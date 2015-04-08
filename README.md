@@ -5,11 +5,13 @@ The full set up was run through Jenkins for executing builds and viewing results
 
 Requirements:
 
--Python 2.7
--Selenium Webdriver
---ChromeDriver (if running tests in Chrome)
---FirefoxDriver (comes pre-installed with Selenium)
--Robot Framework
---Selenium2Library
+Python 2.7
+
+Selenium Webdriver
+-ChromeDriver (if running tests in Chrome)
+-FirefoxDriver (comes pre-installed with Selenium)
+
+Robot Framework
+-Selenium2Library
 
 
