@@ -3,7 +3,7 @@
 | Resource      | ../resources/keywords/cpo_all_models_keywords.robot | 
 | Suite Setup | Setup Commands, CPO All Models page | 
 | Suite Teardown | Teardown Commands | 
-| Test Teardown | Reload Page | ${CPO ALL MODELS URL} | 
+| Test Teardown | Custom Reload page | ${CPO ALL MODELS URL} | 
 
 *** Test Cases ***
 | Sedans - LS thumbnail checks - 2014 | 

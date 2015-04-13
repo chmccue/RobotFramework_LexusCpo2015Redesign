@@ -1,9 +1,9 @@
 *** Variables ***
 
 | ${BASE URL}            | ${LIVE LEXUS URL} | 
-| ${BROWSER}             | Firefox | 
+| ${BROWSER}             | Chrome | 
 | ${LIVE LEXUS URL}      | http://www.lexus.com | 
-| ${TEST SPEED}          | 0 | 
+| ${TEST SPEED}          | 0.05 | 
 | ${WAIT TIME}           | 15 | 
 
 | @{BROWSER LIST}        | Firefox | Chrome | Ie | 

@@ -492,7 +492,7 @@
 
 # IS C DOES NOT HAVE 2009 VERSION
 | ${CPO ISC 2014 BROCHURE PAGE TITLE} | Brochure for 2014 Lexus ISC - 2014-Lexus-ISC-Brochure.pdf | 
-| ${CPO ISC 2013 BROCHURE PAGE TITLE} | Brochure for 2013 Lexus IS, ISF & ISC - 2013-Lexus-IS-Brochure.pdf | 
+| ${CPO ISC 2013 BROCHURE PAGE TITLE} | Brochure for 2013 Lexus IS, ISF & ISC - 2013-Lexus-ISC-Brochure.pdf | 
 | ${CPO ISC 2012 BROCHURE PAGE TITLE} | Brochure for 2012 Lexus IS, ISF & ISC - 2012-Lexus-IS-Brochure.pdf | 
 | ${CPO ISC 2011 BROCHURE PAGE TITLE} | Brochure for 2011 Lexus IS, ISF & ISC - 2011-Lexus-IS-Brochure.pdf | 
 | ${CPO ISC 2010 BROCHURE PAGE TITLE} | Brochure for 2010 Lexus IS, ISF & ISC - 2010-Lexus-IS-Brochure.pdf | 
@@ -559,7 +559,7 @@
 | ${CPO HSH 2010 BROCHURE PAGE TITLE} |  Brochure for 2010 Lexus HS & HSh Hybrid - 2010-Lexus-HS-Brochure.pdf | 
 
 | ${CPO ISF 2014 BROCHURE PAGE TITLE} |  Brochure for 2014 Lexus ISF - 2014-Lexus-ISF-Brochure.pdf | 
-| ${CPO ISF 2013 BROCHURE PAGE TITLE} |  Brochure for 2013 Lexus IS, ISF & ISC - 2013-Lexus-IS-Brochure.pdf | 
+| ${CPO ISF 2013 BROCHURE PAGE TITLE} |  Brochure for 2013 Lexus IS, ISF & ISC - 2013-Lexus-ISF-Brochure.pdf | 
 | ${CPO ISF 2012 BROCHURE PAGE TITLE} |  Brochure for 2012 Lexus IS, ISF & ISC - 2012-Lexus-IS-Brochure.pdf | 
 | ${CPO ISF 2011 BROCHURE PAGE TITLE} |  Brochure for 2011 Lexus IS, ISF & ISC - 2011-Lexus-IS-Brochure.pdf | 
 | ${CPO ISF 2010 BROCHURE PAGE TITLE} |  Brochure for 2010 Lexus IS, ISF & ISC - 2010-Lexus-IS-Brochure.pdf | 
@@ -597,7 +597,7 @@
 
 # IS C DOES NOT HAVE 2009 VERSION
 | ${CPO ISC 2014 BROCHURE URL} | /documents/brochures/2014/2014-Lexus-ISC-Brochure.pdf | 
-| ${CPO ISC 2013 BROCHURE URL} | /documents/brochures/2013/2013-Lexus-IS-Brochure.pdf | 
+| ${CPO ISC 2013 BROCHURE URL} | /documents/brochures/2013/2013-Lexus-ISC-Brochure.pdf | 
 | ${CPO ISC 2012 BROCHURE URL} | /documents/brochures/2012/2012-Lexus-IS-Brochure.pdf | 
 | ${CPO ISC 2011 BROCHURE URL} | /documents/brochures/2011/2011-Lexus-IS-Brochure.pdf | 
 | ${CPO ISC 2010 BROCHURE URL} | /documents/brochures/2010/2010-Lexus-IS-Brochure.pdf | 
@@ -665,9 +665,8 @@
 | ${CPO HSH 2010 BROCHURE URL} | /documents/brochures/2010/2010-Lexus-HS-Brochure.pdf | 
 
 | ${CPO ISF 2014 BROCHURE URL} |  /documents/brochures/2014/2014-Lexus-ISF-Brochure.pdf | 
-| ${CPO ISF 2013 BROCHURE URL} |  /documents/brochures/2013/2013-Lexus-IS-Brochure.pdf | 
+| ${CPO ISF 2013 BROCHURE URL} |  /documents/brochures/2013/2013-Lexus-ISF-Brochure.pdf | 
 | ${CPO ISF 2012 BROCHURE URL} |  /documents/brochures/2012/2012-Lexus-IS-Brochure.pdf | 
 | ${CPO ISF 2011 BROCHURE URL} |  /documents/brochures/2011/2011-Lexus-IS-Brochure.pdf | 
 | ${CPO ISF 2010 BROCHURE URL} |  /documents/brochures/2010/2010-Lexus-IS-Brochure.pdf | 
-| ${CPO ISF 2009 BROCHURE URL} |  /documents/brochures/2009/2009-Lexus-ISF-Brochure.pdf | 
-
+| ${CPO ISF 2009 BROCHURE URL} |  /documents/brochures/2009/2009-Lexus-ISF-Brochure.pdf |

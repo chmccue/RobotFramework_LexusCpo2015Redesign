@@ -17,13 +17,14 @@
 | | Go To | ${BASE URL} | 
 | | Add Cookie | IPE906 | IPE906 | 
 | | Add Cookie | IPE_PAGE | DONE | 
-| | Maximize Browser Window | 
-#| | Run Keyword Unless | '${BROWSER}' == 'Ie' | Maximize Browser Window | 
+#| | Maximize Browser Window | 
+| | Run Keyword If | '${BROWSER}' == 'Ie' | Reload Page | 
+| | Run Keyword Unless | '${BROWSER}' == 'Ie' | Maximize Browser Window | 
 
 | Setup Commands, proxy on, firefox | 
 # This works for Firefox
 | | ${proxy} | Evaluate | sys.modules['selenium.webdriver'].Proxy() | sys, selenium.webdriver | 
-| | ${proxy.http_proxy} | Set Variable | 0.0.0.0:00 |
+| | ${proxy.http_proxy} | Set Variable | <enter proxy here>
 | | Create Webdriver | ${BROWSER} | proxy=${proxy} | 
 # | | Set Selenium Speed | $(TEST SPEED} | 
 | | Go To | ${BASE URL} | 
@@ -33,16 +34,17 @@
 
 # Not working as currently written
 | Setup Commands, proxy on, phantomjs | 
-| | ${service args} | Create List | --proxy=0.0.0.0:0 | 	
+| | ${service args} | Create List | --proxy=<enter proxy here> | 	
 | | Create Webdriver | PhantomJS | service_args=${service args} | 
 
 | Setup Commands, desired capabilities | 
 | | Open Browser | ${BASE URL} | ${BROWSER} | desired_capabilities=webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.HTMLUNIT) | 
 
-| Reload page | [Arguments] | ${page url} | 
+| Custom Reload page | [Arguments] | ${page url} | 
 | | Go To | ${BASE URL}${page url} | 
-| | Run Keyword If | '${BROWSER}' == 'Ie' | Go To | ${BASE URL}${page url} | 
+#| | Run Keyword If | '${BROWSER}' == 'Ie' | Go To | ${BASE URL}${page url} | 
 | | Log | ${BASE URL}${page url} | 
+| | Run Keyword If | '${BROWSER}' == 'Ie' | Reload Page | 
 | | Maximize Browser Window | 
 
 
@@ -61,7 +63,7 @@
 | Verify Correct Link URL | [Arguments] | ${Expected page url} | 
 | | ${Actual page url} | Get Location | 
 | | Log | ${Actual page url} | 
-| | Log | ${BASE URL}${Expected page url} | 
+| | Log | ${Expected page url} | 
 | | Should Contain | ${Actual page url} | ${Expected page url} | 
 | | Run Keyword Unless | '${BROWSER}' == 'Ie' | Page Should Not Contain | The page you requested could not be found. This location may not be current. | 
 | | Run Keyword Unless | '${BROWSER}' == 'Ie' | Page Should Not Contain | Error Message | 
@@ -77,7 +79,7 @@
 
 # FOR WWW ENVIRONMENT.  COMMENT OUT IF TESTS NEED TO BE RUN ON STAGING OR VMTL ENVIRONMENTS
 | PDF - Switch Window, Verify Correct Link Title and URL | [Arguments] | ${Expected page title} | ${Expected page url} | 
-| | sleep | 10 | 
+| | sleep | 15 | 
 | | Select Window | url=${BASE URL}${Expected page url} | 
 | | Run Keyword If | '${BROWSER}' == 'Firefox' | Verify Correct Link Title | ${Expected page title} | 
 | | Verify Correct Link URL | ${Expected page url} | 
@@ -91,7 +93,8 @@
 #| | Verify Correct Link URL | ${Expected page url} | 
 #| | Close Second Window, Switch Back to Main Window | 
 
-| Find and Click Element | [Arguments]    | ${Page element} |
+| Find and Click Element | [Arguments]    | ${Page element} | 
+#| | Run Keyword Unless | '${BROWSER}' == 'Firefox' | Execute Javascript | window.scrollTo(0,0) | 
 | |	Wait Until Element Is Visible         | ${Page element} | ${WAIT TIME} | 
 | | Click Element | ${Page element} | 
 #| | Run Keyword If | '${BROWSER}' == 'Ie' | Mouse Down | ${Page element} | 

@@ -1,7 +1,7 @@
 *** Settings ***
 | Documentation | CPO Compare Page. | 
 | Resource      | ../resources/keywords/cpo_compare_keywords.robot | 
-| Test Teardown | Reload page | ${CPO COMPARE URL} | 
+| Test Teardown | Custom Reload page | ${CPO COMPARE URL} | 
 | Suite Setup | Setup Commands, CPO Compare page | 
 | Suite Teardown | Teardown Commands | 
 
@@ -37,14 +37,14 @@
 | | And approved copy for models other than BMW are not displayed | 
 
 | Desktop - Select Manufacturer to Compare - Cadillac | 
-| | [Tags] | desktop | test | 
+| | [Tags] | desktop | 
 | | Given user clicks on Select Manufacturer to Compare dropdown | 
 | | When user selects Cadillac | 
 | | Then compare overview displays approved copy for Cadillac | 
 | | And approved copy for models other than Cadillac are not displayed | 
 
 | Desktop - Select Manufacturer to Compare - Infiniti | 
-| | [Tags] | desktop | test | 
+| | [Tags] | desktop | 
 | | Given user clicks on Select Manufacturer to Compare dropdown | 
 | | When user selects Infiniti | 
 | | Then compare overview displays approved copy for Infiniti | 

@@ -39,6 +39,22 @@
 
 
 # **************************************
+
+| ${ZIP NEW YORK} | 10011 | 
+| ${ZIP LOS ANGELES} | 90245 | 
+| ${ZIP ORLANDO} | 32792 | 
+| ${ZIP CHICAGO} | 60018 | 
+| ${ZIP SAN FRANCISCO} | 94102 | 
+| ${ZIP CLEVELAND} | 44103 | 
+| ${ZIP MIAMI} | 33125 | 
+| ${ZIP PHOENIX} | 85003 | 
+| ${ZIP BOSTON} | 02108 | 
+| ${ZIP OKLAHOMA CITY} | 73078 | 
+| ${ZIP NEWARK} | 07102 | 
+
+# 11 zip codes in list
+| @{ZIP CODE LIST} | ${ZIP NEW YORK} | ${ZIP LOS ANGELES} | ${ZIP ORLANDO} | ${ZIP CHICAGO} | ${ZIP SAN FRANCISCO} | ${ZIP CLEVELAND} | ${ZIP MIAMI} | ${ZIP PHOENIX} | ${ZIP BOSTON} | ${ZIP OKLAHOMA CITY} | ${ZIP NEWARK} | 
+
 # **************************************
 
 # Checkbox elements 
@@ -159,7 +175,7 @@
 | ${VALUE SC}  | SC 430 | 
 
 | ${VALUE RX}  | RX 350 |
-| ${VALUE GX}  | GX 460 | 
+| ${VALUE GX}  | GX 470,GX 460 | 
 | ${VALUE LX}  | LX 570 | 
 
 | ${VALUE CTh} | CT 200h |  
@@ -173,14 +189,14 @@
 
 
 # VALUES WITH PLUS IN THEM
-#| ${VALUE IS}  | IS 250,IS 350 | 
-#| ${VALUE ES}  | ES 350 | 
+#| ${VALUE IS}  | IS+250,IS+350 | 
+#| ${VALUE ES}  | ES+350 | 
 #| ${VALUE GS}  | GS+350 | 
 #| ${VALUE LS}  | LS+460 | 
 #| ${VALUE ISC} | IS+250C,IS+350C | 
 #| ${VALUE SC}  | SC+430 | 
 #| ${VALUE RX}  | RX+350 |
-#| ${VALUE GX}  | GX+460 | 
+#| ${VALUE GX}  | GX+470,GX+460 | 
 #| ${VALUE LX}  | LX+570 | 
 #| ${VALUE CTh} | CT+200h |  
 #| ${VALUE ESh} | ES+300h | 
@@ -200,6 +216,9 @@
 # 3 MODELS SELECTED VARIABLE
 | ${RESULTS PAGE - ES,ISC,GX} | ${MODEL VALUE CSS 1}${VALUE ES},${VALUE ISC},${VALUE GX}${MODEL VALUE CSS 2} | 
 
+# 4 MODELS SELECTED VARIABLE
+| ${RESULTS PAGE - LS,SC,HSh,ISF} | ${MODEL VALUE CSS 1}${VALUE LS},${VALUE SC},${VALUE HSh},${VALUE ISF}${MODEL VALUE CSS 2} | 
+
 # 5 MODELS SELECTED VARIABLE
 | ${RESULTS PAGE - IS,GS,GX,CTh,RXh} | ${MODEL VALUE CSS 1}${VALUE IS},${VALUE GS},${VALUE GX},${VALUE CTh},${VALUE RXh}${MODEL VALUE CSS 2} | 
 
@@ -210,6 +229,9 @@
 
 | ${RESULTS PAGE - ALL MODELS SELECTED - LONG STRING} | xpath=.//*[@id='inv_search_model']/option[contains(text(), "IS 250,IS 350,ES 350,GS 350,LS 460,IS 250C,IS 350C,SC 430,RX 350,GX 460,LX 570,CT 200h,ES 300h,GS 450h,LS 600h,HS 250h,RX 450h,IS F")] | 
 
+
+| ${RESULTS PAGE - XPATH OFFERS} | (//td[@class='item-info']) | 
+#| ${XPATH COUNT} | Get Matching Xpath Count | ${RESULTS PAGE - XPATH OFFERS} | 
 
 | ${RESULTS PAGE - IS MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE IS}${MODEL VALUE CSS 2} | 
 
@@ -262,11 +284,11 @@
 | ${RESULTS PAGE - MAX MILEAGE - 20,000 SELECTED} | xpath=.//*[@id='inv_search_maxMileage']/option[@selected="selected"][@value="20000"] | 
 
 | ${RESULTS PAGE - MIN YEAR - 2009 SELECTED} | xpath=.//*[@id='inv_search_minYear']/option[@selected="selected"][@value="2009"] | 
-${RESULTS PAGE - MIN YEAR - 2010 SELECTED}   | xpath=.//*[@id='inv_search_minYear']/option[@selected="selected"][@value="2010"] | 
+| ${RESULTS PAGE - MIN YEAR - 2010 SELECTED}   | xpath=.//*[@id='inv_search_minYear']/option[@selected="selected"][@value="2010"] | 
 | ${RESULTS PAGE - MIN YEAR - 2011 SELECTED} | xpath=.//*[@id='inv_search_minYear']/option[@selected="selected"][@value="2011"] | 
 
 | ${RESULTS PAGE - MAX YEAR - 2012 SELECTED} | xpath=.//*[@id='inv_search_maxYear']/option[@selected="selected"][@value="2012"] | 
-${RESULTS PAGE - MAX YEAR - 2013 SELECTED}   | xpath=.//*[@id='inv_search_maxYear']/option[@selected="selected"][@value="2013"] | 
+| ${RESULTS PAGE - MAX YEAR - 2013 SELECTED}   | xpath=.//*[@id='inv_search_maxYear']/option[@selected="selected"][@value="2013"] | 
 | ${RESULTS PAGE - MAX YEAR - 2014 SELECTED} | xpath=.//*[@id='inv_search_maxYear']/option[@selected="selected"][@value="2014"] | 
 
 

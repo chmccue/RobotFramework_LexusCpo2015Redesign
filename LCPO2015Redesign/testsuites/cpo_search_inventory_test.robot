@@ -3,7 +3,7 @@
 | Resource      | ../resources/keywords/cpo_search_inventory_keywords.robot | 
 | Suite Setup   | Setup Commands, Search Inventory page | 
 | Suite Teardown | Teardown Commands | 
-| Test Teardown | Reload page | ${CPO SEARCH INVENTORY URL}
+| Test Teardown | Custom Reload page | ${CPO SEARCH INVENTORY URL}
 
 *** Test Cases ***
 
@@ -30,7 +30,7 @@
 
 # THIS TEST CONFIRMED PASSES.  ALL OTHER SIMILAR TESTS TO BE REDONE IN THE SAME MANNER AS THIS TEST
 | Search with 2 models selected, Los Angeles zip code | 
-| | [Tags] | desktop | test | 
+| | [Tags] | desktop | 
 | | Given 2 models are selected: LS,RX | 
 | | And user enters Los Angeles zip code | 
 | | When user clicks on Search button | 
@@ -38,10 +38,12 @@
 | | And search results page displays Los Angeles zip code | 
 
 | Search with 3 models selected, Press Browser Back button, search with 4 different models | 
+| | [Tags] | test | 
 | | Given 3 models are selected: ES,ISC,GX | 
 | | When user clicks on Search button | 
-| | Then results page displays offers only for 3 models: ES,ISC,GX | 
+| | And results page displays offers only for 3 models: ES,ISC,GX | 
 | | And user presses browser back button | 
+| | And 3 models are selected: ES,ISC,GX | 
 | | And 4 models are selected: LS,SC,ISF,HSh | 
 | | And user updates search fields with Orlando, $50,000 price, 70,000 mileage range, 2010 min year, 2013 max year | 
 | | When user clicks on Search button | 
@@ -57,7 +59,6 @@
 | | And search results page displays Orlando zip code | 
 
 | Search with 10 models selected, New York zip code, max price $60,000, max mileage 10,000, min year 2011, max year 2012 | 
-| | [Tags] | logcheck | 
 | | Given 10 models are selected: IS,ES,GS,LS,RX,GX,LX,CTh,LSh,RXh | 
 | | And user enters New York zip code | 
 | | And user clicks on Max Price dropdown menu | 
@@ -105,7 +106,9 @@
 | | Then results page displays offers only for GS model | 
 
 | Search with only LS model selected | 
+| | [Tags] | testit | 
 | | Given user clicks checkbox for LS model | 
+| | And user enters a random zip code | 
 | | When user clicks on Search button | 
 | | Then results page displays offers only for LS model | 
 
@@ -120,8 +123,9 @@
 | | Then results page displays offers only for RX model | 
 
 | Search with only LX model selected | 
-
+| | [Tags] | testit | 
 | | Given user clicks checkbox for LX model | 
+| | And user enters a random zip code | 
 | | When user clicks on Search button | 
 | | Then results page displays offers only for LX model | 
 
@@ -137,7 +141,9 @@
 | | Then results page displays offers only for IS C model | 
 
 | Search with only SC model selected | 
+| | [Tags] | testit | 
 | | Given user clicks checkbox for SC model | 
+| | And user enters a random zip code | 
 | | When user clicks on Search button | 
 | | Then results page displays offers only for SC model | 
 
@@ -152,8 +158,9 @@
 | | Then results page displays offers only for HSh model | 
 
 | Search with only RXh model selected | 
-| | [Tags] | quick | 
+| | [Tags] | testit | 
 | | Given user clicks checkbox for RXh model | 
+| | And user enters a random zip code | 
 | | When user clicks on Search button | 
 | | Then results page displays offers only for RXh model | 
 

@@ -3,7 +3,7 @@
 | Resource      | ../resources/keywords/cpo_overview_keywords.robot | 
 | Suite Setup    | Setup Commands, CPO Overview Page | 
 | Suite Teardown | Teardown Commands | 
-| Test Setup     | Reload page | ${CPO OVERVIEW URL} | 
+| Test Setup     | Custom Reload page | ${CPO OVERVIEW URL} | 
 
 *** Test Cases ***
 

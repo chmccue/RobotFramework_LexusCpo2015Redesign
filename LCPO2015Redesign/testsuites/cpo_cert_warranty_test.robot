@@ -3,7 +3,7 @@
 | Resource      | ../resources/keywords/cpo_cert_warranty_keywords.robot |  
 | Suite Setup | Setup Commands, CPO Certification & Warranty page | 
 | Suite Teardown | Teardown Commands | 
-| Test Teardown | Reload page | ${CPO CERTIFICATION & WARRANTY URL} | 
+| Test Teardown | Custom Reload page | ${CPO CERTIFICATION & WARRANTY URL} | 
 
 *** Test Cases ***
 
