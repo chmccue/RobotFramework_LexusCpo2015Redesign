@@ -9,16 +9,17 @@
 
 | Setup Commands, CPO ISC Models page | 
 | | Setup Commands | 
-| | Go To | ${BASE URL}${CPO ISC 2014 URL} | 
+| | Go To | ${BASE URL}${CPO ISC 2015 URL} | 
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
+
+| user is on ISC 2015 Model page | 
+| | Go To | ${BASE URL}${CPO ISC 2015 URL} | 
+| | Verify Correct Link Title | ${CPO ISC 2015 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO ISC 2015 URL} | 
 
 | user is on ISC 2014 Model page | 
 | | Go To | ${BASE URL}${CPO ISC 2014 URL} | 
@@ -53,67 +54,6 @@
 # ********************************************************************
 # ********************************************************************
 
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
-
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
-
-# ********************************************************************
-# ********************************************************************
-# DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
-
-| user views the ISC 2014 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2014 BROCHURE PAGE TITLE} | ${CPO ISC 2014 BROCHURE URL} | 
-
-| user views the ISC 2013 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2013 BROCHURE PAGE TITLE} | ${CPO ISC 2013 BROCHURE URL} | 
-
-| user views the ISC 2012 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2012 BROCHURE PAGE TITLE} | ${CPO ISC 2012 BROCHURE URL} | 
-
-| user views the ISC 2011 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2011 BROCHURE PAGE TITLE} | ${CPO ISC 2011 BROCHURE URL} | 
-
-| user views the ISC 2010 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2010 BROCHURE PAGE TITLE} | ${CPO ISC 2010 BROCHURE URL} | 
-
-| user views the ISC 2009 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2009 BROCHURE PAGE TITLE} | ${CPO ISC 2009 BROCHURE URL} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| menu expands and user selects 2014 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2014 BUTTON} | 
-
-| menu expands and user selects 2013 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2013 BUTTON} | 
-
-| menu expands and user selects 2012 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2012 BUTTON} | 
-
-| menu expands and user selects 2011 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2011 BUTTON} | 
-
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
-
-| menu expands and user selects 2009 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2009 BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
 | user is taken to ISC 2014 Model page | 
 | | Verify Correct Link Title | ${CPO ISC 2014 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO ISC 2014 URL} | 
@@ -137,6 +77,184 @@
 | user is taken to ISC 2009 Model page | 
 | | Verify Correct Link Title | ${CPO ISC 2009 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO ISC 2009 URL} | 
+
+# ********************************************************************
+# ********************************************************************
+# DOWNLOAD BROCHURE
+
+| user views the ISC 2015 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2015 BROCHURE PAGE TITLE} | ${CPO ISC 2015 BROCHURE URL} | 
+
+| user views the ISC 2014 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2014 BROCHURE PAGE TITLE} | ${CPO ISC 2014 BROCHURE URL} | 
+
+| user views the ISC 2013 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2013 BROCHURE PAGE TITLE} | ${CPO ISC 2013 BROCHURE URL} | 
+
+| user views the ISC 2012 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2012 BROCHURE PAGE TITLE} | ${CPO ISC 2012 BROCHURE URL} | 
+
+| user views the ISC 2011 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2011 BROCHURE PAGE TITLE} | ${CPO ISC 2011 BROCHURE URL} | 
+
+| user views the ISC 2010 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2010 BROCHURE PAGE TITLE} | ${CPO ISC 2010 BROCHURE URL} | 
+
+| user views the ISC 2009 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISC 2009 BROCHURE PAGE TITLE} | ${CPO ISC 2009 BROCHURE URL} | 
+
+# ********************************************************************
+# ********************************************************************
+# ********************************************************************
+# ********************************************************************
+# ***************************************************************
+# DESKTOP REVIEW
+# ***************************************************************
+
+# DESKTOP RESOLUTION
+| Desktop View - ISC 2015 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2015 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+ISC 2015 Model page - Desktop view - Choose Another Model Year menu
+| Desktop View - ISC 2014 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2014 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Desktop View - ISC 2013 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2013 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Desktop View - ISC 2012 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2012 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Desktop View - ISC 2011 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2011 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Desktop View - ISC 2010 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2010 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
+
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - ISC 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2015 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Portrait View - ISC 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2014 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Portrait View - ISC 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2013 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Portrait View - ISC 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2012 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Portrait View - ISC 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2011 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Portrait View - ISC 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2010 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - ISC 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2015 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Landscape View - ISC 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2014 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Landscape View - ISC 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2013 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Landscape View - ISC 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2012 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Landscape View - ISC 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2011 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Mobile Landscape View - ISC 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2010 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - ISC 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2015 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Portrait View - ISC 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2014 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Portrait View - ISC 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2013 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Portrait View - ISC 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2012 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Portrait View - ISC 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2011 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Portrait View - ISC 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2010 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - ISC 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2015 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Landscape View - ISC 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2014 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Landscape View - ISC 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2013 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Landscape View - ISC 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2012 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Landscape View - ISC 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2011 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+| Tablet Landscape View - ISC 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO ISC 2010 URL} | ${CPO ISC PAGE TITLE VAR} | ${CPO ISC URL VAR} | ${CPO YEARS ISC} | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************

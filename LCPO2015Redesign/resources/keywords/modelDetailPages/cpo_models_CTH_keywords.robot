@@ -9,11 +9,16 @@
 
 | Setup Commands, CPO CTH Models page | 
 | | Setup Commands | 
-| | Go To | ${BASE URL}${CPO CTH 2014 URL} | 
+| | Go To | ${BASE URL}${CPO CTH 2015 URL} | 
 
 
 # ********************************************************************
 # ********************************************************************
+
+| user is on CTH 2015 Model page | 
+| | Go To | ${BASE URL}${CPO CTH 2015 URL} | 
+| | Verify Correct Link Title | ${CPO CTH 2015 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO CTH 2015 URL} | 
 
 | user is on CTH 2014 Model page | 
 | | Go To | ${BASE URL}${CPO CTH 2014 URL} | 
@@ -41,65 +46,13 @@
 | | Verify Correct Link URL | ${CPO CTH 2010 URL} | 
 
 
-# ********************************************************************
-# ********************************************************************
-
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
-
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
-
-# ********************************************************************
-# ********************************************************************
-# DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
-
-| user views the CTH 2014 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2014 BROCHURE PAGE TITLE} | ${CPO CTH 2014 BROCHURE URL} | 
-
-| user views the CTH 2013 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2013 BROCHURE PAGE TITLE} | ${CPO CTH 2013 BROCHURE URL} | 
-
-| user views the CTH 2012 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2012 BROCHURE PAGE TITLE} | ${CPO CTH 2012 BROCHURE URL} | 
-
-| user views the CTH 2011 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2011 BROCHURE PAGE TITLE} | ${CPO CTH 2011 BROCHURE URL} | 
-
-| user views the CTH 2010 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2010 BROCHURE PAGE TITLE} | ${CPO CTH 2010 BROCHURE URL} | 
-
 
 # ********************************************************************
 # ********************************************************************
 
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| menu expands and user selects 2014 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2014 BUTTON} | 
-
-| menu expands and user selects 2013 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2013 BUTTON} | 
-
-| menu expands and user selects 2012 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2012 BUTTON} | 
-
-| menu expands and user selects 2011 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2011 BUTTON} | 
-
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
-
-
-# ********************************************************************
-# ********************************************************************
+| user is taken to CTH 2015 Model page | 
+| | Verify Correct Link Title | ${CPO CTH 2015 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO CTH 2015 URL} | 
 
 | user is taken to CTH 2014 Model page | 
 | | Verify Correct Link Title | ${CPO CTH 2014 PAGE TITLE} | 
@@ -120,6 +73,162 @@
 | user is taken to CTH 2010 Model page | 
 | | Verify Correct Link Title | ${CPO CTH 2010 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO CTH 2010 URL} | 
+
+# ********************************************************************
+# ********************************************************************
+# DOWNLOAD BROCHURE
+
+| user views the CTH 2015 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2015 BROCHURE PAGE TITLE} | ${CPO CTH 2015 BROCHURE URL} | 
+
+| user views the CTH 2014 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2014 BROCHURE PAGE TITLE} | ${CPO CTH 2014 BROCHURE URL} | 
+
+| user views the CTH 2013 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2013 BROCHURE PAGE TITLE} | ${CPO CTH 2013 BROCHURE URL} | 
+
+| user views the CTH 2012 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2012 BROCHURE PAGE TITLE} | ${CPO CTH 2012 BROCHURE URL} | 
+
+| user views the CTH 2011 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2011 BROCHURE PAGE TITLE} | ${CPO CTH 2011 BROCHURE URL} | 
+
+| user views the CTH 2010 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO CTH 2010 BROCHURE PAGE TITLE} | ${CPO CTH 2010 BROCHURE URL} | 
+
+
+# ********************************************************************
+# ********************************************************************
+# ***************************************************************
+# DESKTOP REVIEW
+# ***************************************************************
+
+# DESKTOP PORTRAIT RESOLUTION
+| Desktop View - CTH 2015 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2015 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Desktop View - CTH 2014 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2014 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Desktop View - CTH 2013 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2013 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Desktop View - CTH 2012 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2012 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Desktop View - CTH 2011 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2011 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+
+
+
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
+
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - CTH 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2015 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Mobile Portrait View - CTH 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2014 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Mobile Portrait View - CTH 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2013 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Mobile Portrait View - CTH 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2012 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Mobile Portrait View - CTH 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2011 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - CTH 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2015 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Mobile Landscape View - CTH 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2014 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Mobile Landscape View - CTH 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2013 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Mobile Landscape View - CTH 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2012 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Mobile Landscape View - CTH 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2011 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - CTH 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2015 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Tablet Portrait View - CTH 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2014 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Tablet Portrait View - CTH 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2013 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Tablet Portrait View - CTH 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2012 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Tablet Portrait View - CTH 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2011 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - CTH 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2015 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Tablet Landscape View - CTH 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2014 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Tablet Landscape View - CTH 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2013 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Tablet Landscape View - CTH 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2012 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+| Tablet Landscape View - CTH 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO CTH 2011 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | ${CPO YEARS CTH} | 
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************
@@ -152,90 +261,3 @@
 | Safety copy matches expected CTH 2014 Safety copy | 
 | | Actual vs Expected Copy | ${CPO CTH 2014 - ACTUAL SAFETY COPY LOCATION 1} | ${CPO CTH 2014 - EXPECTED SAFETY COPY 1} | 
 | | Actual vs Expected Copy | ${CPO CTH 2014 - ACTUAL SAFETY COPY LOCATION 2} | ${CPO CTH 2014 - EXPECTED SAFETY COPY 2} | 
-
-
-
-# ***************************************************************
-# MOBILE REVIEW
-# ***************************************************************
-
-# MOBILE PORTRAIT RESOLUTION
-| Mobile Portrait View - CTH 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2014 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Mobile Portrait View - CTH 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2013 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Mobile Portrait View - CTH 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2012 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Mobile Portrait View - CTH 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2011 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-
-# MOBILE LANDSCAPE RESOLUTION
-| Mobile Landscape View - CTH 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2014 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Mobile Landscape View - CTH 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2013 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Mobile Landscape View - CTH 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2012 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Mobile Landscape View - CTH 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2011 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-
-
-# ***************************************************************
-# TABLET REVIEW
-# ***************************************************************
-
-# TABLET PORTRAIT RESOLUTION
-| Tablet Portrait View - CTH 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2014 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Tablet Portrait View - CTH 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2013 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Tablet Portrait View - CTH 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2012 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Tablet Portrait View - CTH 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2011 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-
-
-# TABLET LANDSCAPE RESOLUTION
-| Tablet Landscape View - CTH 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2014 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Tablet Landscape View - CTH 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2013 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Tablet Landscape View - CTH 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2012 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-| Tablet Landscape View - CTH 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for CTH |  ${CPO CTH 2011 URL} | ${CPO CTH PAGE TITLE VAR} | ${CPO CTH URL VAR} | 
-
-
-
-

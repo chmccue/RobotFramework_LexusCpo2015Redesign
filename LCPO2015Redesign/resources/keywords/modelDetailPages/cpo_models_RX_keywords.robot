@@ -9,16 +9,17 @@
 
 | Setup Commands, CPO RX Models page | 
 | | Setup Commands | 
-| | Go To | ${BASE URL}${CPO RX 2014 URL} | 
+| | Go To | ${BASE URL}${CPO RX 2015 URL} | 
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
+
+| user is on RX 2015 Model page | 
+| | Go To | ${BASE URL}${CPO RX 2015 URL} | 
+| | Verify Correct Link Title | ${CPO RX 2015 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO RX 2015 URL} | 
 
 | user is on RX 2014 Model page | 
 | | Go To | ${BASE URL}${CPO RX 2014 URL} | 
@@ -53,67 +54,6 @@
 # ********************************************************************
 # ********************************************************************
 
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
-
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
-
-# ********************************************************************
-# ********************************************************************
-# DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
-
-| user views the RX 2014 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2014 BROCHURE PAGE TITLE} | ${CPO RX 2014 BROCHURE URL} | 
-
-| user views the RX 2013 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2013 BROCHURE PAGE TITLE} | ${CPO RX 2013 BROCHURE URL} | 
-
-| user views the RX 2012 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2012 BROCHURE PAGE TITLE} | ${CPO RX 2012 BROCHURE URL} | 
-
-| user views the RX 2011 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2011 BROCHURE PAGE TITLE} | ${CPO RX 2011 BROCHURE URL} | 
-
-| user views the RX 2010 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2010 BROCHURE PAGE TITLE} | ${CPO RX 2010 BROCHURE URL} | 
-
-| user views the RX 2009 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2009 BROCHURE PAGE TITLE} | ${CPO RX 2009 BROCHURE URL} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| menu expands and user selects 2014 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2014 BUTTON} | 
-
-| menu expands and user selects 2013 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2013 BUTTON} | 
-
-| menu expands and user selects 2012 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2012 BUTTON} | 
-
-| menu expands and user selects 2011 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2011 BUTTON} | 
-
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
-
-| menu expands and user selects 2009 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2009 BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
 | user is taken to RX 2014 Model page | 
 | | Verify Correct Link Title | ${CPO RX 2014 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO RX 2014 URL} | 
@@ -137,6 +77,207 @@
 | user is taken to RX 2009 Model page | 
 | | Verify Correct Link Title | ${CPO RX 2009 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO RX 2009 URL} | 
+
+
+# ********************************************************************
+# ********************************************************************
+# DOWNLOAD BROCHURE
+| user views the RX 2015 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2015 BROCHURE PAGE TITLE} | ${CPO RX 2015 BROCHURE URL} | 
+
+| user views the RX 2014 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2014 BROCHURE PAGE TITLE} | ${CPO RX 2014 BROCHURE URL} | 
+
+| user views the RX 2013 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2013 BROCHURE PAGE TITLE} | ${CPO RX 2013 BROCHURE URL} | 
+
+| user views the RX 2012 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2012 BROCHURE PAGE TITLE} | ${CPO RX 2012 BROCHURE URL} | 
+
+| user views the RX 2011 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2011 BROCHURE PAGE TITLE} | ${CPO RX 2011 BROCHURE URL} | 
+
+| user views the RX 2010 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2010 BROCHURE PAGE TITLE} | ${CPO RX 2010 BROCHURE URL} | 
+
+| user views the RX 2009 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO RX 2009 BROCHURE PAGE TITLE} | ${CPO RX 2009 BROCHURE URL} | 
+
+# ********************************************************************
+# ********************************************************************
+# ***************************************************************
+# DESKTOP REVIEW
+# ***************************************************************
+
+# DESKTOP PORTRAIT RESOLUTION
+| Desktop View - RX 2015 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2015 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+RX 2015 Model page - Desktop view - Choose Another Model Year menu
+| Desktop View - RX 2014 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2014 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Desktop View - RX 2013 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2013 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Desktop View - RX 2012 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2012 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Desktop View - RX 2011 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2011 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Desktop View - RX 2010 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2010 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Desktop View - RX 2009 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2009 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
+
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - RX 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2015 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Portrait View - RX 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2014 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Portrait View - RX 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2013 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Portrait View - RX 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2012 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Portrait View - RX 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2011 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Portrait View - RX 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2010 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Portrait View - RX 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2009 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - RX 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2015 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Landscape View - RX 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2014 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Landscape View - RX 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2013 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Landscape View - RX 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2012 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Landscape View - RX 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2011 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Landscape View - RX 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2010 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Mobile Landscape View - RX 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2009 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - RX 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2015 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Portrait View - RX 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2014 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Portrait View - RX 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2013 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Portrait View - RX 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2012 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Portrait View - RX 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2011 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Portrait View - RX 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2010 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Portrait View - RX 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2009 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - RX 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2015 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Landscape View - RX 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2014 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Landscape View - RX 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2013 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Landscape View - RX 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2012 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Landscape View - RX 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2011 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Landscape View - RX 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2010 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+| Tablet Landscape View - RX 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO RX 2009 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | ${CPO YEARS RX} | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************
@@ -169,122 +310,5 @@
 | Safety copy matches expected RX 2014 Safety copy | 
 | | Actual vs Expected Copy | ${CPO RX 2014 - ACTUAL SAFETY COPY LOCATION 1} | ${CPO RX 2014 - EXPECTED SAFETY COPY 1} | 
 | | Actual vs Expected Copy | ${CPO RX 2014 - ACTUAL SAFETY COPY LOCATION 2} | ${CPO RX 2014 - EXPECTED SAFETY COPY 2} | 
-
-
-
-
-# ***************************************************************
-# MOBILE REVIEW
-# ***************************************************************
-
-# MOBILE PORTRAIT RESOLUTION
-| Mobile Portrait View - RX 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2014 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Portrait View - RX 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2013 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Portrait View - RX 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2012 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Portrait View - RX 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2011 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Portrait View - RX 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2010 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Portrait View - RX 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2009 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-
-# MOBILE LANDSCAPE RESOLUTION
-| Mobile Landscape View - RX 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2014 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Landscape View - RX 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2013 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Landscape View - RX 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2012 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Landscape View - RX 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2011 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Landscape View - RX 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2010 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Mobile Landscape View - RX 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2009 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-
-
-# ***************************************************************
-# TABLET REVIEW
-# ***************************************************************
-
-# TABLET PORTRAIT RESOLUTION
-| Tablet Portrait View - RX 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2014 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Portrait View - RX 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2013 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Portrait View - RX 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2012 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Portrait View - RX 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2011 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Portrait View - RX 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2010 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Portrait View - RX 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2009 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-
-# TABLET LANDSCAPE RESOLUTION
-| Tablet Landscape View - RX 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2014 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Landscape View - RX 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2013 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Landscape View - RX 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2012 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Landscape View - RX 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2011 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Landscape View - RX 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2010 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-| Tablet Landscape View - RX 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO RX 2009 URL} | ${CPO RX PAGE TITLE VAR} | ${CPO RX URL VAR} | 
-
-
 
 

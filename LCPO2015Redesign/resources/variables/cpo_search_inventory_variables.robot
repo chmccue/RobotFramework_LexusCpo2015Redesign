@@ -2,41 +2,46 @@
 
 # MOBILE SEARCH INVENTORY PAGE ONLY
 
-| ${CPO MOBILE MAIN HERO IMAGE} | xpath=//header/img[@class="mobileOnly"] | 
+| ${CPO MOBILE MAIN HERO IMAGE} | css=header>img.mobileOnly | 
 
 # CPO SEARCH INVENTORY PAGE
 # **************************************
 # **************************************
-| ${SEARCH ZIP CODE BOX} | xpath=.//*[@id='desktop-zip-field'] | 
-| ${SEARCH MAX PRICE MENU} | xpath=.//*[@id='dk_container_price']/a | 
-| ${SEARCH MIN YEAR RANGE MENU} | xpath=.//*[@id='dk_container_yearrange']/a | 
-| ${SEARCH MAX YEAR RANGE MENU} | xpath=.//*[@id='dk_container_yearrange-max']/a | 
-| ${SEARCH MAX MILEAGE MENU} | xpath=.//*[@id='dk_container_mileage']/a | 
 
-| ${SEARCH BUTTON} | xpath=(//button[contains(text(), "SEARCH")]) | 
+| ${SEARCH ZIP CODE BOX} | css=input#desktop-zip-field | 
+| ${SEARCH MAX PRICE MENU} | css=div#dk_container_price>a | 
+| ${SEARCH MIN YEAR RANGE MENU} | css=div#dk_container_yearrange>a | 
+| ${SEARCH MAX YEAR RANGE MENU} | css=div#dk_container_yearrange-max>a | 
+| ${SEARCH MAX MILEAGE MENU} | css=div#dk_container_mileage>a | 
 
-| ${PRICE DEFAULT DISPLAY} | xpath=(//*[@id='dk_container_price']/div/ul/li[@class="dk_option_current"]) | 
-| ${MIN YEAR DEFAULT DISPLAY} | xpath=(//*[@id='dk_container_yearrange']/div/ul/li[@class="dk_option_current"]) | 
-| ${MAX YEAR DEFAULT DISPLAY} | xpath=(//*[@id='dk_container_yearrange-max']/div/ul/li[@class="dk_option_current"]) | 
-| ${MILEAGE DEFAULT DISPLAY} | xpath=(//*[@id='dk_container_mileage']/div/ul/li[@class="dk_option_current"]) | 
+| ${SEARCH BUTTON - XPATH} | xpath=(//button[contains(text(), "SEARCH")]) |
 
-| ${MAX PRICE MENU - $50,000} | xpath=.//*[@id='dk_container_price']/div/ul/li/a[contains(text(), "$50,000")] | 
-| ${MAX PRICE MENU - $30,000} | xpath=.//*[@id='dk_container_price']/div/ul/li/a[contains(text(), "$30,000")] | 
-| ${MAX PRICE MENU - $60,000} | xpath=.//*[@id='dk_container_price']/div/ul/li/a[contains(text(), "$60,000")] | 
-| ${MAX PRICE MENU - $5,000} | xpath=.//*[@id='dk_container_price']/div/ul/li/a[contains(text(), "$5,000")] | 
+| ${SEARCH BUTTON} | css=button.button.submit | 
 
-| ${MAX MILEAGE MENU - 70,000} | xpath=.//*[@id='dk_container_mileage']/div/ul/li/a[contains(text(), "70,000")] | 
-| ${MAX MILEAGE MENU - 40,000} | xpath=.//*[@id='dk_container_mileage']/div/ul/li/a[contains(text(), "40,000")] | 
-| ${MAX MILEAGE MENU - 20,000} | xpath=.//*[@id='dk_container_mileage']/div/ul/li/a[contains(text(), "20,000")] | 
 
-| ${MIN YEAR MENU - 2011} | xpath=.//*[@id='dk_container_yearrange']/div/ul/li/a[contains(text(), "2011")] | 
-| ${MIN YEAR MENU - 2010} | xpath=.//*[@id='dk_container_yearrange']/div/ul/li/a[contains(text(), "2010")] |
-| ${MIN YEAR MENU - 2009} | xpath=.//*[@id='dk_container_yearrange']/div/ul/li/a[contains(text(), "2009")] | 
+| ${PRICE DEFAULT DISPLAY} | css=#dk_container_price>div>ul>li.dk_option_current | 
+| ${MIN YEAR DEFAULT DISPLAY} | css=#dk_container_yearrange>div>ul>li.dk_option_current | 
+| ${MAX YEAR DEFAULT DISPLAY} | css=#dk_container_yearrange-max>div>ul>li.dk_option_current | 
+| ${MILEAGE DEFAULT DISPLAY} | css=#dk_container_mileage>div>ul>li.dk_option_current | 
 
-| ${MAX YEAR MENU - 2014} | xpath=.//*[@id='dk_container_yearrange-max']/div/ul/li/a[contains(text(), "2014")] | 
-| ${MAX YEAR MENU - 2013} | xpath=.//*[@id='dk_container_yearrange-max']/div/ul/li/a[contains(text(), "2013")] | 
-| ${MAX YEAR MENU - 2012} | xpath=.//*[@id='dk_container_yearrange-max']/div/ul/li/a[contains(text(), "2012")] | 
 
+
+| ${MAX PRICE MENU - $50,000} | css=#dk_container_price>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='50000'] | 
+| ${MAX PRICE MENU - $30,000} | css=#dk_container_price>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='30000'] | 
+| ${MAX PRICE MENU - $60,000} | css=#dk_container_price>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='60000'] | 
+| ${MAX PRICE MENU - $5,000} | css=#dk_container_price>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='5000'] | 
+
+| ${MAX MILEAGE MENU - 70,000} | css=#dk_container_mileage>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='70000'] | 
+| ${MAX MILEAGE MENU - 40,000} | css=#dk_container_mileage>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='40000'] | 
+| ${MAX MILEAGE MENU - 20,000} | css=#dk_container_mileage>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='20000'] | 
+
+| ${MIN YEAR MENU - 2011} | css=#dk_container_yearrange>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='2011'] | 
+| ${MIN YEAR MENU - 2010} | css=#dk_container_yearrange>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='2010'] |
+| ${MIN YEAR MENU - 2009} | css=#dk_container_yearrange>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='2009'] | 
+
+| ${MAX YEAR MENU - 2014} | css=#dk_container_yearrange-max>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='2014'] | 
+| ${MAX YEAR MENU - 2013} | css=#dk_container_yearrange-max>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='2013'] | 
+| ${MAX YEAR MENU - 2012} | css=#dk_container_yearrange-max>div>ul.dk_options_inner>li>a[data-dk-dropdown-value='2012'] | 
 
 # **************************************
 
@@ -59,33 +64,37 @@
 
 # Checkbox elements 
 # **************************************
-| ${ALL MODELS CHECKBOX} | xpath=(//label[contains(text(), "SELECT ALL MODELS")]) | 
+
+| ${ALL MODELS CHECKBOX} | css=div.select-all-container>label | 
 
 | ${ALL MODELS URL STRING} |  IS+250,IS+350,ES+350,GS+350,LS+460,IS+250C,IS+350C,SC+430,RX+350,GX+460,LX+570,CT+200h,ES+300h,GS+450h,LS+600h,HS+250h,RX+450h,IS+F | 
 
 
+| ${NXh CHECKBOX IMAGE} | css=div.product-image>div>img[alt="NX HYBRID"] | 
+| ${RXh CHECKBOX IMAGE} | css=div.product-image>div>img[alt="RX HYBRID"] | 
+| ${CTh CHECKBOX IMAGE} | css=div.product-image>div>img[alt="CT HYBRID"] | 
+| ${LSh CHECKBOX IMAGE} | css=div.product-image>div>img[alt="LS HYBRID"] | 
+| ${GSh CHECKBOX IMAGE} | css=div.product-image>div>img[alt="GS HYBRID"] | 
+| ${HSh CHECKBOX IMAGE} | css=div.product-image>div>img[alt="HS HYBRID"] |
+| ${ESh CHECKBOX IMAGE} | css=div.product-image>div>img[alt="ES HYBRID"] | 
 
-| ${RXh CHECKBOX IMAGE} | xpath=(//img[@alt="RX HYBRID"])[1] | 
-| ${CTh CHECKBOX IMAGE} | xpath=(//img[@alt="CT HYBRID"])[1] | 
-| ${LSh CHECKBOX IMAGE} | xpath=(//img[@alt="LS HYBRID"])[1] | 
-| ${GSh CHECKBOX IMAGE} | xpath=(//img[@alt="GS HYBRID"])[1] | 
-| ${HSh CHECKBOX IMAGE} | xpath=(//img[@alt="HS HYBRID"])[1] |
-| ${ESh CHECKBOX IMAGE} | xpath=(//img[@alt="ES HYBRID"])[1] | 
+| ${LS CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="LS"] | 
+| ${GS CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="GS"] | 
+| ${ES CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="ES"] | 
+| ${IS CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="IS"] | 
 
-| ${LS CHECKBOX IMAGE}  | xpath=(//img[@alt="LS"])[2] | 
-| ${GS CHECKBOX IMAGE}  | xpath=(//img[@alt="GS"])[2] | 
-| ${ES CHECKBOX IMAGE}  | xpath=(//img[@alt="ES"])[2] | 
-| ${IS CHECKBOX IMAGE}  | xpath=(//img[@alt="IS"])[2] | 
+| ${NX CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="NX"] | 
+| ${RX CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="RX"] | 
+| ${GX CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="GX"] | 
+| ${LX CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="LX"] | 
 
-| ${RX CHECKBOX IMAGE}  | xpath=(//img[@alt="RX"])[3] | 
-| ${GX CHECKBOX IMAGE}  | xpath=(//img[@alt="GX"])[2] | 
-| ${LX CHECKBOX IMAGE}  | xpath=(//img[@alt="LX"])[2] | 
+| ${RCF CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="RC F"] | 
+| ${ISF CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="IS F"] | 
+| ${RC CHECKBOX IMAGE}   | css=div.product-image>div>img[alt="RC"] | 
+| ${SC CHECKBOX IMAGE}   | css=div.product-image>div>img[alt="SC"] | 
+| ${ISC CHECKBOX IMAGE}  | css=div.product-image>div>img[alt="IS C"] | 
 
-| ${ISF CHECKBOX IMAGE}  | xpath=(//img[@alt="IS F"])[1] | 
-| ${SC CHECKBOX IMAGE}   | xpath=(//img[@alt="SC"])[1] | 
-| ${ISC CHECKBOX IMAGE}  | xpath=(//img[@alt="IS C"])[1] | 
-
-| @{CHECKBOX IMAGE LIST} | ${CTh CHECKBOX IMAGE} | ${LSh CHECKBOX IMAGE} | ${GSh CHECKBOX IMAGE} | ${HSh CHECKBOX IMAGE} | ${ESh CHECKBOX IMAGE} | ${LS CHECKBOX IMAGE} | ${GS CHECKBOX IMAGE} | ${ES CHECKBOX IMAGE} | ${IS CHECKBOX IMAGE} | ${RX CHECKBOX IMAGE} | ${GX CHECKBOX IMAGE} | ${LX CHECKBOX IMAGE} | ${ISF CHECKBOX IMAGE} | ${SC CHECKBOX IMAGE} | ${ISC CHECKBOX IMAGE} | ${RXh CHECKBOX IMAGE} | 
+| @{CHECKBOX IMAGE LIST} | ${CTh CHECKBOX IMAGE} | ${LSh CHECKBOX IMAGE} | ${GSh CHECKBOX IMAGE} | ${HSh CHECKBOX IMAGE} | ${ESh CHECKBOX IMAGE} | ${LS CHECKBOX IMAGE} | ${GS CHECKBOX IMAGE} | ${ES CHECKBOX IMAGE} | ${IS CHECKBOX IMAGE} | ${RX CHECKBOX IMAGE} | ${GX CHECKBOX IMAGE} | ${LX CHECKBOX IMAGE} | ${ISF CHECKBOX IMAGE} | ${SC CHECKBOX IMAGE} | ${ISC CHECKBOX IMAGE} | ${RXh CHECKBOX IMAGE} | ${NX CHECKBOX IMAGE} | ${NXH CHECKBOX IMAGE} | ${RC CHECKBOX IMAGE} | ${RCF CHECKBOX IMAGE} | 
 
 # THE BELOW WERE DIRECT LINKS TO THE ACTUAL CHECKBOX, BUT THE TESTS WERE NOT READING THEM PROPERLY AND WERE STILL FAILING AT TIMES FOR UNKNOWN REASONS.
 | ${RXh CHECKBOX} | xpath=(//div[@class="fake-check"])[16] | 
@@ -131,30 +140,9 @@
 #| ${ISC CHECKBOX} | css=input[type="checkbox"][value="IS+250C,IS+350C"] | 
 
 | @{CHECKBOX LIST} | ${CTh CHECKBOX} | ${LSh CHECKBOX} | ${GSh CHECKBOX} | ${HSh CHECKBOX} | ${ESh CHECKBOX} | ${LS CHECKBOX} | ${GS CHECKBOX} | ${ES CHECKBOX} | ${IS CHECKBOX} | ${RX CHECKBOX} | ${GX CHECKBOX} | ${LX CHECKBOX} | ${ISF CHECKBOX} | ${SC CHECKBOX} | ${ISC CHECKBOX} | ${RXh CHECKBOX} | 
+
+
 # **************************************
-
-# Thumbnail image elements
-# **************************************
-| ${RXh THUMBNAIL} | css=div.image-wrapper-ratio-fix>img[alt="RX HYBRID"] | 
-| ${CTh THUMBNAIL} | css=div.image-wrapper-ratio-fix>img[alt="CT HYBRID"] | 
-| ${HSh THUMBNAIL} | css=div.image-wrapper-ratio-fix>img[alt="HS HYBRID"] | 
-| ${LSh THUMBNAIL} | css=div.image-wrapper-ratio-fix>img[alt="LS HYBRID"] | 
-| ${GSh THUMBNAIL} | css=div.image-wrapper-ratio-fix>img[alt="GS HYBRID"] | 
-
-| ${LS THUMBNAIL}  | css=div.image-wrapper-ratio-fix>img[alt="LS"] | 
-| ${GS THUMBNAIL}  | css=div.image-wrapper-ratio-fix>img[alt="GS"] | 
-| ${ES THUMBNAIL}  | css=div.image-wrapper-ratio-fix>img[alt="ES"] | 
-| ${IS THUMBNAIL}  | css=div.image-wrapper-ratio-fix>img[alt="IS"] | 
-
-| ${RX THUMBNAIL}  | css=div.image-wrapper-ratio-fix>img[alt="RX"] | 
-| ${GX THUMBNAIL}  | css=div.image-wrapper-ratio-fix>img[alt="GX"] | 
-| ${LX THUMBNAIL}  | css=div.image-wrapper-ratio-fix>img[alt="LX"] | 
-
-| ${ISF THUMBNAIL}  | css=div.image-wrapper-ratio-fix>img[alt="IS F"] | 
-| ${SC THUMBNAIL} | css=div.image-wrapper-ratio-fix>img[alt="SC"] | 
-| ${ISC THUMBNAIL} | css=div.image-wrapper-ratio-fix>img[alt="IS C"] | 
-# **************************************
-
 # CPO Search Results page elements
 # **************************************
 | ${RESULTS PAGE - MODEL MENU} | css=#inv_search_model | 
@@ -171,9 +159,11 @@
 | ${VALUE GS}  | GS 350 | 
 | ${VALUE LS}  | LS 460 | 
 
+| ${VALUE RC}  | RC 350 | 
 | ${VALUE ISC} | IS 250C,IS 350C | 
 | ${VALUE SC}  | SC 430 | 
 
+| ${VALUE NX}  | NX 200t |
 | ${VALUE RX}  | RX 350 |
 | ${VALUE GX}  | GX 470,GX 460 | 
 | ${VALUE LX}  | LX 570 | 
@@ -183,8 +173,10 @@
 | ${VALUE GSh} | GS 450h | 
 | ${VALUE LSh} | LS 600h | 
 | ${VALUE HSh} | HS 250h | 
+| ${VALUE NXh} | NX 300h | 
 | ${VALUE RXh} | RX 450h | 
 
+| ${VALUE RCF} | RC F | 
 | ${VALUE ISF} | IS F | 
 
 
@@ -194,7 +186,9 @@
 #| ${VALUE GS}  | GS+350 | 
 #| ${VALUE LS}  | LS+460 | 
 #| ${VALUE ISC} | IS+250C,IS+350C | 
+#| ${VALUE RC}  | RC+350 | 
 #| ${VALUE SC}  | SC+430 | 
+#| ${VALUE NX}  | NX+200t |
 #| ${VALUE RX}  | RX+350 |
 #| ${VALUE GX}  | GX+470,GX+460 | 
 #| ${VALUE LX}  | LX+570 | 
@@ -203,7 +197,9 @@
 #| ${VALUE GSh} | GS+450h | 
 #| ${VALUE LSh} | LS+600h | 
 #| ${VALUE HSh} | HS+250h | 
+#| ${VALUE NXh} | NX+300h | 
 #| ${VALUE RXh} | RX+450h | 
+#| ${VALUE RCF} | RC+F | 
 #| ${VALUE ISF} | IS+F | 
 
 
@@ -223,11 +219,9 @@
 | ${RESULTS PAGE - IS,GS,GX,CTh,RXh} | ${MODEL VALUE CSS 1}${VALUE IS},${VALUE GS},${VALUE GX},${VALUE CTh},${VALUE RXh}${MODEL VALUE CSS 2} | 
 
 # 10 MODELS SELECTED VARIABLE
-| ${RESULTS PAGE - IS,ES,GS,LS,RX,GX,LX,CTh,LSh,RXh} | ${MODEL VALUE CSS 1}${VALUE IS},${VALUE ES},${VALUE GS},${VALUE LS},${VALUE RX},${VALUE GX},${VALUE LX},${VALUE CTh},${VALUE LSh},${VALUE RXh}${MODEL VALUE CSS 2} | 
+| ${RESULTS PAGE - IS,ES,GS,LS,RX,GX,LX,CTh,LSh,RXh} | ${MODEL VALUE CSS 1}${VALUE IS},${VALUE ES},${VALUE GS},${VALUE LS},${VALUE RX},${VALUE GX},${VALUE LX},${VALUE CTh},${VALUE RXh},${VALUE LSh}${MODEL VALUE CSS 2} | 
 
-| ${RESULTS PAGE - ALL MODELS SELECTED} | xpath=(//select[@id='inv_search_model']/option[contains(text(), "All Models")]) | 
-
-| ${RESULTS PAGE - ALL MODELS SELECTED - LONG STRING} | xpath=.//*[@id='inv_search_model']/option[contains(text(), "IS 250,IS 350,ES 350,GS 350,LS 460,IS 250C,IS 350C,SC 430,RX 350,GX 460,LX 570,CT 200h,ES 300h,GS 450h,LS 600h,HS 250h,RX 450h,IS F")] | 
+| ${RESULTS PAGE - ALL MODELS SELECTED} | css=select#inv_search_model>option[value='All'] | 
 
 
 | ${RESULTS PAGE - XPATH OFFERS} | (//td[@class='item-info']) | 
@@ -241,6 +235,8 @@
 
 | ${RESULTS PAGE - ES MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE ES}${MODEL VALUE CSS 2} | 
 
+| ${RESULTS PAGE - NX MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE NX}${MODEL VALUE CSS 2} | 
+
 | ${RESULTS PAGE - RX MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE RX}${MODEL VALUE CSS 2} | 
 
 | ${RESULTS PAGE - LX MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE LX}${MODEL VALUE CSS 2} | 
@@ -249,11 +245,15 @@
 
 | ${RESULTS PAGE - ISC MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE ISC}${MODEL VALUE CSS 2} | 
 
+| ${RESULTS PAGE - RC MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE RC}${MODEL VALUE CSS 2} | 
+
 | ${RESULTS PAGE - SC MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE SC}${MODEL VALUE CSS 2} | 
 
 | ${RESULTS PAGE - CTh MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE CTh}${MODEL VALUE CSS 2} | 
 
 | ${RESULTS PAGE - HSh MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE HSh}${MODEL VALUE CSS 2} | 
+
+| ${RESULTS PAGE - NXh MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE NXh}${MODEL VALUE CSS 2} | 
 
 | ${RESULTS PAGE - RXh MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE RXh}${MODEL VALUE CSS 2} | 
 
@@ -263,32 +263,33 @@
 
 | ${RESULTS PAGE - LSh MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE LSh}${MODEL VALUE CSS 2} | 
 
+| ${RESULTS PAGE - RCF MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE RCF}${MODEL VALUE CSS 2} | 
+
 | ${RESULTS PAGE - ISF MODEL SELECTED} | ${MODEL VALUE CSS 1}${VALUE ISF}${MODEL VALUE CSS 2} | 
 
 # ********************************************************************************
 # ********************************************************************************
 
+| ${RESULTS PAGE - NEW YORK ZIP CODE ELEMENT} | css=input#inv_search_zipCode[value='10011'] | 
+| ${RESULTS PAGE - LOS ANGELES ZIP CODE ELEMENT} | css=input#inv_search_zipCode[value='90245'] | 
+| ${RESULTS PAGE - ORLANDO ZIP CODE ELEMENT} | css=input#inv_search_zipCode[value='32792'] | 
 
-| ${RESULTS PAGE - NEW YORK ZIP CODE ELEMENT} | xpath=(//*[@id='inv_search_zipCode'][@value="10011"]) | 
-| ${RESULTS PAGE - LOS ANGELES ZIP CODE ELEMENT} | xpath=(//*[@id='inv_search_zipCode'][@value="90245"]) | 
-| ${RESULTS PAGE - ORLANDO ZIP CODE ELEMENT} | xpath=(//*[@id='inv_search_zipCode'][@value="32792"]) | 
 
+| ${RESULTS PAGE - MAX PRICE - $50,000 SELECTED} | css=select#inv_search_maxPrice>option[value='50000'] | 
+| ${RESULTS PAGE - MAX PRICE - $30,000 SELECTED} | css=select#inv_search_maxPrice>option[value='30000'] | 
+| ${RESULTS PAGE - MAX PRICE - $60,000 SELECTED} | css=select#inv_search_maxPrice>option[value='60000'] | 
+| ${RESULTS PAGE - MAX PRICE - $5,000 SELECTED} | css=select#inv_search_maxPrice>option[value='5000'] | 
 
-| ${RESULTS PAGE - MAX PRICE - $50,000 SELECTED} | xpath=.//*[@id='inv_search_maxPrice']/option[@selected="selected"][@value="50000"] | 
-| ${RESULTS PAGE - MAX PRICE - $30,000 SELECTED} | xpath=.//*[@id='inv_search_maxPrice']/option[@selected="selected"][@value="30000"] | 
-| ${RESULTS PAGE - MAX PRICE - $60,000 SELECTED} | xpath=.//*[@id='inv_search_maxPrice']/option[@selected="selected"][@value="60000"] | 
-| ${RESULTS PAGE - MAX PRICE - $5,000 SELECTED} | xpath=.//*[@id='inv_search_maxPrice']/option[@selected="selected"][@value="5000"] | 
+| ${RESULTS PAGE - MAX MILEAGE - 70,000 SELECTED} | css=select#inv_search_maxMileage>option[value='70000'] | 
+| ${RESULTS PAGE - MAX MILEAGE - 40,000 SELECTED} | css=select#inv_search_maxMileage>option[value='40000'] | 
+| ${RESULTS PAGE - MAX MILEAGE - 20,000 SELECTED} | css=select#inv_search_maxMileage>option[value='20000'] | 
 
-| ${RESULTS PAGE - MAX MILEAGE - 70,000 SELECTED} | xpath=.//*[@id='inv_search_maxMileage']/option[@selected="selected"][@value="70000"] | 
-| ${RESULTS PAGE - MAX MILEAGE - 40,000 SELECTED} | xpath=.//*[@id='inv_search_maxMileage']/option[@selected="selected"][@value="40000"] | 
-| ${RESULTS PAGE - MAX MILEAGE - 20,000 SELECTED} | xpath=.//*[@id='inv_search_maxMileage']/option[@selected="selected"][@value="20000"] | 
+| ${RESULTS PAGE - MIN YEAR - 2009 SELECTED}   | css=select#inv_search_minYear>option[value='2009'] | 
+| ${RESULTS PAGE - MIN YEAR - 2010 SELECTED}   | css=select#inv_search_minYear>option[value='2010'] | 
+| ${RESULTS PAGE - MIN YEAR - 2011 SELECTED}   | css=select#inv_search_minYear>option[value='2011'] | 
 
-| ${RESULTS PAGE - MIN YEAR - 2009 SELECTED} | xpath=.//*[@id='inv_search_minYear']/option[@selected="selected"][@value="2009"] | 
-| ${RESULTS PAGE - MIN YEAR - 2010 SELECTED}   | xpath=.//*[@id='inv_search_minYear']/option[@selected="selected"][@value="2010"] | 
-| ${RESULTS PAGE - MIN YEAR - 2011 SELECTED} | xpath=.//*[@id='inv_search_minYear']/option[@selected="selected"][@value="2011"] | 
-
-| ${RESULTS PAGE - MAX YEAR - 2012 SELECTED} | xpath=.//*[@id='inv_search_maxYear']/option[@selected="selected"][@value="2012"] | 
-| ${RESULTS PAGE - MAX YEAR - 2013 SELECTED}   | xpath=.//*[@id='inv_search_maxYear']/option[@selected="selected"][@value="2013"] | 
-| ${RESULTS PAGE - MAX YEAR - 2014 SELECTED} | xpath=.//*[@id='inv_search_maxYear']/option[@selected="selected"][@value="2014"] | 
+| ${RESULTS PAGE - MAX YEAR - 2012 SELECTED}   | css=select#inv_search_maxYear>option[value='2012'] | 
+| ${RESULTS PAGE - MAX YEAR - 2013 SELECTED}   | css=select#inv_search_maxYear>option[value='2013'] | 
+| ${RESULTS PAGE - MAX YEAR - 2014 SELECTED}   | css=select#inv_search_maxYear>option[value='2014'] | 
 
 

@@ -22,24 +22,24 @@
 | SC 2010 Model page - Download Brochure button | 
 | | [Tags] | 2010 | brochure | 
 | | Given user is on SC 2010 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the SC 2010 Brochure | 
 
 | SC 2010 Model page - Back to All Models button | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on SC 2010 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
 
 | SC 2010 Model page - Choose Another Model Year - 2010 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on SC 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2010 | 
 | | Then user is taken to SC 2010 Model page | 
 
 | SC 2010 Model page - Choose Another Model Year - 2009 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on SC 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2009 | 
@@ -62,28 +62,29 @@
 | SC 2009 Model page - Download Brochure button | 
 | | [Tags] | 2009 | brochure | 
 | | Given user is on SC 2009 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the SC 2009 Brochure | 
 
 | SC 2009 Model page - Choose Another Model Year - 2010 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on SC 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2010 | 
 | | Then user is taken to SC 2010 Model page | 
 
 | SC 2009 Model page - Choose Another Model Year - 2009 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on SC 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to SC 2009 Model page | 
 
 | SC 2009 Model page - Back to All Models button | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on SC 2009 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
+
 
 
 # ***********************************************
@@ -92,41 +93,41 @@
 
 # MOBILE PORTRAIT MODE
 | SC 2010 Model page - Mobile Portrait view - Choose Another Model Year menu | 
-| | [Tags] | mobile | 2010 | 
+| | [Tags] | mobile | 2010 | ie | 
 | | Mobile Portrait View - SC 2010 page - review Choose Another Model Year menu | 
 
 | SC 2009 Model page - Mobile Portrait view - Choose Another Model Year menu | 
-| | [Tags] | mobile | 2009 | 
+| | [Tags] | mobile | 2009 | ie | 
 | | Mobile Portrait View - SC 2009 page - review Choose Another Model Year menu | 
 
 
 # MOBILE LANDSCAPE MODE
 | SC 2010 Model page - Mobile Landscape view - Choose Another Model Year menu | 
-| | [Tags] | mobile | 2010 | 
+| | [Tags] | mobile | 2010 | ie | 
 | | Mobile Landscape View - SC 2010 page - review Choose Another Model Year menu | 
 
 | SC 2009 Model page - Mobile Landscape view - Choose Another Model Year menu | 
-| | [Tags] | mobile | 2009 | 
+| | [Tags] | mobile | 2009 | ie | 
 | | Mobile Landscape View - SC 2009 page - review Choose Another Model Year menu | 
 
 
 
 # TABLET PORTRAIT MODE
 | SC 2010 Model page - Tablet Portrait view - Choose Another Model Year menu | 
-| | [Tags] | tablet | 2010 | 
+| | [Tags] | tablet | 2010 | ie | 
 | | Tablet Portrait View - SC 2010 page - review Choose Another Model Year menu | 
 
 | SC 2009 Model page - Tablet Portrait view - Choose Another Model Year menu | 
-| | [Tags] | tablet | 2009 | 
+| | [Tags] | tablet | 2009 | ie | 
 | | Tablet Portrait View - SC 2009 page - review Choose Another Model Year menu | 
 
 
 # TABLET LANDSCAPE MODE
 | SC 2010 Model page - Tablet Landscape view - Choose Another Model Year menu | 
-| | [Tags] | tablet | 2010 | 
+| | [Tags] | tablet | 2010 | ie | 
 | | Tablet Landscape View - SC 2010 page - review Choose Another Model Year menu | 
 
 | SC 2009 Model page - Tablet Landscape view - Choose Another Model Year menu | 
-| | [Tags] | tablet | 2009 | 
+| | [Tags] | tablet | 2009 | ie | 
 | | Tablet Landscape View - SC 2009 page - review Choose Another Model Year menu | 
 

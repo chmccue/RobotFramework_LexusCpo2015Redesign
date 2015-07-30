@@ -8,36 +8,36 @@
 *** Test Cases ***
 
 | Desktop - Compare Tool - Category copy check | 
-| | [Tags] | desktop | 
+| | [Tags] | desktop | ie | 
 | | compare overview displays approved copy for Category sections | 
 
 | Desktop - Compare Tool - Lexus copy check | 
-| | [Tags] | desktop | 
+| | [Tags] | desktop | ie | 
 | | compare overview displays approved copy for Lexus | 
 
 | Desktop - Select Manufacturer to Compare - Acura | 
-| | [Tags] | desktop | 
+| | [Tags] | desktop | ie | 
 | | Given user clicks on Select Manufacturer to Compare dropdown | 
 | | When user selects Acura | 
 | | Then compare overview displays approved copy for Acura | 
 | | And approved copy for models other than Acura are not displayed | 
 
 | Desktop - Select Manufacturer to Compare - Audi | 
-| | [Tags] | desktop | 
+| | [Tags] | desktop | ie | 
 | | Given user clicks on Select Manufacturer to Compare dropdown | 
 | | When user selects Audi | 
 | | Then compare overview displays approved copy for Audi | 
 | | And approved copy for models other than Audi are not displayed | 
 
 | Desktop - Select Manufacturer to Compare - BMW | 
-| | [Tags] | desktop | 
+| | [Tags] | desktop | ie | 
 | | Given user clicks on Select Manufacturer to Compare dropdown | 
 | | When user selects BMW | 
 | | Then compare overview displays approved copy for BMW | 
 | | And approved copy for models other than BMW are not displayed | 
 
 | Desktop - Select Manufacturer to Compare - Cadillac | 
-| | [Tags] | desktop | 
+| | [Tags] | desktop | ie | 
 | | Given user clicks on Select Manufacturer to Compare dropdown | 
 | | When user selects Cadillac | 
 | | Then compare overview displays approved copy for Cadillac | 
@@ -93,14 +93,14 @@
 | | And approved copy for models other than Volvo are not displayed | 
 
 | Desktop - Select Manufacturer to Compare - Ford | 
-| | [Tags] | desktop | 
+| | [Tags] | desktop | ie | 
 | | Given user clicks on Select Manufacturer to Compare dropdown | 
 | | When user selects Ford | 
 | | Then compare overview displays approved copy for Ford | 
 | | And approved copy for models other than Ford are not displayed | 
 
 | Desktop - Select Manufacturer to Compare - Honda | 
-| | [Tags] | desktop | 
+| | [Tags] | desktop | ie | 
 | | Given user clicks on Select Manufacturer to Compare dropdown | 
 | | When user selects Honda | 
 | | Then compare overview displays approved copy for Honda | 
@@ -117,11 +117,11 @@
 # *****************************************************************
 
 | Mobile Portrait View - Compare Tool - Category copy check | 
-| | [Tags] | mobile | 
+| | [Tags] | mobile | ie | 
 | | compare overview displays approved copy for Category sections | 
 
 | Mobile Portrait View - Compare Tool - Lexus copy check | 
-| | [Tags] | mobile | 
+| | [Tags] | mobile | ie | 
 | | compare overview displays approved copy for Lexus | 
 
 | Mobile Portrait View - Select Manufacturer to Compare - Acura | 

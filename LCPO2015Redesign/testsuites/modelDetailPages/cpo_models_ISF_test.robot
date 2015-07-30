@@ -21,31 +21,31 @@
 | ISF 2014 Model page - Download Brochure button | 
 | | [Tags] | 2014 | 
 | | Given user is on ISF 2014 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the ISF 2014 Brochure | 
 
 | ISF 2014 Model page - Back to All Models button | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on ISF 2014 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
 
 | ISF 2014 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on ISF 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to ISF 2014 Model page | 
 
 | ISF 2014 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on ISF 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to ISF 2013 Model page | 
 
 | ISF 2014 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on ISF 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -88,25 +88,25 @@
 | ISF 2013 Model page - Download Brochure button | 
 | | [Tags] | 2013 | 
 | | Given user is on ISF 2013 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the ISF 2013 Brochure | 
 
 | ISF 2013 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on ISF 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to ISF 2014 Model page | 
 
 | ISF 2013 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on ISF 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to ISF 2013 Model page | 
 
 | ISF 2013 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on ISF 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -134,7 +134,7 @@
 | | Then user is taken to ISF 2009 Model page | 
 
 | ISF 2013 Model page - Back to All Models button | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on ISF 2013 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
@@ -155,18 +155,25 @@
 | ISF 2012 Model page - Download Brochure button | 
 | | [Tags] | 2012 | 
 | | Given user is on ISF 2012 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the ISF 2012 Brochure | 
 
 | ISF 2012 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on ISF 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to ISF 2013 Model page | 
 
+| ISF 2012 Model page - Choose Another Model Year - 2012 | 
+| | [Tags] | 2012 | ie | 
+| | Given user is on ISF 2012 Model page | 
+| | When user clicks Choose Another Model Year menu | 
+| | And menu expands and user selects 2012 | 
+| | Then user is taken to ISF 2012 Model page | 
+
 | ISF 2012 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on ISF 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -194,7 +201,7 @@
 | | Then user is taken to ISF 2009 Model page | 
 
 | ISF 2012 Model page - Back to All Models button | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on ISF 2012 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
@@ -215,25 +222,25 @@
 | ISF 2011 Model page - Download Brochure button | 
 | | [Tags] | 2011 | 
 | | Given user is on ISF 2011 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the ISF 2011 Brochure | 
 
 | ISF 2011 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on ISF 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to ISF 2013 Model page | 
 
 | ISF 2011 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on ISF 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
 | | Then user is taken to ISF 2012 Model page | 
 
 | ISF 2011 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on ISF 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -254,7 +261,7 @@
 | | Then user is taken to ISF 2009 Model page | 
 
 | ISF 2011 Model page - Back to All Models button | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on ISF 2011 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
@@ -275,18 +282,18 @@
 | ISF 2010 Model page - Download Brochure button | 
 | | [Tags] | 2010 | 
 | | Given user is on ISF 2010 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the ISF 2010 Brochure | 
 
 | ISF 2010 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on ISF 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to ISF 2013 Model page | 
 
 | ISF 2010 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on ISF 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -300,7 +307,7 @@
 | | Then user is taken to ISF 2011 Model page | 
 
 | ISF 2010 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on ISF 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -314,7 +321,7 @@
 | | Then user is taken to ISF 2009 Model page | 
 
 | ISF 2010 Model page - Back to All Models button | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on ISF 2010 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
@@ -335,18 +342,18 @@
 | ISF 2009 Model page - Download Brochure button | 
 | | [Tags] | 2009 | 
 | | Given user is on ISF 2009 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the ISF 2009 Brochure | 
 
 | ISF 2009 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on ISF 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to ISF 2013 Model page | 
 
 | ISF 2009 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on ISF 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -367,14 +374,14 @@
 | | Then user is taken to ISF 2010 Model page | 
 
 | ISF 2009 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on ISF 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to ISF 2014 Model page | 
 
 | ISF 2009 Model page - Back to All Models button | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on ISF 2009 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
@@ -413,7 +420,7 @@
 
 # MOBILE LANDSCAPE MODE
 | ISF 2014 Model page - Mobile Landscape view - Choose Another Model Year menu | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | test | 
 | | Mobile Landscape View - ISF 2014 page - review Choose Another Model Year menu | 
 
 | ISF 2013 Model page - Mobile Landscape view - Choose Another Model Year menu | 

@@ -9,8 +9,8 @@
 *** Keywords ***
 
 | user is on Lexus homepage | 
-| | Go To | ${LEXUS HOMEPAGE URL} | 
-| | Go To | ${LEXUS HOMEPAGE URL} | 
+| | Go To | ${BASE URL} | 
+| | Go To | ${BASE URL} | 
 
 | user clicks on CPO link in global nav | 
 | | Find and Click Element | ${LEXUS GLOBAL NAV CPO BUTTON} | 

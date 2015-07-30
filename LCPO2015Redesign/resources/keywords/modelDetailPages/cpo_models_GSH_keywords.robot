@@ -13,12 +13,13 @@
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
+
+| user is on GSH 2015 Model page | 
+| | Go To | ${BASE URL}${CPO GSH 2015 URL} | 
+| | Verify Correct Link Title | ${CPO GSH 2015 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GSH 2015 URL} | 
 
 | user is on GSH 2014 Model page | 
 | | Go To | ${BASE URL}${CPO GSH 2014 URL} | 
@@ -29,11 +30,6 @@
 | | Go To | ${BASE URL}${CPO GSH 2013 URL} | 
 | | Verify Correct Link Title | ${CPO GSH 2013 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO GSH 2013 URL} | 
-
-| user is on GSH 2012 Model page | 
-| | Go To | ${BASE URL}${CPO GSH 2012 URL} | 
-| | Verify Correct Link Title | ${CPO GSH 2012 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GSH 2012 URL} | 
 
 | user is on GSH 2011 Model page | 
 | | Go To | ${BASE URL}${CPO GSH 2011 URL} | 
@@ -53,27 +49,38 @@
 # ********************************************************************
 # ********************************************************************
 
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
+| user is taken to GSH 2014 Model page | 
+| | Verify Correct Link Title | ${CPO GSH 2014 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GSH 2014 URL} | 
 
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
+| user is taken to GSH 2013 Model page | 
+| | Verify Correct Link Title | ${CPO GSH 2013 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GSH 2013 URL} | 
+
+| user is taken to GSH 2011 Model page | 
+| | Verify Correct Link Title | ${CPO GSH 2011 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GSH 2011 URL} | 
+
+| user is taken to GSH 2010 Model page | 
+| | Verify Correct Link Title | ${CPO GSH 2010 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GSH 2010 URL} | 
+
+| user is taken to GSH 2009 Model page | 
+| | Verify Correct Link Title | ${CPO GSH 2009 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GSH 2009 URL} | 
 
 # ********************************************************************
 # ********************************************************************
 # DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
+
+| user views the GSH 2015 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GSH 2015 BROCHURE PAGE TITLE} | ${CPO GSH 2015 BROCHURE URL} | 
 
 | user views the GSH 2014 Brochure | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GSH 2014 BROCHURE PAGE TITLE} | ${CPO GSH 2014 BROCHURE URL} | 
 
 | user views the GSH 2013 Brochure | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GSH 2013 BROCHURE PAGE TITLE} | ${CPO GSH 2013 BROCHURE URL} | 
-
-| user views the GSH 2012 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GSH 2012 BROCHURE PAGE TITLE} | ${CPO GSH 2012 BROCHURE URL} | 
 
 | user views the GSH 2011 Brochure | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GSH 2011 BROCHURE PAGE TITLE} | ${CPO GSH 2011 BROCHURE URL} | 
@@ -87,56 +94,150 @@
 # ********************************************************************
 # ********************************************************************
 
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
+# ***************************************************************
+# DESKTOP REVIEW
+# ***************************************************************
 
-# ********************************************************************
-# ********************************************************************
+# DESKTOP RESOLUTION
+| Desktop View - GSH 2015 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2015 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| menu expands and user selects 2014 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2014 BUTTON} | 
+| Desktop View - GSH 2014 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2014 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| menu expands and user selects 2013 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2013 BUTTON} | 
+| Desktop View - GSH 2013 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2013 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| menu expands and user selects 2012 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2012 BUTTON} | 
+| Desktop View - GSH 2011 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2011 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| menu expands and user selects 2011 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2011 BUTTON} | 
+| Desktop View - GSH 2010 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2010 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
+| Desktop View - GSH 2009 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2009 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| menu expands and user selects 2009 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2009 BUTTON} | 
 
-# ********************************************************************
-# ********************************************************************
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
 
-| user is taken to GSH 2014 Model page | 
-| | Verify Correct Link Title | ${CPO GSH 2014 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GSH 2014 URL} | 
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - GSH 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2015 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| user is taken to GSH 2013 Model page | 
-| | Verify Correct Link Title | ${CPO GSH 2013 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GSH 2013 URL} | 
+| Mobile Portrait View - GSH 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2014 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| user is taken to GSH 2012 Model page | 
-| | Verify Correct Link Title | ${CPO GSH 2012 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GSH 2012 URL} | 
+| Mobile Portrait View - GSH 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2013 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| user is taken to GSH 2011 Model page | 
-| | Verify Correct Link Title | ${CPO GSH 2011 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GSH 2011 URL} | 
+| Mobile Portrait View - GSH 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2011 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| user is taken to GSH 2010 Model page | 
-| | Verify Correct Link Title | ${CPO GSH 2010 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GSH 2010 URL} | 
+| Mobile Portrait View - GSH 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2010 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
 
-| user is taken to GSH 2009 Model page | 
-| | Verify Correct Link Title | ${CPO GSH 2009 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GSH 2009 URL} | 
+| Mobile Portrait View - GSH 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2009 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - GSH 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2015 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Mobile Landscape View - GSH 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2014 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Mobile Landscape View - GSH 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2013 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Mobile Landscape View - GSH 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2011 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Mobile Landscape View - GSH 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2010 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Mobile Landscape View - GSH 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2009 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - GSH 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2015 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Portrait View - GSH 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2014 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Portrait View - GSH 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2013 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Portrait View - GSH 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2011 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Portrait View - GSH 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2010 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Portrait View - GSH 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2009 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - GSH 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2015 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Landscape View - GSH 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2014 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Landscape View - GSH 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2013 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Landscape View - GSH 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2011 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Landscape View - GSH 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2010 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+| Tablet Landscape View - GSH 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GSH 2009 URL} | ${CPO GSH PAGE TITLE VAR} | ${CPO GSH URL VAR} | ${CPO YEARS GSH} | 
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************

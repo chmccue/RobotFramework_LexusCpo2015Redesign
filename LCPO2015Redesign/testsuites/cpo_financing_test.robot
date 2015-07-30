@@ -22,7 +22,7 @@
 | | Then user is taken to Kelley Blue Book page | 
 
 | Copy checks | 
-| | [Tags] | desktop | copyReview | 
+| | [Tags] | desktop | copyReview | ie | test | 
 | | Desktop financing header title and description copy are present | 
 | | CPO Leasing copy is present | 
 | | CPO YLD copy is present | 
@@ -49,7 +49,7 @@
 | | Then user is taken to Kelley Blue Book page | 
 
 | Copy checks - mobile | 
-| | [Tags] | mobile | copyReview | 
+| | [Tags] | mobile | copyReview | ie | test | 
 | | user loads mobile portrait resolution | 
 | | Mobile financing description copy is present | 
 | | CPO Leasing copy is present | 

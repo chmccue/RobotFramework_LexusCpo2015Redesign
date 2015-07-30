@@ -9,16 +9,17 @@
 
 | Setup Commands, CPO GS Models page | 
 | | Setup Commands | 
-| | Go To | ${BASE URL}${CPO GS 2014 URL} | 
+| | Go To | ${BASE URL}${CPO GS 2015 URL} | 
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
+
+| user is on GS 2015 Model page | 
+| | Go To | ${BASE URL}${CPO GS 2015 URL} | 
+| | Verify Correct Link Title | ${CPO GS 2015 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GS 2015 URL} | 
 
 | user is on GS 2014 Model page | 
 | | Go To | ${BASE URL}${CPO GS 2014 URL} | 
@@ -29,11 +30,6 @@
 | | Go To | ${BASE URL}${CPO GS 2013 URL} | 
 | | Verify Correct Link Title | ${CPO GS 2013 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO GS 2013 URL} | 
-
-| user is on GS 2012 Model page | 
-| | Go To | ${BASE URL}${CPO GS 2012 URL} | 
-| | Verify Correct Link Title | ${CPO GS 2012 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GS 2012 URL} | 
 
 | user is on GS 2011 Model page | 
 | | Go To | ${BASE URL}${CPO GS 2011 URL} | 
@@ -53,27 +49,38 @@
 # ********************************************************************
 # ********************************************************************
 
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
+| user is taken to GS 2014 Model page | 
+| | Verify Correct Link Title | ${CPO GS 2014 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GS 2014 URL} | 
 
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
+| user is taken to GS 2013 Model page | 
+| | Verify Correct Link Title | ${CPO GS 2013 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GS 2013 URL} | 
+
+| user is taken to GS 2011 Model page | 
+| | Verify Correct Link Title | ${CPO GS 2011 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GS 2011 URL} | 
+
+| user is taken to GS 2010 Model page | 
+| | Verify Correct Link Title | ${CPO GS 2010 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GS 2010 URL} | 
+
+| user is taken to GS 2009 Model page | 
+| | Verify Correct Link Title | ${CPO GS 2009 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GS 2009 URL} | 
 
 # ********************************************************************
 # ********************************************************************
 # DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
+
+| user views the GS 2015 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GS 2015 BROCHURE PAGE TITLE} | ${CPO GS 2015 BROCHURE URL} | 
 
 | user views the GS 2014 Brochure | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GS 2014 BROCHURE PAGE TITLE} | ${CPO GS 2014 BROCHURE URL} | 
 
 | user views the GS 2013 Brochure | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GS 2013 BROCHURE PAGE TITLE} | ${CPO GS 2013 BROCHURE URL} | 
-
-| user views the GS 2012 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GS 2012 BROCHURE PAGE TITLE} | ${CPO GS 2012 BROCHURE URL} | 
 
 | user views the GS 2011 Brochure | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GS 2011 BROCHURE PAGE TITLE} | ${CPO GS 2011 BROCHURE URL} | 
@@ -87,56 +94,150 @@
 # ********************************************************************
 # ********************************************************************
 
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
+# ***************************************************************
+# DESKTOP REVIEW
+# ***************************************************************
 
-# ********************************************************************
-# ********************************************************************
+# DESKTOP PORTRAIT RESOLUTION
+| Desktop View - GS 2015 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2015 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| menu expands and user selects 2014 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2014 BUTTON} | 
+| Desktop View - GS 2014 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2014 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| menu expands and user selects 2013 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2013 BUTTON} | 
+| Desktop View - GS 2013 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2013 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| menu expands and user selects 2012 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2012 BUTTON} | 
+| Desktop View - GS 2011 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2011 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| menu expands and user selects 2011 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2011 BUTTON} | 
+| Desktop View - GS 2010 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2010 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
+| Desktop View - GS 2009 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2009 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| menu expands and user selects 2009 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2009 BUTTON} | 
 
-# ********************************************************************
-# ********************************************************************
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
 
-| user is taken to GS 2014 Model page | 
-| | Verify Correct Link Title | ${CPO GS 2014 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GS 2014 URL} | 
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - GS 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2015 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| user is taken to GS 2013 Model page | 
-| | Verify Correct Link Title | ${CPO GS 2013 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GS 2013 URL} | 
+| Mobile Portrait View - GS 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2014 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| user is taken to GS 2012 Model page | 
-| | Verify Correct Link Title | ${CPO GS 2012 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GS 2012 URL} | 
+| Mobile Portrait View - GS 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2013 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| user is taken to GS 2011 Model page | 
-| | Verify Correct Link Title | ${CPO GS 2011 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GS 2011 URL} | 
+| Mobile Portrait View - GS 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2011 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| user is taken to GS 2010 Model page | 
-| | Verify Correct Link Title | ${CPO GS 2010 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GS 2010 URL} | 
+| Mobile Portrait View - GS 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2010 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
 
-| user is taken to GS 2009 Model page | 
-| | Verify Correct Link Title | ${CPO GS 2009 PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO GS 2009 URL} | 
+| Mobile Portrait View - GS 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2009 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - GS 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2015 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Mobile Landscape View - GS 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2014 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Mobile Landscape View - GS 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2013 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Mobile Landscape View - GS 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2011 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Mobile Landscape View - GS 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2010 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Mobile Landscape View - GS 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2009 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - GS 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2015 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Portrait View - GS 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2014 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Portrait View - GS 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2013 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Portrait View - GS 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2011 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Portrait View - GS 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2010 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Portrait View - GS 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2009 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - GS 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2015 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Landscape View - GS 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2014 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Landscape View - GS 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2013 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Landscape View - GS 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2011 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Landscape View - GS 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2010 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+| Tablet Landscape View - GS 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO GS 2009 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | ${CPO YEARS GS} | 
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************
@@ -169,121 +270,3 @@
 | Safety copy matches expected GS 2014 Safety copy | 
 | | Actual vs Expected Copy | ${CPO GS 2014 - ACTUAL SAFETY COPY LOCATION 1} | ${CPO GS 2014 - EXPECTED SAFETY COPY 1} | 
 | | Actual vs Expected Copy | ${CPO GS 2014 - ACTUAL SAFETY COPY LOCATION 2} | ${CPO GS 2014 - EXPECTED SAFETY COPY 2} | 
-
-
-
-
-
-# ***************************************************************
-# MOBILE REVIEW
-# ***************************************************************
-
-# MOBILE PORTRAIT RESOLUTION
-| Mobile Portrait View - GS 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2014 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Portrait View - GS 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2013 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Portrait View - GS 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2012 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Portrait View - GS 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2011 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Portrait View - GS 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2010 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Portrait View - GS 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2009 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-
-# MOBILE LANDSCAPE RESOLUTION
-| Mobile Landscape View - GS 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2014 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Landscape View - GS 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2013 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Landscape View - GS 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2012 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Landscape View - GS 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2011 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Landscape View - GS 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2010 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Mobile Landscape View - GS 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2009 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-
-
-# ***************************************************************
-# TABLET REVIEW
-# ***************************************************************
-
-# TABLET PORTRAIT RESOLUTION
-| Tablet Portrait View - GS 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2014 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Portrait View - GS 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2013 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Portrait View - GS 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2012 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Portrait View - GS 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2011 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Portrait View - GS 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2010 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Portrait View - GS 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2009 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-
-# TABLET LANDSCAPE RESOLUTION
-| Tablet Landscape View - GS 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2014 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Landscape View - GS 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2013 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Landscape View - GS 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2012 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Landscape View - GS 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2011 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Landscape View - GS 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2010 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-| Tablet Landscape View - GS 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for GS,LX,GSH |  ${CPO GS 2009 URL} | ${CPO GS PAGE TITLE VAR} | ${CPO GS URL VAR} | 
-
-

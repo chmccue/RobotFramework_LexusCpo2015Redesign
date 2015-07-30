@@ -41,7 +41,9 @@
 | | Find and Click Element | ${SEARCH BUTTON} | 
 
 | results page displays offers for all models | 
-| | Element Should Be Visible | ${RESULTS PAGE - ALL MODELS SELECTED} | 
+| | results page check | ${RESULTS PAGE - ALL MODELS SELECTED} | 
+
+#| | Element Should Be Visible | ${RESULTS PAGE - ALL MODELS SELECTED} | 
 
 | 2 models are selected: LS,RX | 
 | | Find and Click Element | ${LS CHECKBOX IMAGE} | 
@@ -152,10 +154,15 @@
 # ***************************************************************
 
 | results page displays offers for $5,000 max price, 40,000 max mileage, 2009 min year, 2014 max year | 
-| | Element Should Be Visible | ${RESULTS PAGE - MAX PRICE - $5,000 SELECTED} | 
-| | Element Should Be Visible | ${RESULTS PAGE - MAX MILEAGE - 40,000 SELECTED} |
-| | Element Should Be Visible | ${RESULTS PAGE - MIN YEAR - 2009 SELECTED} | 
-| | Element Should Be Visible | ${RESULTS PAGE - MAX YEAR - 2014 SELECTED} | 
+| | results page check | ${RESULTS PAGE - MAX PRICE - $5,000 SELECTED} | 
+| | results page check | ${RESULTS PAGE - MAX MILEAGE - 40,000 SELECTED} |
+| | results page check | ${RESULTS PAGE - MIN YEAR - 2009 SELECTED} | 
+| | results page check | ${RESULTS PAGE - MAX YEAR - 2014 SELECTED} | 
+
+#| | Element Should Be Visible | ${RESULTS PAGE - MAX PRICE - $5,000 SELECTED} | 
+#| | Element Should Be Visible | ${RESULTS PAGE - MAX MILEAGE - 40,000 SELECTED} |
+#| | Element Should Be Visible | ${RESULTS PAGE - MIN YEAR - 2009 SELECTED} | 
+#| | Element Should Be Visible | ${RESULTS PAGE - MAX YEAR - 2014 SELECTED} | 
 
 | results page displays $30,000 max price | 
 | | Element Should Be Visible | ${RESULTS PAGE - MAX PRICE - $30,000 SELECTED} | 
@@ -175,18 +182,21 @@
 # *****************************************************
 # *****************************************************
 
-| user enters New York zip code |
+| user enters New York zip code | 
 | | Clear and Type into element | ${SEARCH ZIP CODE BOX} | 10011 | 
 | user enters Los Angeles zip code | 
 | | Clear and Type into element | ${SEARCH ZIP CODE BOX} | 90245 | 
 | user enters Orlando zip code | 
 | | Clear and Type into element | ${SEARCH ZIP CODE BOX} | 32792 | 
 | search results page displays New York zip code | 
-| | Verify Text Element On Page | ${RESULTS PAGE - NEW YORK ZIP CODE ELEMENT} | 
+| | results page check | ${RESULTS PAGE - NEW YORK ZIP CODE ELEMENT} | 
+#| | Verify Text Element On Page | ${RESULTS PAGE - NEW YORK ZIP CODE ELEMENT} | 
 | search results page displays Los Angeles zip code | 
-| | Verify Text Element On Page | ${RESULTS PAGE - LOS ANGELES ZIP CODE ELEMENT} | 
+| | results page check | ${RESULTS PAGE - LOS ANGELES ZIP CODE ELEMENT} | 
+#| | Verify Text Element On Page | ${RESULTS PAGE - LOS ANGELES ZIP CODE ELEMENT} | 
 | search results page displays Orlando zip code | 
-| | Verify Text Element On Page | ${RESULTS PAGE - ORLANDO ZIP CODE ELEMENT} | 
+| | results page check | ${RESULTS PAGE - ORLANDO ZIP CODE ELEMENT} | 
+#| | Verify Text Element On Page | ${RESULTS PAGE - ORLANDO ZIP CODE ELEMENT} | 
 
 | user clicks checkbox for IS model | 
 | | Find and Click Element | ${IS CHECKBOX IMAGE} | 
@@ -196,12 +206,16 @@
 | | Find and Click Element | ${LS CHECKBOX IMAGE} | 
 | user clicks checkbox for ES model | 
 | | Find and Click Element | ${ES CHECKBOX IMAGE} | 
+| user clicks checkbox for NX model | 
+| | Find and Click Element | ${NX CHECKBOX IMAGE} | 
 | user clicks checkbox for RX model | 
 | | Find and Click Element | ${RX CHECKBOX IMAGE} | 
 | user clicks checkbox for LX model | 
 | | Find and Click Element | ${LX CHECKBOX IMAGE} | 
 | user clicks checkbox for GX model | 
 | | Find and Click Element | ${GX CHECKBOX IMAGE} | 
+| user clicks checkbox for RC model | 
+| | Find and Click Element | ${RC CHECKBOX IMAGE} | 
 | user clicks checkbox for SC model | 
 | | Find and Click Element | ${SC CHECKBOX IMAGE} | 
 | user clicks checkbox for IS C model | 
@@ -210,6 +224,8 @@
 | | Find and Click Element | ${CTh CHECKBOX IMAGE} | 
 | user clicks checkbox for HSh model | 
 | | Find and Click Element | ${HSh CHECKBOX IMAGE} | 
+| user clicks checkbox for NXh model | 
+| | Find and Click Element | ${NXh CHECKBOX IMAGE} | 
 | user clicks checkbox for RXh model | 
 | | Find and Click Element | ${RXh CHECKBOX IMAGE} | 
 | user clicks checkbox for ESh model | 
@@ -218,6 +234,8 @@
 | | Find and Click Element | ${GSh CHECKBOX IMAGE} | 
 | user clicks checkbox for LSh model | 
 | | Find and Click Element | ${LSh CHECKBOX IMAGE} | 
+| user clicks checkbox for RC F model | 
+| | Find and Click Element | ${RCF CHECKBOX IMAGE} | 
 | user clicks checkbox for IS F model | 
 | | Find and Click Element | ${ISF CHECKBOX IMAGE} | 
 
@@ -230,12 +248,16 @@
 | | results page check | ${RESULTS PAGE - LS MODEL SELECTED} | 
 | results page displays offers only for ES model | 
 | | results page check | ${RESULTS PAGE - ES MODEL SELECTED} | 
+| results page displays offers only for NX model | 
+| | results page check | ${RESULTS PAGE - NX MODEL SELECTED} | 
 | results page displays offers only for RX model | 
 | | results page check | ${RESULTS PAGE - RX MODEL SELECTED} | 
 | results page displays offers only for LX model | 
 | | results page check | ${RESULTS PAGE - LX MODEL SELECTED} | 
 | results page displays offers only for GX model | 
 | | results page check | ${RESULTS PAGE - GX MODEL SELECTED} | 
+| results page displays offers only for RC model | 
+| | results page check | ${RESULTS PAGE - RC MODEL SELECTED} | 
 | results page displays offers only for SC model | 
 | | results page check | ${RESULTS PAGE - SC MODEL SELECTED} | 
 | results page displays offers only for IS C model | 
@@ -244,6 +266,8 @@
 | | results page check | ${RESULTS PAGE - CTh MODEL SELECTED} | 
 | results page displays offers only for HSh model | 
 | | results page check | ${RESULTS PAGE - HSh MODEL SELECTED} | 
+| results page displays offers only for NXh model | 
+| | results page check | ${RESULTS PAGE - NXh MODEL SELECTED} | 
 | results page displays offers only for RXh model | 
 | | results page check | ${RESULTS PAGE - RXh MODEL SELECTED} | 
 | results page displays offers only for ESh model | 
@@ -252,22 +276,35 @@
 | | results page check | ${RESULTS PAGE - GSh MODEL SELECTED} | 
 | results page displays offers only for LSh model | 
 | | results page check | ${RESULTS PAGE - LSh MODEL SELECTED} | 
+| results page displays offers only for RC F model | 
+| | results page check | ${RESULTS PAGE - RCF MODEL SELECTED} | 
 | results page displays offers only for IS F model | 
 | | results page check | ${RESULTS PAGE - ISF MODEL SELECTED} | 
 
 
 | results page displays offers for $60,000 price, 20,000 mileage range, 2011 min year, 2012 max year | 
-| | Element Should Be Visible | ${RESULTS PAGE - MAX PRICE - $60,000 SELECTED} | 
-| | Element Should Be Visible | ${RESULTS PAGE - MAX MILEAGE - 20,000 SELECTED} | 
-| | Element Should Be Visible | ${RESULTS PAGE - MIN YEAR - 2011 SELECTED} | 
-| | Element Should Be Visible | ${RESULTS PAGE - MAX YEAR - 2012 SELECTED} | 
+| | results page check | ${RESULTS PAGE - MAX PRICE - $60,000 SELECTED} | 
+| | results page check | ${RESULTS PAGE - MAX MILEAGE - 20,000 SELECTED} | 
+| | results page check | ${RESULTS PAGE - MIN YEAR - 2011 SELECTED} | 
+| | results page check | ${RESULTS PAGE - MAX YEAR - 2012 SELECTED} | 
+
+#| | Element Should Be Visible | ${RESULTS PAGE - MAX PRICE - $60,000 SELECTED} | 
+#| | Element Should Be Visible | ${RESULTS PAGE - MAX MILEAGE - 20,000 SELECTED} | 
+#| | Element Should Be Visible | ${RESULTS PAGE - MIN YEAR - 2011 SELECTED} | 
+#| | Element Should Be Visible | ${RESULTS PAGE - MAX YEAR - 2012 SELECTED} | 
 
 | results page displays offers for Orlando, $50,000 price, 70,000 mileage range, 2010 min year, 2013 max year | 
-| | Element Should Be Visible | ${RESULTS PAGE - ORLANDO ZIP CODE ELEMENT} | 
-| | Element Should Be Visible | ${RESULTS PAGE - MAX PRICE - $50,000 SELECTED}  | 
-| | Element Should Be Visible | ${RESULTS PAGE - MAX MILEAGE - 70,000 SELECTED} | 
-| | Element Should Be Visible | ${RESULTS PAGE - MIN YEAR - 2010 SELECTED}      | 
-| | Element Should Be Visible | ${RESULTS PAGE - MAX YEAR - 2013 SELECTED}      | 
+| | results page check | ${RESULTS PAGE - ORLANDO ZIP CODE ELEMENT} | 
+| | results page check | ${RESULTS PAGE - MAX PRICE - $50,000 SELECTED} | 
+| | results page check | ${RESULTS PAGE - MAX MILEAGE - 70,000 SELECTED} | 
+| | results page check | ${RESULTS PAGE - MIN YEAR - 2010 SELECTED}  | 
+| | results page check | ${RESULTS PAGE - MAX YEAR - 2013 SELECTED} | 
+
+#| | Element Should Be Visible | ${RESULTS PAGE - ORLANDO ZIP CODE ELEMENT} | 
+#| | Element Should Be Visible | ${RESULTS PAGE - MAX PRICE - $50,000 SELECTED}  | 
+#| | Element Should Be Visible | ${RESULTS PAGE - MAX MILEAGE - 70,000 SELECTED} | 
+#| | Element Should Be Visible | ${RESULTS PAGE - MIN YEAR - 2010 SELECTED}      | 
+#| | Element Should Be Visible | ${RESULTS PAGE - MAX YEAR - 2013 SELECTED}      | 
 
 | user presses browser back button | 
 | | Go Back | 

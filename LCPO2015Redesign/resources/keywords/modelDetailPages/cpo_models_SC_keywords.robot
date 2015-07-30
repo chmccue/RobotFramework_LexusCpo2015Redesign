@@ -13,10 +13,6 @@
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
 
@@ -32,19 +28,9 @@
 
 # ********************************************************************
 # ********************************************************************
-
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
-
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
-
 # ********************************************************************
 # ********************************************************************
 # DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
 
 | user views the SC 2010 Brochure | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO SC 2010 BROCHURE PAGE TITLE} | ${CPO SC 2010 BROCHURE URL} | 
@@ -54,19 +40,6 @@
 
 # ********************************************************************
 # ********************************************************************
-
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
-
-| menu expands and user selects 2009 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2009 BUTTON} | 
-
 # ********************************************************************
 # ********************************************************************
 
@@ -78,6 +51,62 @@
 | user is taken to SC 2009 Model page | 
 | | Verify Correct Link Title | ${CPO SC 2009 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO SC 2009 URL} | 
+
+
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
+
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - SC 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO SC 2010 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | ${CPO YEARS SC} | 
+
+| Mobile Portrait View - SC 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO SC 2009 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | ${CPO YEARS SC} | 
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - SC 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO SC 2010 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | ${CPO YEARS SC} | 
+
+| Mobile Landscape View - SC 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO SC 2009 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | ${CPO YEARS SC} | 
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - SC 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO SC 2010 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | ${CPO YEARS SC} | 
+
+| Tablet Portrait View - SC 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO SC 2009 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | ${CPO YEARS SC} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - SC 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO SC 2010 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | ${CPO YEARS SC} | 
+
+| Tablet Landscape View - SC 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO SC 2009 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | ${CPO YEARS SC} | 
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************
@@ -110,54 +139,5 @@
 | Safety copy matches expected SC 2010 Safety copy | 
 | | Actual vs Expected Copy | ${CPO SC 2010 - ACTUAL SAFETY COPY LOCATION 1} | ${CPO SC 2010 - EXPECTED SAFETY COPY 1} | 
 | | Actual vs Expected Copy | ${CPO SC 2010 - ACTUAL SAFETY COPY LOCATION 2} | ${CPO SC 2010 - EXPECTED SAFETY COPY 2} | 
-
-
-
-# ***************************************************************
-# MOBILE REVIEW
-# ***************************************************************
-
-# MOBILE PORTRAIT RESOLUTION
-| Mobile Portrait View - SC 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for SC |  ${CPO SC 2010 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | 
-
-| Mobile Portrait View - SC 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for SC |  ${CPO SC 2009 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | 
-
-
-# MOBILE LANDSCAPE RESOLUTION
-| Mobile Landscape View - SC 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for SC |  ${CPO SC 2010 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | 
-
-| Mobile Landscape View - SC 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for SC |  ${CPO SC 2009 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | 
-
-
-# ***************************************************************
-# TABLET REVIEW
-# ***************************************************************
-
-# TABLET PORTRAIT RESOLUTION
-| Tablet Portrait View - SC 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for SC |  ${CPO SC 2010 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | 
-
-| Tablet Portrait View - SC 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for SC |  ${CPO SC 2009 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | 
-
-
-# TABLET LANDSCAPE RESOLUTION
-| Tablet Landscape View - SC 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for SC |  ${CPO SC 2010 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | 
-
-| Tablet Landscape View - SC 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for SC |  ${CPO SC 2009 URL} | ${CPO SC PAGE TITLE VAR} | ${CPO SC URL VAR} | 
 
 

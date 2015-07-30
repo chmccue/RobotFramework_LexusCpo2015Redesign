@@ -9,16 +9,17 @@
 
 | Setup Commands, CPO GX Models page | 
 | | Setup Commands | 
-| | Go To | ${BASE URL}${CPO GX 2014 URL} | 
+| | Go To | ${BASE URL}${CPO GX 2015 URL} | 
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
+
+| user is on GX 2015 Model page | 
+| | Go To | ${BASE URL}${CPO GX 2015 URL} | 
+| | Verify Correct Link Title | ${CPO GX 2015 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO GX 2015 URL} | 
 
 | user is on GX 2014 Model page | 
 | | Go To | ${BASE URL}${CPO GX 2014 URL} | 
@@ -53,67 +54,6 @@
 # ********************************************************************
 # ********************************************************************
 
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
-
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
-
-# ********************************************************************
-# ********************************************************************
-# DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
-
-| user views the GX 2014 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2014 BROCHURE PAGE TITLE} | ${CPO GX 2014 BROCHURE URL} | 
-
-| user views the GX 2013 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2013 BROCHURE PAGE TITLE} | ${CPO GX 2013 BROCHURE URL} | 
-
-| user views the GX 2012 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2012 BROCHURE PAGE TITLE} | ${CPO GX 2012 BROCHURE URL} | 
-
-| user views the GX 2011 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2011 BROCHURE PAGE TITLE} | ${CPO GX 2011 BROCHURE URL} | 
-
-| user views the GX 2010 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2010 BROCHURE PAGE TITLE} | ${CPO GX 2010 BROCHURE URL} | 
-
-| user views the GX 2009 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2009 BROCHURE PAGE TITLE} | ${CPO GX 2009 BROCHURE URL} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| menu expands and user selects 2014 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2014 BUTTON} | 
-
-| menu expands and user selects 2013 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2013 BUTTON} | 
-
-| menu expands and user selects 2012 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2012 BUTTON} | 
-
-| menu expands and user selects 2011 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2011 BUTTON} | 
-
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
-
-| menu expands and user selects 2009 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2009 BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
 | user is taken to GX 2014 Model page | 
 | | Verify Correct Link Title | ${CPO GX 2014 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO GX 2014 URL} | 
@@ -137,6 +77,207 @@
 | user is taken to GX 2009 Model page | 
 | | Verify Correct Link Title | ${CPO GX 2009 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO GX 2009 URL} | 
+
+
+# ********************************************************************
+# ********************************************************************
+# DOWNLOAD BROCHURE
+| user views the GX 2015 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2015 BROCHURE PAGE TITLE} | ${CPO GX 2015 BROCHURE URL} | 
+
+| user views the GX 2014 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2014 BROCHURE PAGE TITLE} | ${CPO GX 2014 BROCHURE URL} | 
+
+| user views the GX 2013 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2013 BROCHURE PAGE TITLE} | ${CPO GX 2013 BROCHURE URL} | 
+
+| user views the GX 2012 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2012 BROCHURE PAGE TITLE} | ${CPO GX 2012 BROCHURE URL} | 
+
+| user views the GX 2011 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2011 BROCHURE PAGE TITLE} | ${CPO GX 2011 BROCHURE URL} | 
+
+| user views the GX 2010 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2010 BROCHURE PAGE TITLE} | ${CPO GX 2010 BROCHURE URL} | 
+
+| user views the GX 2009 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO GX 2009 BROCHURE PAGE TITLE} | ${CPO GX 2009 BROCHURE URL} | 
+
+# ********************************************************************
+# ********************************************************************
+# ***************************************************************
+# DESKTOP REVIEW
+# ***************************************************************
+
+# DESKTOP PORTRAIT RESOLUTION
+| Desktop View - GX 2015 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2015 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+GX 2015 Model page - Desktop view - Choose Another Model Year menu
+| Desktop View - GX 2014 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2014 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Desktop View - GX 2013 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2013 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Desktop View - GX 2012 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2012 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Desktop View - GX 2011 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2011 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Desktop View - GX 2010 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2010 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Desktop View - GX 2009 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2009 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
+
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - GX 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2015 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Portrait View - GX 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2014 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Portrait View - GX 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2013 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Portrait View - GX 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2012 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Portrait View - GX 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2011 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Portrait View - GX 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2010 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Portrait View - GX 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2009 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - GX 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2015 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Landscape View - GX 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2014 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Landscape View - GX 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2013 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Landscape View - GX 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2012 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Landscape View - GX 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2011 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Landscape View - GX 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2010 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Mobile Landscape View - GX 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2009 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - GX 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2015 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Portrait View - GX 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2014 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Portrait View - GX 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2013 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Portrait View - GX 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2012 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Portrait View - GX 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2011 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Portrait View - GX 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2010 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Portrait View - GX 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2009 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - GX 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2015 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Landscape View - GX 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2014 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Landscape View - GX 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2013 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Landscape View - GX 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2012 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Landscape View - GX 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2011 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Landscape View - GX 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2010 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+| Tablet Landscape View - GX 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO GX 2009 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | ${CPO YEARS GX} | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************
@@ -169,121 +310,5 @@
 | Safety copy matches expected GX 2014 Safety copy | 
 | | Actual vs Expected Copy | ${CPO GX 2014 - ACTUAL SAFETY COPY LOCATION 1} | ${CPO GX 2014 - EXPECTED SAFETY COPY 1} | 
 | | Actual vs Expected Copy | ${CPO GX 2014 - ACTUAL SAFETY COPY LOCATION 2} | ${CPO GX 2014 - EXPECTED SAFETY COPY 2} | 
-
-
-
-
-
-# ***************************************************************
-# MOBILE REVIEW
-# ***************************************************************
-
-# MOBILE PORTRAIT RESOLUTION
-| Mobile Portrait View - GX 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2014 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Portrait View - GX 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2013 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Portrait View - GX 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2012 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Portrait View - GX 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2011 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Portrait View - GX 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2010 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Portrait View - GX 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2009 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-
-# MOBILE LANDSCAPE RESOLUTION
-| Mobile Landscape View - GX 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2014 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Landscape View - GX 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2013 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Landscape View - GX 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2012 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Landscape View - GX 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2011 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Landscape View - GX 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2010 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Mobile Landscape View - GX 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2009 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-
-
-# ***************************************************************
-# TABLET REVIEW
-# ***************************************************************
-
-# TABLET PORTRAIT RESOLUTION
-| Tablet Portrait View - GX 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2014 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Portrait View - GX 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2013 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Portrait View - GX 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2012 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Portrait View - GX 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2011 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Portrait View - GX 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2010 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Portrait View - GX 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2009 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-
-# TABLET LANDSCAPE RESOLUTION
-| Tablet Landscape View - GX 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2014 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Landscape View - GX 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2013 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Landscape View - GX 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2012 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Landscape View - GX 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2011 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Landscape View - GX 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2010 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
-
-| Tablet Landscape View - GX 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO GX 2009 URL} | ${CPO GX PAGE TITLE VAR} | ${CPO GX URL VAR} | 
 
 

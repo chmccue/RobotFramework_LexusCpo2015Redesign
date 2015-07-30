@@ -6,6 +6,22 @@
 
 *** Test Cases ***
 
+| LS 2015 Model page - Download Brochure button | 
+| | [Tags] | 2015 | ie_ignore | 
+| | Given user is on LS 2015 Model page | 
+| | When user clicks Model Detail Page Download Brochure button | 
+| | Then user views the LS 2015 Brochure | 
+
+| LS 2015 Model page - Back to All Models button | 
+| | [Tags] | 2015 | ie | 
+| | Given user is on LS 2015 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LS 2015 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2015 | test | 
+| | Desktop View - LS 2015 page - review Choose Another Model Year menu | 
+
 # ******************************************************
 # CPO LS 2014 MODEL PAGE
 # ******************************************************
@@ -21,36 +37,37 @@
 | LS 2014 Model page - Download Brochure button | 
 | | [Tags] | 2014 | 
 | | Given user is on LS 2014 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LS 2014 Brochure | 
 
 | LS 2014 Model page - Back to All Models button | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on LS 2014 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
 
-# Confirmed this will work to condense future scripts
-| LS 2014 Model page - Choose Another Model Year menu | 
-| | [Tags] | 2014 | 
-| | 2014 LS page - Choose Another Model Year menu functions, verify linked page title/url | 
+| LS 2014 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2014 | 
+| | Desktop View - LS 2014 page - review Choose Another Model Year menu | 
+
+*** comment ***
 
 | LS 2014 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on LS 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to LS 2014 Model page | 
 
 | LS 2014 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on LS 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LS 2013 Model page | 
 
 | LS 2014 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on LS 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -90,28 +107,42 @@
 #| | And Drivetrain copy matches expected LS 2013 Drivetrain copy | 
 #| | And Safety copy matches expected LS 2013 Safety copy | 
 
+*** Test Cases ***
+
 | LS 2013 Model page - Download Brochure button | 
 | | [Tags] | 2013 | 
 | | Given user is on LS 2013 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LS 2013 Brochure | 
 
+| LS 2013 Model page - Back to All Models button | 
+| | [Tags] | 2013 | ie | 
+| | Given user is on LS 2013 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LS 2013 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2013 | 
+| | Desktop View - LS 2013 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LS 2013 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on LS 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to LS 2014 Model page | 
 
 | LS 2013 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on LS 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LS 2013 Model page | 
 
 | LS 2013 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on LS 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -138,11 +169,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to LS 2009 Model page | 
 
-| LS 2013 Model page - Back to All Models button | 
-| | [Tags] | 2013 | 
-| | Given user is on LS 2013 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO LS 2012 MODEL PAGE
@@ -157,28 +183,42 @@
 #| | AndDrivetrain copy matches expected LS 2012 Drivetrain copy | 
 #| | AndSafety copy matches expected LS 2012 Safety copy | 
 
+*** Test Cases ***
+
 | LS 2012 Model page - Download Brochure button | 
 | | [Tags] | 2012 | 
 | | Given user is on LS 2012 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LS 2012 Brochure | 
 
+| LS 2012 Model page - Back to All Models button | 
+| | [Tags] | 2012 | ie | 
+| | Given user is on LS 2012 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LS 2012 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2012 | 
+| | Desktop View - LS 2012 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LS 2012 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on LS 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LS 2013 Model page | 
 
 | LS 2012 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on LS 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
 | | Then user is taken to LS 2012 Model page | 
 
 | LS 2012 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on LS 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -205,12 +245,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to LS 2009 Model page | 
 
-| LS 2012 Model page - Back to All Models button | 
-| | [Tags] | 2012 | 
-| | Given user is on LS 2012 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
-
 # ******************************************************
 # CPO LS 2011 MODEL PAGE
 # ******************************************************
@@ -224,28 +258,42 @@
 #| | AndDrivetrain copy matches expected LS 2011 Drivetrain copy | 
 #| | AndSafety copy matches expected LS 2011 Safety copy | 
 
+*** Test Cases ***
+
 | LS 2011 Model page - Download Brochure button | 
 | | [Tags] | 2011 | 
 | | Given user is on LS 2011 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LS 2011 Brochure | 
 
+| LS 2011 Model page - Back to All Models button | 
+| | [Tags] | 2011 | ie | 
+| | Given user is on LS 2011 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LS 2011 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2011 | 
+| | Desktop View - LS 2011 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LS 2011 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on LS 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LS 2013 Model page | 
 
 | LS 2011 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on LS 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
 | | Then user is taken to LS 2012 Model page | 
 
 | LS 2011 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on LS 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -272,12 +320,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to LS 2009 Model page | 
 
-| LS 2011 Model page - Back to All Models button | 
-| | [Tags] | 2011 | 
-| | Given user is on LS 2011 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
-
 # ******************************************************
 # CPO LS 2010 MODEL PAGE
 # ******************************************************
@@ -291,21 +333,35 @@
 #| | AndDrivetrain copy matches expected LS 2010 Drivetrain copy | 
 #| | AndSafety copy matches expected LS 2010 Safety copy | 
 
+*** Test Cases ***
+
 | LS 2010 Model page - Download Brochure button | 
 | | [Tags] | 2010 | 
 | | Given user is on LS 2010 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LS 2010 Brochure | 
 
+| LS 2010 Model page - Back to All Models button | 
+| | [Tags] | 2010 | ie | 
+| | Given user is on LS 2010 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LS 2010 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2010 | 
+| | Desktop View - LS 2010 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LS 2010 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on LS 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LS 2013 Model page | 
 
 | LS 2010 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on LS 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -326,7 +382,7 @@
 | | Then user is taken to LS 2010 Model page | 
 
 | LS 2010 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on LS 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -339,11 +395,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to LS 2009 Model page | 
 
-| LS 2010 Model page - Back to All Models button | 
-| | [Tags] | 2010 | 
-| | Given user is on LS 2010 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO LS 2009 MODEL PAGE
@@ -361,18 +412,30 @@
 | LS 2009 Model page - Download Brochure button | 
 | | [Tags] | 2009 | 
 | | Given user is on LS 2009 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LS 2009 Brochure | 
 
+| LS 2009 Model page - Back to All Models button | 
+| | [Tags] | 2009 | ie | 
+| | Given user is on LS 2009 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LS 2009 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2009 | 
+| | Desktop View - LS 2009 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LS 2009 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on LS 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LS 2013 Model page | 
 
 | LS 2009 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on LS 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -400,20 +463,13 @@
 | | Then user is taken to LS 2009 Model page | 
 
 | LS 2009 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on LS 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to LS 2014 Model page | 
 
-| LS 2009 Model page - Back to All Models button | 
-| | [Tags] | 2009 | 
-| | Given user is on LS 2009 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
-
-
-
+*** Test Cases ***
 
 
 # ***********************************************
@@ -421,6 +477,10 @@
 # ***********************************************
 
 # MOBILE PORTRAIT MODE
+| LS 2015 Model page - Mobile Portrait view - Choose Another Model Year menu | 
+| | [Tags] | mobile | 2015 | 
+| | Mobile Portrait View - LS 2015 page - review Choose Another Model Year menu | 
+
 | LS 2014 Model page - Mobile Portrait view - Choose Another Model Year menu | 
 | | [Tags] | mobile | 2014 | 
 | | Mobile Portrait View - LS 2014 page - review Choose Another Model Year menu | 
@@ -447,6 +507,10 @@
 
 
 # MOBILE LANDSCAPE MODE
+| LS 2015 Model page - Mobile Landscape view - Choose Another Model Year menu | 
+| | [Tags] | mobile | 2015 | 
+| | Mobile Landscape View - LS 2015 page - review Choose Another Model Year menu | 
+
 | LS 2014 Model page - Mobile Landscape view - Choose Another Model Year menu | 
 | | [Tags] | mobile | 2014 | 
 | | Mobile Landscape View - LS 2014 page - review Choose Another Model Year menu | 
@@ -474,6 +538,10 @@
 
 
 # TABLET PORTRAIT MODE
+| LS 2015 Model page - Tablet Portrait view - Choose Another Model Year menu | 
+| | [Tags] | tablet | 2015 | 
+| | Tablet Portrait View - LS 2015 page - review Choose Another Model Year menu | 
+
 | LS 2014 Model page - Tablet Portrait view - Choose Another Model Year menu | 
 | | [Tags] | tablet | 2014 | 
 | | Tablet Portrait View - LS 2014 page - review Choose Another Model Year menu | 
@@ -500,6 +568,10 @@
 
 
 # TABLET LANDSCAPE MODE
+| LS 2015 Model page - Tablet Landscape view - Choose Another Model Year menu | 
+| | [Tags] | tablet | 2015 | 
+| | Tablet Landscape View - LS 2015 page - review Choose Another Model Year menu | 
+
 | LS 2014 Model page - Tablet Landscape view - Choose Another Model Year menu | 
 | | [Tags] | tablet | 2014 | 
 | | Tablet Landscape View - LS 2014 page - review Choose Another Model Year menu | 

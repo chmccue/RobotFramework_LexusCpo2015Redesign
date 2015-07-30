@@ -37,14 +37,16 @@
 | | Actual vs Expected Copy | ${161-POINT INSPECTION COPY LOCATION 2} | ${161-POINT INSPECTION EXPECTED COPY} | 
  
 | user clicks Download Checklist button in 161-Point Inspection section | 
-| | Find and Click Element | ${161-POINT INSPECTION DOWNLOAD CHECKLIST BUTTON} | 
+#| | Find and Click Element | ${161-POINT INSPECTION DOWNLOAD CHECKLIST BUTTON} | 
+| | Run Keyword Unless | '${BROWSER}'=='Chrome' | Find and Click Element | ${161-POINT INSPECTION DOWNLOAD CHECKLIST BUTTON} | 
 
 | user is able to view the 161-Point Inspection checklist | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${161 POINT INSPECTION PAGE TITLE} | ${161 POINT INSPECTION URL} | 
 | | Go To | ${BASE URL}${CPO CERTIFICATION & WARRANTY URL} | 
 
 | user clicks Mobile Download Checklist button in 161-Point Inspection section | 
-| | Find and Click Element | ${161-POINT INSPECTION DOWNLOAD CHECKLIST BUTTON - MOBILE} | 
+#| | Find and Click Element | ${161-POINT INSPECTION DOWNLOAD CHECKLIST BUTTON - MOBILE} | 
+| | Run Keyword Unless | '${BROWSER}'=='Chrome' | Find and Click Element | ${161-POINT INSPECTION DOWNLOAD CHECKLIST BUTTON - MOBILE} | 
 
 
 | Roadside Assistance copy appears correct on page | 
@@ -60,20 +62,21 @@
 | | Actual vs Expected Copy | ${LOANER CAR COPY LOCATION 1} | ${LOANER CAR EXPECTED COPY TITLE} | 
 | | Actual vs Expected Copy | ${LOANER CAR COPY LOCATION 2} | ${LOANER CAR EXPECTED COPY} | 
 
-| Program Compare Tool copy appears correct on page |
+| Program Compare Tool copy appears correct on page | 
 | | Actual vs Expected Copy | ${PROGRAM COMPARE TOOL COPY LOCATION 1} | ${PROGRAM COMPARE TOOL EXPECTED COPY TITLE} | 
 | | Actual vs Expected Copy | ${PROGRAM COMPARE TOOL COPY LOCATION 2} | ${PROGRAM COMPARE TOOL EXPECTED COPY} | 
 
 | user clicks Learn More link in Program Compare section | 
+| | Run Keyword If | '${BROWSER}'=='Ie' | Javascript Scroll Up On Page | ${PROGRAM COMPARE TOOL LEARN MORE LINK} | 
 | | Find and Click Element | ${PROGRAM COMPARE TOOL LEARN MORE LINK} | 
 
 | user clicks Learn More Mobile link in Program Compare section | 
+| | Run Keyword If | '${BROWSER}'=='Ie' | Javascript Scroll Up On Page | ${PROGRAM COMPARE TOOL LEARN MORE LINK - MOBILE} | 
 | | Find and Click Element | ${PROGRAM COMPARE TOOL LEARN MORE LINK - MOBILE} | 
 
 | user is taken to the Program Compare Tool page | 
 | | Verify Correct Link Title | ${CPO COMPARE PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO COMPARE URL} | 
-# | | Go To | ${BASE URL}${CPO CERTIFICATION & WARRANTY URL} | 
 
 | non-expanded copy section is not visible | 
 | | Element Should Be Visible | ${WARRANTY MAIN COPY LOCATION 1} | 
@@ -82,6 +85,7 @@
 | | Element Should Not Be Visible | ${WARRANTY ADDITIONAL COPY LOCATION 2} | 
 
 | user clicks on Warranty expandable arrow | 
+| | Run Keyword If | '${BROWSER}'=='Ie' | Javascript Scroll Up On Page | ${WARRANTY EXPANSIVE ARROW} | 
 | | Find and Click Element | ${WARRANTY EXPANSIVE ARROW} | 
 | | Sleep | 2 | 
 
@@ -91,4 +95,19 @@
 | | Actual vs Expected Copy | ${WARRANTY ADDITIONAL COPY LOCATION 1} | ${WARRANTY ADDITIONAL SECTION EXPECTED COPY 1.2} | 
 | | Actual vs Expected Copy | ${WARRANTY ADDITIONAL COPY LOCATION 2} | ${WARRANTY ADDITIONAL SECTION EXPECTED COPY TITLE 2} | 
 | | Actual vs Expected Copy | ${WARRANTY ADDITIONAL COPY LOCATION 2} | ${WARRANTY ADDITIONAL SECTION EXPECTED COPY 2.1} | 
+
+
+
+| user clicks Desktop Certification Watch Video button | 
+| | Element Should Not Be Visible | ${CERTIFICATION WATCH VIDEO SHARE BUTTON} | 
+| | Element Should Not Be Visible | ${CERTIFICATION WATCH VIDEO OVERLAY BUTTON} | 
+| | Find and Click Element | ${CERTIFICATION WATCH VIDEO BUTTON - DESKTOP} | 
+| user clicks Mobile Certification Watch Video button | 
+| | Element Should Not Be Visible | ${CERTIFICATION WATCH VIDEO SHARE BUTTON} | 
+| | Element Should Not Be Visible | ${CERTIFICATION WATCH VIDEO OVERLAY BUTTON} | 
+| | Find and Click Element | ${CERTIFICATION WATCH VIDEO BUTTON - MOBILE} | 
+| Watch Video overlay appears on page | 
+| | Wait Until Element Is Visible | ${CERTIFICATION WATCH VIDEO SHARE BUTTON} | 
+| | Element Should Be Visible | ${CERTIFICATION WATCH VIDEO SHARE BUTTON} | 
+| | Element Should Be Visible | ${CERTIFICATION WATCH VIDEO OVERLAY BUTTON} | 
 

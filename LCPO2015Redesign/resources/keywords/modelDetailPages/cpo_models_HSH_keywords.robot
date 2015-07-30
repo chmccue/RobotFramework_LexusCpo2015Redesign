@@ -13,10 +13,6 @@
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
 
@@ -37,19 +33,9 @@
 
 # ********************************************************************
 # ********************************************************************
-
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
-
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
-
 # ********************************************************************
 # ********************************************************************
 # DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
 
 | user views the HSH 2010 Brochure | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO HSH 2010 BROCHURE PAGE TITLE} | ${CPO HSH 2010 BROCHURE URL} | 
@@ -62,22 +48,8 @@
 
 # ********************************************************************
 # ********************************************************************
-
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
-
 # ********************************************************************
 # ********************************************************************
-
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
-
-| menu expands and user selects 2011 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2011 BUTTON} | 
-
-| menu expands and user selects 2012 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2012 BUTTON} | 
-
 # ********************************************************************
 # ********************************************************************
 
@@ -93,6 +65,96 @@
 | user is taken to HSH 2012 Model page | 
 | | Verify Correct Link Title | ${CPO HSH 2012 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO HSH 2012 URL} | 
+
+
+
+
+
+
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
+
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - HSH 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2012 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+| Mobile Portrait View - HSH 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2011 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+| Mobile Portrait View - HSH 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2010 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - HSH 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2012 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+| Mobile Landscape View - HSH 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2011 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+| Mobile Landscape View - HSH 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2010 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - HSH 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2012 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+| Tablet Portrait View - HSH 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2011 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+| Tablet Portrait View - HSH 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2010 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - HSH 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2012 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+| Tablet Landscape View - HSH 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2011 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+| Tablet Landscape View - HSH 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO HSH 2010 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | ${CPO YEARS HSH} | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************
@@ -126,68 +188,4 @@
 | | Actual vs Expected Copy | ${CPO HSH 2012 - ACTUAL SAFETY COPY LOCATION 1} | ${CPO HSH 2012 - EXPECTED SAFETY COPY 1} | 
 | | Actual vs Expected Copy | ${CPO HSH 2012 - ACTUAL SAFETY COPY LOCATION 2} | ${CPO HSH 2012 - EXPECTED SAFETY COPY 2} | 
 
-
-
-# ***************************************************************
-# MOBILE REVIEW
-# ***************************************************************
-
-# MOBILE PORTRAIT RESOLUTION
-| Mobile Portrait View - HSH 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2012 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-| Mobile Portrait View - HSH 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2011 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-| Mobile Portrait View - HSH 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2010 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-
-# MOBILE LANDSCAPE RESOLUTION
-| Mobile Landscape View - HSH 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2012 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-| Mobile Landscape View - HSH 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2011 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-| Mobile Landscape View - HSH 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2010 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-
-# ***************************************************************
-# TABLET REVIEW
-# ***************************************************************
-
-# TABLET PORTRAIT RESOLUTION
-| Tablet Portrait View - HSH 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2012 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-| Tablet Portrait View - HSH 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2011 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-| Tablet Portrait View - HSH 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2010 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-
-# TABLET LANDSCAPE RESOLUTION
-| Tablet Landscape View - HSH 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2012 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-| Tablet Landscape View - HSH 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2011 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
-
-| Tablet Landscape View - HSH 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for HSH |  ${CPO HSH 2010 URL} | ${CPO HSH PAGE TITLE VAR} | ${CPO HSH URL VAR} | 
 

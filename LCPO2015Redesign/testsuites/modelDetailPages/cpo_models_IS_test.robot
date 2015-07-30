@@ -7,6 +7,25 @@
 *** Test Cases ***
 
 # ******************************************************
+# CPO IS 2015 MODEL PAGE
+# ******************************************************
+
+| IS 2015 Model page - Download Brochure button | 
+| | [Tags] | 2015 | 
+| | Given user is on IS 2015 Model page | 
+| | When user clicks Model Detail Page Download Brochure button | 
+| | Then user views the IS 2015 Brochure | 
+
+| IS 2015 Model page - Back to All Models button | 
+| | [Tags] | 2015 | ie | 
+| | Given user is on IS 2015 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| IS 2015 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2015 | test | 
+| | Desktop View - IS 2015 page - review Choose Another Model Year menu | 
+# ******************************************************
 # CPO IS 2014 MODEL PAGE
 # ******************************************************
 #| IS 2014 Model page - Copy check | 
@@ -21,31 +40,37 @@
 | IS 2014 Model page - Download Brochure button | 
 | | [Tags] | 2014 | 
 | | Given user is on IS 2014 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the IS 2014 Brochure | 
 
 | IS 2014 Model page - Back to All Models button | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on IS 2014 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
 
+| IS 2014 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2014 | test | 
+| | Desktop View - IS 2014 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | IS 2014 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on IS 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to IS 2014 Model page | 
 
 | IS 2014 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on IS 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to IS 2013 Model page | 
 
 | IS 2014 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on IS 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -85,28 +110,42 @@
 #| | And Drivetrain copy matches expected IS 2013 Drivetrain copy | 
 #| | And Safety copy matches expected IS 2013 Safety copy | 
 
+*** Test Cases ***
+
 | IS 2013 Model page - Download Brochure button | 
 | | [Tags] | 2013 | 
 | | Given user is on IS 2013 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the IS 2013 Brochure | 
 
+| IS 2013 Model page - Back to All Models button | 
+| | [Tags] | 2013 | ie | 
+| | Given user is on IS 2013 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| IS 2013 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2013 | test | 
+| | Desktop View - IS 2013 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | IS 2013 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on IS 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to IS 2014 Model page | 
 
 | IS 2013 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on IS 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to IS 2013 Model page | 
 
 | IS 2013 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on IS 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -133,11 +172,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to IS 2009 Model page | 
 
-| IS 2013 Model page - Back to All Models button | 
-| | [Tags] | 2013 | 
-| | Given user is on IS 2013 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO IS 2012 MODEL PAGE
@@ -152,21 +186,42 @@
 #| | AndDrivetrain copy matches expected IS 2012 Drivetrain copy | 
 #| | AndSafety copy matches expected IS 2012 Safety copy | 
 
+*** Test Cases ***
+
 | IS 2012 Model page - Download Brochure button | 
 | | [Tags] | 2012 | 
 | | Given user is on IS 2012 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the IS 2012 Brochure | 
 
+| IS 2012 Model page - Back to All Models button | 
+| | [Tags] | 2012 | ie | 
+| | Given user is on IS 2012 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| IS 2012 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2012 | test | 
+| | Desktop View - IS 2012 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | IS 2012 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on IS 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to IS 2013 Model page | 
 
+| IS 2012 Model page - Choose Another Model Year - 2012 | 
+| | [Tags] | 2012 | ie | 
+| | Given user is on IS 2012 Model page | 
+| | When user clicks Choose Another Model Year menu | 
+| | And menu expands and user selects 2012 | 
+| | Then user is taken to IS 2012 Model page | 
+
 | IS 2012 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on IS 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -193,11 +248,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to IS 2009 Model page | 
 
-| IS 2012 Model page - Back to All Models button | 
-| | [Tags] | 2012 | 
-| | Given user is on IS 2012 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO IS 2011 MODEL PAGE
@@ -212,21 +262,35 @@
 #| | AndDrivetrain copy matches expected IS 2011 Drivetrain copy | 
 #| | AndSafety copy matches expected IS 2011 Safety copy | 
 
+*** Test Cases ***
+
 | IS 2011 Model page - Download Brochure button | 
 | | [Tags] | 2011 | 
 | | Given user is on IS 2011 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the IS 2011 Brochure | 
 
+| IS 2011 Model page - Back to All Models button | 
+| | [Tags] | 2011 | ie | 
+| | Given user is on IS 2011 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| IS 2011 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2011 | test | 
+| | Desktop View - IS 2011 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | IS 2011 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on IS 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to IS 2013 Model page | 
 
 | IS 2011 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on IS 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -240,7 +304,7 @@
 | | Then user is taken to IS 2011 Model page | 
 
 | IS 2011 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on IS 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -260,12 +324,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to IS 2009 Model page | 
 
-| IS 2011 Model page - Back to All Models button | 
-| | [Tags] | 2011 | 
-| | Given user is on IS 2011 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
-
 # ******************************************************
 # CPO IS 2010 MODEL PAGE
 # ******************************************************
@@ -279,21 +337,35 @@
 #| | AndDrivetrain copy matches expected IS 2010 Drivetrain copy | 
 #| | AndSafety copy matches expected IS 2010 Safety copy | 
 
+*** Test Cases ***
+
 | IS 2010 Model page - Download Brochure button | 
 | | [Tags] | 2010 | 
 | | Given user is on IS 2010 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the IS 2010 Brochure | 
 
+| IS 2010 Model page - Back to All Models button | 
+| | [Tags] | 2010 | ie | 
+| | Given user is on IS 2010 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| IS 2010 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2010 | test | 
+| | Desktop View - IS 2010 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | IS 2010 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on IS 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to IS 2013 Model page | 
 
 | IS 2010 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on IS 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -314,7 +386,7 @@
 | | Then user is taken to IS 2010 Model page | 
 
 | IS 2010 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on IS 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -327,11 +399,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to IS 2009 Model page | 
 
-| IS 2010 Model page - Back to All Models button | 
-| | [Tags] | 2010 | 
-| | Given user is on IS 2010 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO IS 2009 MODEL PAGE
@@ -346,21 +413,35 @@
 #| | AndDrivetrain copy matches expected IS 2009 Drivetrain copy | 
 #| | AndSafety copy matches expected IS 2009 Safety copy | 
 
+*** Test Cases ***
+
 | IS 2009 Model page - Download Brochure button | 
 | | [Tags] | 2009 | 
 | | Given user is on IS 2009 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the IS 2009 Brochure | 
 
+| IS 2009 Model page - Back to All Models button | 
+| | [Tags] | 2009 | ie | 
+| | Given user is on IS 2009 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| IS 2009 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2009 | test | 
+| | Desktop View - IS 2009 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | IS 2009 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2009 |
+| | [Tags] | 2009 | ie | 
 | | Given user is on IS 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to IS 2013 Model page | 
 
 | IS 2009 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2009 |
+| | [Tags] | 2009 | ie | 
 | | Given user is on IS 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -381,18 +462,13 @@
 | | Then user is taken to IS 2010 Model page | 
 
 | IS 2009 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2009 |
+| | [Tags] | 2009 | ie | 
 | | Given user is on IS 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to IS 2014 Model page | 
 
-| IS 2009 Model page - Back to All Models button | 
-| | [Tags] | 2009 |
-| | Given user is on IS 2009 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
-
+*** Test Cases ***
 
 # ***********************************************
 # MOBILE REVIEW

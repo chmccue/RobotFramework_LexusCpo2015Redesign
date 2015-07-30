@@ -3,43 +3,77 @@
 
 | ${COMPARE SELECT MANUFACTURER TO COMPARE DROPDOWN} | xpath=.//*[@id='dk_container_manufacturer']/a | 
 
-| ${COMPARE ACURA DROPDOWN} | xpath=.//a[.='ACURA'] | 
-| ${COMPARE AUDI DROPDOWN} | xpath=.//a[.='AUDI'] | 
-| ${COMPARE BMW DROPDOWN} | xpath=.//a[.='BMW'] | 
-| ${COMPARE CADILLAC DROPDOWN} | xpath=(//a[.='CADILLAC']) | 
-| ${COMPARE INFINITI DROPDOWN} | xpath=(//a[.='INFINITI']) | 
-| ${COMPARE JAGUAR DROPDOWN} | xpath=.//a[.='JAGUAR'] | 
-| ${COMPARE LAND ROVER DROPDOWN} | xpath=.//a[.='LAND ROVER'] | 
-| ${COMPARE LINCOLN DROPDOWN} | xpath=.//a[.='LINCOLN'] | 
-| ${COMPARE MERCEDES-BENZ DROPDOWN} | xpath=.//a[.='MERCEDES-BENZ'] | 
-| ${COMPARE PORSCHE DROPDOWN} | xpath=.//a[.='PORSCHE'] | 
-| ${COMPARE VOLVO DROPDOWN} | xpath=.//a[.='VOLVO'] | 
-| ${COMPARE FORD DROPDOWN} | xpath=.//a[.='FORD'] | 
-| ${COMPARE HONDA DROPDOWN} | xpath=.//a[.='HONDA'] | 
-| ${COMPARE TOYOTA DROPDOWN} | xpath=.//a[.='TOYOTA'] | 
+| ${COMPARE ACURA DROPDOWN - XPATH} | xpath=.//a[.='ACURA'] | 
+| ${COMPARE AUDI DROPDOWN - XPATH} | xpath=.//a[.='AUDI'] | 
+| ${COMPARE BMW DROPDOWN - XPATH} | xpath=.//a[.='BMW'] | 
+| ${COMPARE CADILLAC DROPDOWN - XPATH} | xpath=(//a[.='CADILLAC']) | 
+| ${COMPARE INFINITI DROPDOWN - XPATH} | xpath=(//a[.='INFINITI']) | 
+| ${COMPARE JAGUAR DROPDOWN - XPATH} | xpath=.//a[.='JAGUAR'] | 
+| ${COMPARE LAND ROVER DROPDOWN - XPATH} | xpath=.//a[.='LAND ROVER'] | 
+| ${COMPARE LINCOLN DROPDOWN - XPATH} | xpath=.//a[.='LINCOLN'] | 
+| ${COMPARE MERCEDES-BENZ DROPDOWN - XPATH} | xpath=.//a[.='MERCEDES-BENZ'] | 
+| ${COMPARE PORSCHE DROPDOWN - XPATH} | xpath=.//a[.='PORSCHE'] | 
+| ${COMPARE VOLVO DROPDOWN - XPATH} | xpath=.//a[.='VOLVO'] | 
+| ${COMPARE FORD DROPDOWN - XPATH} | xpath=.//a[.='FORD'] | 
+| ${COMPARE HONDA DROPDOWN - XPATH} | xpath=.//a[.='HONDA'] | 
+| ${COMPARE TOYOTA DROPDOWN - XPATH} | xpath=.//a[.='TOYOTA'] | 
+
+| ${COMPARE ACURA DROPDOWN} | css=a[data-dk-dropdown-value='acura'] | 
+| ${COMPARE AUDI DROPDOWN} | css=a[data-dk-dropdown-value='audi'] | 
+| ${COMPARE BMW DROPDOWN} | css=a[data-dk-dropdown-value='bmw'] | 
+| ${COMPARE CADILLAC DROPDOWN} | css=a[data-dk-dropdown-value='cadillac'] | 
+| ${COMPARE INFINITI DROPDOWN} | css=a[data-dk-dropdown-value='infiniti'] | 
+| ${COMPARE JAGUAR DROPDOWN} | css=a[data-dk-dropdown-value='jaguar'] | 
+| ${COMPARE LAND ROVER DROPDOWN} | css=a[data-dk-dropdown-value='landrover'] | 
+| ${COMPARE LINCOLN DROPDOWN} | css=a[data-dk-dropdown-value='lincoln'] | 
+| ${COMPARE MERCEDES-BENZ DROPDOWN} | css=a[data-dk-dropdown-value='mercedes-benz'] | 
+| ${COMPARE PORSCHE DROPDOWN} | css=a[data-dk-dropdown-value='porsche'] | 
+| ${COMPARE VOLVO DROPDOWN} | css=a[data-dk-dropdown-value='volvo'] | 
+| ${COMPARE FORD DROPDOWN} | css=a[data-dk-dropdown-value='ford'] | 
+| ${COMPARE HONDA DROPDOWN} | css=a[data-dk-dropdown-value='honda'] | 
+| ${COMPARE TOYOTA DROPDOWN} | css=a[data-dk-dropdown-value='toyota'] | 
 
 
  # ************************************************
  # COMPARE WARRANTY COPY
  # ************************************************
 
-| ${COMPARE CATEGORY WARRANTY COPY LOCATION} | xpath=(//tr[1]/td[1]) | 
-| ${COMPARE LEXUS WARRANTY COPY LOCATION} | xpath=(//tr[1]/td/div[@class='divide']) | 
+| ${COMPARE CATEGORY WARRANTY COPY LOCATION - XPATH} | xpath=(//tr[1]/td[1]) | 
+| ${COMPARE LEXUS WARRANTY COPY LOCATION - XPATH} | xpath=(//tr[1]/td/div[@class='divide']) | 
  
-| ${COMPARE ACURA WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp acura'] | 
-| ${COMPARE AUDI WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp audi'] | 
-| ${COMPARE BMW WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp bmw'] | 
-| ${COMPARE CADILLAC WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp cadillac'] | 
-| ${COMPARE INFINITI WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp infiniti'] | 
-| ${COMPARE JAGUAR WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp jaguar'] | 
-| ${COMPARE LAND ROVER WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp landrover'] | 
-| ${COMPARE LINCOLN WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp lincoln'] | 
-| ${COMPARE MERCEDES-BENZ WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp mercedes-benz'] | 
-| ${COMPARE PORSCHE WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp porsche'] | 
-| ${COMPARE VOLVO WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp volvo'] | 
-| ${COMPARE FORD WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp ford'] | 
-| ${COMPARE HONDA WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp honda'] | 
-| ${COMPARE TOYOTA WARRANTY COPY LOCATION} | xpath=.//tr[1]/td/div[@class='comp toyota'] | 
+| ${COMPARE ACURA WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp acura'] | 
+| ${COMPARE AUDI WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp audi'] | 
+| ${COMPARE BMW WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp bmw'] | 
+| ${COMPARE CADILLAC WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp cadillac'] | 
+| ${COMPARE INFINITI WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp infiniti'] | 
+| ${COMPARE JAGUAR WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp jaguar'] | 
+| ${COMPARE LAND ROVER WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp landrover'] | 
+| ${COMPARE LINCOLN WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp lincoln'] | 
+| ${COMPARE MERCEDES-BENZ WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp mercedes-benz'] | 
+| ${COMPARE PORSCHE WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp porsche'] | 
+| ${COMPARE VOLVO WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp volvo'] | 
+| ${COMPARE FORD WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp ford'] | 
+| ${COMPARE HONDA WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp honda'] | 
+| ${COMPARE TOYOTA WARRANTY COPY LOCATION - XPATH} | xpath=.//tr[1]/td/div[@class='comp toyota'] | 
+
+
+| ${COMPARE CATEGORY WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td:nth-child(1) | 
+| ${COMPARE LEXUS WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.divide | 
+ 
+| ${COMPARE ACURA WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.acura | 
+| ${COMPARE AUDI WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.audi | 
+| ${COMPARE BMW WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.bmw | 
+| ${COMPARE CADILLAC WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.cadillac | 
+| ${COMPARE INFINITI WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.infiniti | 
+| ${COMPARE JAGUAR WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.jaguar | 
+| ${COMPARE LAND ROVER WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.landrover | 
+| ${COMPARE LINCOLN WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.lincoln | 
+| ${COMPARE MERCEDES-BENZ WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.mercedes-benz | 
+| ${COMPARE PORSCHE WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.porsche | 
+| ${COMPARE VOLVO WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.volvo | 
+| ${COMPARE FORD WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.ford | 
+| ${COMPARE HONDA WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.honda | 
+| ${COMPARE TOYOTA WARRANTY COPY LOCATION} | css=tr:nth-child(1)>td>div.comp.toyota | 
 
 # ************************************************
 | @{COMPARE LEXUS LIST} | ${COMPARE LEXUS WARRANTY COPY LOCATION} | ${COMPARE LEXUS DEDUCTIBLE COPY LOCATION} | ${COMPARE LEXUS INSPECTION COPY LOCATION} | ${COMPARE LEXUS ROADSIDE ASSISTANCE COPY LOCATION} | ${COMPARE LEXUS FREE FIRST MAINTENANCE COPY LOCATION} | ${COMPARE LEXUS TRIP INTERRUPTION COPY LOCATION} | ${COMPARE LEXUS LOANER CAR COPY LOCATION} | ${COMPARE LEXUS AGE MILEAGE ELIGIBILITY COPY LOCATION} | 
@@ -111,23 +145,45 @@
  # ************************************************
  # COMPARE DEDUCTIBLE COPY
  # ************************************************
-| ${COMPARE CATEGORY DEDUCTIBLE COPY LOCATION} | xpath=(//tr[2]/td[1]) | 
-| ${COMPARE LEXUS DEDUCTIBLE COPY LOCATION} | xpath=(//tr[2]/td/div[@class='divide']) | 
+| ${COMPARE CATEGORY DEDUCTIBLE COPY LOCATION - XPATH} | xpath=(//tr[2]/td[1]) | 
+| ${COMPARE LEXUS DEDUCTIBLE COPY LOCATION - XPATH} | xpath=(//tr[2]/td/div[@class='divide']) | 
 
-| ${COMPARE ACURA DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp acura'] | 
-| ${COMPARE AUDI DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp audi'] | 
-| ${COMPARE BMW DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp bmw'] | 
-| ${COMPARE CADILLAC DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp cadillac'] | 
-| ${COMPARE INFINITI DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp infiniti'] | 
-| ${COMPARE JAGUAR DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp jaguar'] | 
-| ${COMPARE LAND ROVER DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp landrover'] | 
-| ${COMPARE LINCOLN DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp lincoln'] | 
-| ${COMPARE MERCEDES-BENZ DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp mercedes-benz'] | 
-| ${COMPARE PORSCHE DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp porsche'] | 
-| ${COMPARE VOLVO DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp volvo'] | 
-| ${COMPARE FORD DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp ford'] | 
-| ${COMPARE HONDA DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp honda'] | 
-| ${COMPARE TOYOTA DEDUCTIBLE COPY LOCATION} | xpath=.//tr[2]/td/div[@class='comp toyota'] |  
+| ${COMPARE ACURA DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp acura'] | 
+| ${COMPARE AUDI DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp audi'] | 
+| ${COMPARE BMW DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp bmw'] | 
+| ${COMPARE CADILLAC DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp cadillac'] | 
+| ${COMPARE INFINITI DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp infiniti'] | 
+| ${COMPARE JAGUAR DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp jaguar'] | 
+| ${COMPARE LAND ROVER DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp landrover'] | 
+| ${COMPARE LINCOLN DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp lincoln'] | 
+| ${COMPARE MERCEDES-BENZ DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp mercedes-benz'] | 
+| ${COMPARE PORSCHE DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp porsche'] | 
+| ${COMPARE VOLVO DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp volvo'] | 
+| ${COMPARE FORD DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp ford'] | 
+| ${COMPARE HONDA DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp honda'] | 
+| ${COMPARE TOYOTA DEDUCTIBLE COPY LOCATION - XPATH} | xpath=.//tr[2]/td/div[@class='comp toyota'] |  
+
+
+
+
+| ${COMPARE CATEGORY DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td:nth-child(1) | 
+| ${COMPARE LEXUS DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.divide | 
+
+| ${COMPARE ACURA DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.acura | 
+| ${COMPARE AUDI DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.audi | 
+| ${COMPARE BMW DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.bmw | 
+| ${COMPARE CADILLAC DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.cadillac | 
+| ${COMPARE INFINITI DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.infiniti | 
+| ${COMPARE JAGUAR DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.jaguar | 
+| ${COMPARE LAND ROVER DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.landrover | 
+| ${COMPARE LINCOLN DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.lincoln | 
+| ${COMPARE MERCEDES-BENZ DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.mercedes-benz | 
+| ${COMPARE PORSCHE DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.porsche | 
+| ${COMPARE VOLVO DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.volvo | 
+| ${COMPARE FORD DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.ford | 
+| ${COMPARE HONDA DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.honda | 
+| ${COMPARE TOYOTA DEDUCTIBLE COPY LOCATION} | css=tr:nth-child(2)>td>div.comp.toyota |  
+
 
 | ${COMPARE CATEGORY DEDUCTIBLE EXPECTED COPY 1} | DEDUCTIBLE | 
 | ${COMPARE CATEGORY DEDUCTIBLE EXPECTED COPY 2} | The maximum amount you pay the repair facility when your vehicle is repaired, regardless of total cost. | 
@@ -400,7 +456,7 @@
 | ${COMPARE TOYOTA AGE MILEAGE ELIGIBILITY COPY LOCATION} | xpath=.//tr[8]/td/div[@class='comp toyota'] | 
 
 | ${COMPARE CATEGORY AGE MILEAGE ELIGIBILITY EXPECTED COPY 1} | AGE/MILEAGE ELIGIBILITY | 
-| ${COMPARE CATEGORY AGE MILEAGE ELIGIBILITY EXPECTED COPY 2} | This is the vehicle age and mileage baseline for entry into the Certified Pre-Owned Program. | 
+| ${COMPARE CATEGORY AGE MILEAGE ELIGIBILITY EXPECTED COPY 2} | This is the vehicle age and mileage baseline for entry into the L/Certified Program. | 
 
 | ${COMPARE LEXUS AGE MILEAGE ELIGIBILITY EXPECTED COPY} | 6 model years or newer/less than 70,000 miles | 
 

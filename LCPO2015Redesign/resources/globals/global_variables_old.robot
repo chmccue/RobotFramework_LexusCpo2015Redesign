@@ -10,28 +10,27 @@
 # MAIN CPO PAGE TITLES AND URLS
 # ******************************************************
 
-| ${CPO OVERVIEW PAGE TITLE} | L CERTIFIED - Browse All Models - Lexus Certified Pre-Owned | 
-| ${CPO SEARCH INVENTORY PAGE TITLE} | L CERTIFIED - Search CPO Inventory - Lexus Certified Pre-Owned | 
-| ${CPO CERTIFICATION & WARRANTY PAGE TITLE} | L CERTIFIED - Certification & Warranty - Lexus Certified Pre-Owned | 
-| ${CPO ALL MODELS PAGE TITLE} | L CERTIFIED - CPO-Eligible Lexus Models - Lexus Certified Pre-Owned | 
-| ${CPO FINANCING PAGE TITLE} | L CERTIFIED - Financing & Leasing - Lexus Certified Pre-Owned | 
-| ${CPO COMPARE PAGE TITLE} | L CERTIFIED - Compare Programs - Lexus Certified Pre-Owned | 
+| ${CPO OVERVIEW PAGE TITLE} | Lexus Certified Pre-Owned Cars - Browse All Models - LCPO.com | 
+| ${CPO OVERVIEW URL} | /cpo | 
+| ${CPO SEARCH INVENTORY PAGE TITLE} | Search CPO Inventory - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO SEARCH INVENTORY URL}         | /cpo/search-inventory | 
 | ${CPO SEARCH RESULTS PAGE TITLE} | Certified Pre-Owned Vehicle Search Results | 
-
-| ${CPO OVERVIEW URL} | /lcertified | 
-| ${CPO SEARCH INVENTORY URL} | /lcertified/search-inventory | 
-| ${CPO CERTIFICATION & WARRANTY URL} | /lcertified/certification-warranty | 
-| ${CPO ALL MODELS URL} | /lcertified/models | 
-| ${CPO FINANCING URL} | /lcertified/financing | 
-| ${CPO COMPARE URL} | /lcertified/compare | 
+| ${CPO ALL MODELS PAGE TITLE} | CPO-Eligible Lexus Models - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO ALL MODELS URL}   | /cpo/models | 
+| ${CPO FINANCING PAGE TITLE} | CPO Financing & Leasing - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO FINANCING URL} | /cpo/financing | 
+| ${CPO CERTIFICATION & WARRANTY PAGE TITLE} | Certification & Warranty - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO CERTIFICATION & WARRANTY URL} | /cpo/certification-warranty | 
+| ${CPO COMPARE PAGE TITLE} | Compare CPO Certification Programs - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO COMPARE URL} | /cpo/compare | 
 
 | @{CPO PAGE URLS LIST} | ${CPO OVERVIEW URL} | ${CPO SEARCH INVENTORY URL} | ${CPO ALL MODELS URL} | ${CPO FINANCING URL} | ${CPO CERTIFICATION & WARRANTY URL} | ${CPO COMPARE URL} | ${CPO LS 2014 URL} | ${CPO IS 2010 URL} | ${CPO RX 2009 URL} | ${CPO GS 2011 URL} | 
 
 | ${DOWNLOAD CPO BROCHURE PAGE TITLE} | Lexus Certified Pre-Owned Brochure - Lexus-Certified-Pre-Owned-Brochure.pdf | 
-| ${DOWNLOAD CPO BROCHURE URL}        | /documents/brochures/lcertified/Lexus-Certified-Pre-Owned-Brochure.pdf | 
+| ${DOWNLOAD CPO BROCHURE URL}        | /documents/brochures/cpo/Lexus-Certified-Pre-Owned-Brochure.pdf | 
 
 | ${161 POINT INSPECTION PAGE TITLE} | Lexus Certified Pre-Owned 161 Point Checklist - Lexus-Certified-Pre-Owned-161-point-checklist-brochure.pdf | 
-| ${161 POINT INSPECTION URL} | /documents/brochures/lcertified/Lexus-Certified-Pre-Owned-161-point-checklist-brochure.pdf | 
+| ${161 POINT INSPECTION URL} | /documents/brochures/cpo/Lexus-Certified-Pre-Owned-161-point-checklist-brochure.pdf | 
 
 # ******************************************************
 # JUMP LINK URLS WITHIN CPO CERTIFICATION & WARRANTY URL
@@ -53,7 +52,7 @@
 | ${CPO MOBILE LEASING URL} | http://m.lexusfinancial.com/pub/ | 
 
 | ${YLD CPO PAGE TITLE} | Los Angeles California Lexus Certified Pre Owned Specials and Offers | 
-| ${YLD CPO URL} | http://www.yourlexusdealer.com/Los_Angeles_California/lcertified/index.html | 
+| ${YLD CPO URL} | http://www.yourlexusdealer.com/Los_Angeles_California/CPO/index.html | 
 
 | ${KELLEY BLUE BOOK PAGE TITLE} | What's My Car Worth - Blue Book Used Car & Trade-In Values - Kelley Blue Book | 
 
@@ -65,7 +64,7 @@
 
 | ${CPO TOP NAV OVERVIEW TAB}                 | css=nav#subnav>ul>li>a.subnav-item.certifiedpre-owned | 
 | ${CPO TOP NAV SEARCH INVENTORY TAB}         | css=nav#subnav>ul>li>a.subnav-item.searchinventory | 
-| ${CPO TOP NAV CERTIFICATION & WARRANTY TAB} | css=nav#subnav>ul>li>a.subnav-item[href='/lcertified/certification-warranty'] | 
+| ${CPO TOP NAV CERTIFICATION & WARRANTY TAB} | css=nav#subnav>ul>li>a.subnav-item[href='/cpo/certification-warranty'] | 
 | ${CPO TOP NAV MODELS TAB}                   | css=nav#subnav>ul>li>a.subnav-item.models | 
 | ${CPO TOP NAV FINANCING TAB}                | css=nav#subnav>ul>li>a.subnav-item.financing | 
 | ${CPO TOP NAV SHARE TAB}                    | css=nav#subnav>ul>li>a.subnav-item.share | 
@@ -75,7 +74,7 @@
 | ${CPO MOBILE TOP NAV DROPDOWN}                     | css=div#cpoMenuButton | 
 | ${CPO MOBILE TOP NAV OVERVIEW TAB}                 | css=a.subnav-item.certifiedpre-owned | 
 | ${CPO MOBILE TOP NAV SEARCH INVENTORY TAB}         | css=a.subnav-item.searchinventory | 
-| ${CPO MOBILE TOP NAV CERTIFICATION & WARRANTY TAB} | css=a.subnav-item[href='/lcertified/certification-warranty'] | 
+| ${CPO MOBILE TOP NAV CERTIFICATION & WARRANTY TAB} | css=a.subnav-item[href='/cpo/certification-warranty'] | 
 | ${CPO MOBILE TOP NAV MODELS TAB}                   | css=a.subnav-item.models | 
 | ${CPO MOBILE TOP NAV FINANCING TAB}                | css=a.subnav-item.financing | 
 | ${CPO MOBILE TOP NAV SHARE TAB}                    | css=a.subnav-item.share | 
@@ -172,31 +171,29 @@
 # FOR LOOP VARIABLES TO INSERT
 # ******************************************************
 
-| ${CPO PAGE TITLE START VAR} | L CERTIFIED - | 
-
-| ${CPO LS PAGE TITLE VAR}  | Lexus LS - Lexus Certified Pre-Owned | 
-| ${CPO IS PAGE TITLE VAR}  | Lexus IS - Lexus Certified Pre-Owned | 
-| ${CPO GS PAGE TITLE VAR}  | Lexus GS - Lexus Certified Pre-Owned | 
-| ${CPO ES PAGE TITLE VAR}  | Lexus ES - Lexus Certified Pre-Owned | 
-| ${CPO NX PAGE TITLE VAR}  | Lexus NX - Lexus Certified Pre-Owned | 
-| ${CPO RX PAGE TITLE VAR}  | Lexus RX - Lexus Certified Pre-Owned | 
-| ${CPO GX PAGE TITLE VAR}  | Lexus GX - Lexus Certified Pre-Owned | 
-| ${CPO LX PAGE TITLE VAR}  | Lexus LX - Lexus Certified Pre-Owned | 
-| ${CPO RC PAGE TITLE VAR}  | Lexus RC - Lexus Certified Pre-Owned | 
-| ${CPO SC PAGE TITLE VAR}  | Lexus SC - Lexus Certified Pre-Owned | 
-| ${CPO RCF PAGE TITLE VAR} | Lexus RC F - Lexus Certified Pre-Owned | 
-| ${CPO ISF PAGE TITLE VAR} | Lexus IS F - Lexus Certified Pre-Owned | 
-| ${CPO ISC PAGE TITLE VAR} | Lexus IS C - Lexus Certified Pre-Owned | 
-| ${CPO CTH PAGE TITLE VAR} | Lexus CTh - Lexus Certified Pre-Owned | 
-| ${CPO GSH PAGE TITLE VAR} | Lexus GSh - Lexus Certified Pre-Owned | 
-| ${CPO LSH PAGE TITLE VAR} | Lexus LSh - Lexus Certified Pre-Owned | 
-| ${CPO NXH PAGE TITLE VAR} | Lexus NXh - Lexus Certified Pre-Owned | 
-| ${CPO RXH PAGE TITLE VAR} | Lexus RXh - Lexus Certified Pre-Owned | 
-| ${CPO ESH PAGE TITLE VAR} | Lexus ESh - Lexus Certified Pre-Owned | 
-| ${CPO HSH PAGE TITLE VAR} | Lexus HSh - Lexus Certified Pre-Owned | 
+| ${CPO LS PAGE TITLE VAR}  | Lexus LS - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO IS PAGE TITLE VAR}  | Lexus IS - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO GS PAGE TITLE VAR}  | Lexus GS - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO ES PAGE TITLE VAR}  | Lexus ES - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO NX PAGE TITLE VAR}  | Lexus NX - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO RX PAGE TITLE VAR}  | Lexus RX - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO GX PAGE TITLE VAR}  | Lexus GX - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO LX PAGE TITLE VAR}  | Lexus LX - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO RC PAGE TITLE VAR}  | Lexus RC - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO SC PAGE TITLE VAR}  | Lexus SC - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO RCF PAGE TITLE VAR} | Lexus RC F - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO ISF PAGE TITLE VAR} | Lexus IS F - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO ISC PAGE TITLE VAR} | Lexus IS C - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO CTH PAGE TITLE VAR} | Lexus CTh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO GSH PAGE TITLE VAR} | Lexus GSh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO LSH PAGE TITLE VAR} | Lexus LSh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO NXH PAGE TITLE VAR} | Lexus NXh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO RXH PAGE TITLE VAR} | Lexus RXh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO ESH PAGE TITLE VAR} | Lexus ESh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO HSH PAGE TITLE VAR} | Lexus HSh - Lexus Certified Pre-Owned - LCPO.com | 
 
 
-| ${CPO MODEL URL VAR} | /lcertified/models/ | 
+| ${CPO MODEL URL VAR} | /cpo/models/ | 
 
 | ${CPO LS URL VAR}  | -Lexus-LS | 
 | ${CPO IS URL VAR}  | -Lexus-IS | 
@@ -255,256 +252,255 @@
 # ******************************************************
 # ******************************************************
 
-| ${CPO RC 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus RC - Lexus Certified Pre-Owned | 
+| ${CPO RC 2015 PAGE TITLE} | 2015 Lexus RC - Lexus Certified Pre-Owned - LCPO.com | 
 
-| ${CPO RCF 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus RC F - Lexus Certified Pre-Owned | 
+| ${CPO RCF 2015 PAGE TITLE} | 2015 Lexus RC F - Lexus Certified Pre-Owned - LCPO.com | 
 
-| ${CPO NX 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus NX - Lexus Certified Pre-Owned | 
+| ${CPO NX 2015 PAGE TITLE} | 2015 Lexus NX - Lexus Certified Pre-Owned - LCPO.com | 
 
-| ${CPO NXH 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus NXh - Lexus Certified Pre-Owned | 
+| ${CPO NXH 2015 PAGE TITLE} | 2015 Lexus NXh - Lexus Certified Pre-Owned - LCPO.com | 
 
-| ${CPO LS 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus LS - Lexus Certified Pre-Owned | 
-| ${CPO LS 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus LS - Lexus Certified Pre-Owned | 
-| ${CPO LS 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus LS - Lexus Certified Pre-Owned | 
-| ${CPO LS 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus LS - Lexus Certified Pre-Owned | 
-| ${CPO LS 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus LS - Lexus Certified Pre-Owned | 
-| ${CPO LS 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus LS - Lexus Certified Pre-Owned | 
-| ${CPO LS 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus LS - Lexus Certified Pre-Owned | 
+| ${CPO LS 2015 PAGE TITLE} | 2015 Lexus LS - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO LS 2014 PAGE TITLE} | 2014 Lexus LS - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO LS 2013 PAGE TITLE} | 2013 Lexus LS - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO LS 2012 PAGE TITLE} | 2012 Lexus LS - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO LS 2011 PAGE TITLE} | 2011 Lexus LS - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO LS 2010 PAGE TITLE} | 2010 Lexus LS - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO LS 2009 PAGE TITLE} | 2009 Lexus LS - Lexus Certified Pre-Owned - LCPO.com | 
 
-| ${CPO GS 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus GS - Lexus Certified Pre-Owned |
-| ${CPO GS 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus GS - Lexus Certified Pre-Owned |
-| ${CPO GS 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus GS - Lexus Certified Pre-Owned |
-| ${CPO GS 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus GS - Lexus Certified Pre-Owned |
-| ${CPO GS 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus GS - Lexus Certified Pre-Owned |
-| ${CPO GS 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus GS - Lexus Certified Pre-Owned |
+| ${CPO GS 2015 PAGE TITLE} | 2015 Lexus GS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GS 2014 PAGE TITLE} | 2014 Lexus GS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GS 2013 PAGE TITLE} | 2013 Lexus GS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GS 2011 PAGE TITLE} | 2011 Lexus GS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GS 2010 PAGE TITLE} | 2010 Lexus GS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GS 2009 PAGE TITLE} | 2009 Lexus GS - Lexus Certified Pre-Owned - LCPO.com |
 
-| ${CPO ES 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus ES - Lexus Certified Pre-Owned |
-| ${CPO ES 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus ES - Lexus Certified Pre-Owned |
-| ${CPO ES 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus ES - Lexus Certified Pre-Owned |
-| ${CPO ES 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus ES - Lexus Certified Pre-Owned |
-| ${CPO ES 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus ES - Lexus Certified Pre-Owned |
-| ${CPO ES 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus ES - Lexus Certified Pre-Owned |
-| ${CPO ES 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus ES - Lexus Certified Pre-Owned |
+| ${CPO ES 2015 PAGE TITLE} | 2015 Lexus ES - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ES 2014 PAGE TITLE} | 2014 Lexus ES - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ES 2013 PAGE TITLE} | 2013 Lexus ES - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ES 2012 PAGE TITLE} | 2012 Lexus ES - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ES 2011 PAGE TITLE} | 2011 Lexus ES - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ES 2010 PAGE TITLE} | 2010 Lexus ES - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ES 2009 PAGE TITLE} | 2009 Lexus ES - Lexus Certified Pre-Owned - LCPO.com |
 
-
-| ${CPO IS 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus IS - Lexus Certified Pre-Owned |
-| ${CPO IS 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus IS - Lexus Certified Pre-Owned |
-| ${CPO IS 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus IS - Lexus Certified Pre-Owned |
-| ${CPO IS 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus IS - Lexus Certified Pre-Owned |
-| ${CPO IS 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus IS - Lexus Certified Pre-Owned |
-| ${CPO IS 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus IS - Lexus Certified Pre-Owned |
-| ${CPO IS 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus IS - Lexus Certified Pre-Owned |
+| ${CPO IS 2015 PAGE TITLE} | 2015 Lexus IS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO IS 2014 PAGE TITLE} | 2014 Lexus IS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO IS 2013 PAGE TITLE} | 2013 Lexus IS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO IS 2012 PAGE TITLE} | 2012 Lexus IS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO IS 2011 PAGE TITLE} | 2011 Lexus IS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO IS 2010 PAGE TITLE} | 2010 Lexus IS - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO IS 2009 PAGE TITLE} | 2009 Lexus IS - Lexus Certified Pre-Owned - LCPO.com |
 
 # IS C DOES NOT HAVE 2009 VERSION
-| ${CPO ISC 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus IS C - Lexus Certified Pre-Owned |
-| ${CPO ISC 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus IS C - Lexus Certified Pre-Owned |
-| ${CPO ISC 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus IS C - Lexus Certified Pre-Owned |
-| ${CPO ISC 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus IS C - Lexus Certified Pre-Owned |
-| ${CPO ISC 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus IS C - Lexus Certified Pre-Owned |
-| ${CPO ISC 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus IS C - Lexus Certified Pre-Owned |
+| ${CPO ISC 2015 PAGE TITLE} | 2015 Lexus IS C - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISC 2014 PAGE TITLE} | 2014 Lexus IS C - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISC 2013 PAGE TITLE} | 2013 Lexus IS C - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISC 2012 PAGE TITLE} | 2012 Lexus IS C - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISC 2011 PAGE TITLE} | 2011 Lexus IS C - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISC 2010 PAGE TITLE} | 2010 Lexus IS C - Lexus Certified Pre-Owned - LCPO.com |
 
 # SC ONLY HAS 2009 AND 2010
-| ${CPO SC 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus SC - Lexus Certified Pre-Owned | 
-| ${CPO SC 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus SC - Lexus Certified Pre-Owned | 
+| ${CPO SC 2010 PAGE TITLE} | 2010 Lexus SC - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO SC 2009 PAGE TITLE} | 2009 Lexus SC - Lexus Certified Pre-Owned - LCPO.com | 
 
-| ${CPO RX 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus RX - Lexus Certified Pre-Owned |
-| ${CPO RX 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus RX - Lexus Certified Pre-Owned |
-| ${CPO RX 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus RX - Lexus Certified Pre-Owned |
-| ${CPO RX 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus RX - Lexus Certified Pre-Owned |
-| ${CPO RX 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus RX - Lexus Certified Pre-Owned |
-| ${CPO RX 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus RX - Lexus Certified Pre-Owned |
-| ${CPO RX 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus RX - Lexus Certified Pre-Owned |
+| ${CPO RX 2015 PAGE TITLE} | 2015 Lexus RX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RX 2014 PAGE TITLE} | 2014 Lexus RX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RX 2013 PAGE TITLE} | 2013 Lexus RX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RX 2012 PAGE TITLE} | 2012 Lexus RX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RX 2011 PAGE TITLE} | 2011 Lexus RX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RX 2010 PAGE TITLE} | 2010 Lexus RX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RX 2009 PAGE TITLE} | 2009 Lexus RX - Lexus Certified Pre-Owned - LCPO.com |
 
-| ${CPO LX 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus LX - Lexus Certified Pre-Owned |
-| ${CPO LX 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus LX - Lexus Certified Pre-Owned |
-| ${CPO LX 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus LX - Lexus Certified Pre-Owned |
-| ${CPO LX 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus LX - Lexus Certified Pre-Owned |
-| ${CPO LX 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus LX - Lexus Certified Pre-Owned |
-| ${CPO LX 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus LX - Lexus Certified Pre-Owned |
-| ${CPO LX 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus LX - Lexus Certified Pre-Owned |
+| ${CPO LX 2015 PAGE TITLE} | 2015 Lexus LX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LX 2014 PAGE TITLE} | 2014 Lexus LX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LX 2013 PAGE TITLE} | 2013 Lexus LX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LX 2012 PAGE TITLE} | 2012 Lexus LX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LX 2011 PAGE TITLE} | 2011 Lexus LX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LX 2010 PAGE TITLE} | 2010 Lexus LX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LX 2009 PAGE TITLE} | 2009 Lexus LX - Lexus Certified Pre-Owned - LCPO.com |
 
-| ${CPO GX 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus GX - Lexus Certified Pre-Owned |
-| ${CPO GX 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus GX - Lexus Certified Pre-Owned |
-| ${CPO GX 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus GX - Lexus Certified Pre-Owned |
-| ${CPO GX 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus GX - Lexus Certified Pre-Owned |
-| ${CPO GX 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus GX - Lexus Certified Pre-Owned |
-| ${CPO GX 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus GX - Lexus Certified Pre-Owned |
-| ${CPO GX 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus GX - Lexus Certified Pre-Owned |
+| ${CPO GX 2015 PAGE TITLE} | 2015 Lexus GX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GX 2014 PAGE TITLE} | 2014 Lexus GX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GX 2013 PAGE TITLE} | 2013 Lexus GX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GX 2012 PAGE TITLE} | 2012 Lexus GX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GX 2011 PAGE TITLE} | 2011 Lexus GX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GX 2010 PAGE TITLE} | 2010 Lexus GX - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GX 2009 PAGE TITLE} | 2009 Lexus GX - Lexus Certified Pre-Owned - LCPO.com |
 
 # RXh DOES NOT HAVE 2009 VERSION
-| ${CPO RXH 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus RXh - Lexus Certified Pre-Owned |
-| ${CPO RXH 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus RXh - Lexus Certified Pre-Owned |
-| ${CPO RXH 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus RXh - Lexus Certified Pre-Owned |
-| ${CPO RXH 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus RXh - Lexus Certified Pre-Owned |
-| ${CPO RXH 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus RXh - Lexus Certified Pre-Owned |
-| ${CPO RXH 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus RXh - Lexus Certified Pre-Owned |
+| ${CPO RXH 2015 PAGE TITLE} | 2015 Lexus RXh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RXH 2014 PAGE TITLE} | 2014 Lexus RXh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RXH 2013 PAGE TITLE} | 2013 Lexus RXh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RXH 2012 PAGE TITLE} | 2012 Lexus RXh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RXH 2011 PAGE TITLE} | 2011 Lexus RXh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO RXH 2010 PAGE TITLE} | 2010 Lexus RXh - Lexus Certified Pre-Owned - LCPO.com |
 
-| ${CPO ESH 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus ESh - Lexus Certified Pre-Owned | 
-| ${CPO ESH 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus ESh - Lexus Certified Pre-Owned | 
-| ${CPO ESH 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus ESh - Lexus Certified Pre-Owned | 
+| ${CPO ESH 2015 PAGE TITLE} | 2015 Lexus ESh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO ESH 2014 PAGE TITLE} | 2014 Lexus ESh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO ESH 2013 PAGE TITLE} | 2013 Lexus ESh - Lexus Certified Pre-Owned - LCPO.com | 
 
 # CTh DOES NOT HAVE 2009 AND 2010
-| ${CPO CTH 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus CTh - Lexus Certified Pre-Owned | 
-| ${CPO CTH 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus CTh - Lexus Certified Pre-Owned | 
-| ${CPO CTH 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus CTh - Lexus Certified Pre-Owned | 
-| ${CPO CTH 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus CTh - Lexus Certified Pre-Owned | 
-| ${CPO CTH 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus CTh - Lexus Certified Pre-Owned | 
+| ${CPO CTH 2015 PAGE TITLE} | 2015 Lexus CTh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO CTH 2014 PAGE TITLE} | 2014 Lexus CTh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO CTH 2013 PAGE TITLE} | 2013 Lexus CTh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO CTH 2012 PAGE TITLE} | 2012 Lexus CTh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO CTH 2011 PAGE TITLE} | 2011 Lexus CTh - Lexus Certified Pre-Owned - LCPO.com | 
 
 # GSh DOES NOT HAVE 2012 VERSION
-| ${CPO GSH 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus GSh - Lexus Certified Pre-Owned |
-| ${CPO GSH 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus GSh - Lexus Certified Pre-Owned |
-| ${CPO GSH 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus GSh - Lexus Certified Pre-Owned |
-| ${CPO GSH 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus GSh - Lexus Certified Pre-Owned |
-| ${CPO GSH 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus GSh - Lexus Certified Pre-Owned |
-| ${CPO GSH 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus GSh - Lexus Certified Pre-Owned |
+| ${CPO GSH 2015 PAGE TITLE} | 2015 Lexus GSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GSH 2014 PAGE TITLE} | 2014 Lexus GSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GSH 2013 PAGE TITLE} | 2013 Lexus GSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GSH 2011 PAGE TITLE} | 2011 Lexus GSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GSH 2010 PAGE TITLE} | 2010 Lexus GSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO GSH 2009 PAGE TITLE} | 2009 Lexus GSh - Lexus Certified Pre-Owned - LCPO.com |
 
-| ${CPO LSH 2015 PAGE TITLE} | L CERTIFIED - 2015 Lexus LSh - Lexus Certified Pre-Owned |
-| ${CPO LSH 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus LSh - Lexus Certified Pre-Owned |
-| ${CPO LSH 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus LSh - Lexus Certified Pre-Owned |
-| ${CPO LSH 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus LSh - Lexus Certified Pre-Owned |
-| ${CPO LSH 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus LSh - Lexus Certified Pre-Owned |
-| ${CPO LSH 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus LSh - Lexus Certified Pre-Owned |
-| ${CPO LSH 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus LSh - Lexus Certified Pre-Owned |
+| ${CPO LSH 2015 PAGE TITLE} | 2015 Lexus LSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LSH 2014 PAGE TITLE} | 2014 Lexus LSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LSH 2013 PAGE TITLE} | 2013 Lexus LSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LSH 2012 PAGE TITLE} | 2012 Lexus LSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LSH 2011 PAGE TITLE} | 2011 Lexus LSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LSH 2010 PAGE TITLE} | 2010 Lexus LSh - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO LSH 2009 PAGE TITLE} | 2009 Lexus LSh - Lexus Certified Pre-Owned - LCPO.com |
 
 # HSh ONLY HAS 2010-2012  
-| ${CPO HSH 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus HSh - Lexus Certified Pre-Owned | 
-| ${CPO HSH 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus HSh - Lexus Certified Pre-Owned | 
-| ${CPO HSH 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus HSh - Lexus Certified Pre-Owned | 
+| ${CPO HSH 2012 PAGE TITLE} |  2012 Lexus HSh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO HSH 2011 PAGE TITLE} |  2011 Lexus HSh - Lexus Certified Pre-Owned - LCPO.com | 
+| ${CPO HSH 2010 PAGE TITLE} |  2010 Lexus HSh - Lexus Certified Pre-Owned - LCPO.com | 
 
-| ${CPO ISF 2014 PAGE TITLE} | L CERTIFIED - 2014 Lexus IS F - Lexus Certified Pre-Owned |
-| ${CPO ISF 2013 PAGE TITLE} | L CERTIFIED - 2013 Lexus IS F - Lexus Certified Pre-Owned |
-| ${CPO ISF 2012 PAGE TITLE} | L CERTIFIED - 2012 Lexus IS F - Lexus Certified Pre-Owned |
-| ${CPO ISF 2011 PAGE TITLE} | L CERTIFIED - 2011 Lexus IS F - Lexus Certified Pre-Owned |
-| ${CPO ISF 2010 PAGE TITLE} | L CERTIFIED - 2010 Lexus IS F - Lexus Certified Pre-Owned |
-| ${CPO ISF 2009 PAGE TITLE} | L CERTIFIED - 2009 Lexus IS F - Lexus Certified Pre-Owned |
+| ${CPO ISF 2014 PAGE TITLE} |  2014 Lexus IS F - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISF 2013 PAGE TITLE} |  2013 Lexus IS F - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISF 2012 PAGE TITLE} |  2012 Lexus IS F - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISF 2011 PAGE TITLE} |  2011 Lexus IS F - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISF 2010 PAGE TITLE} |  2010 Lexus IS F - Lexus Certified Pre-Owned - LCPO.com |
+| ${CPO ISF 2009 PAGE TITLE} |  2009 Lexus IS F - Lexus Certified Pre-Owned - LCPO.com |
 
 
 # **************************************************************************
 
 
-| ${CPO RC 2015 URL} |  /lcertified/models/2015-Lexus-RC | 
+| ${CPO RC 2015 URL} |  /cpo/models/2015-Lexus-RC | 
 
-| ${CPO RCF 2015 URL} | /lcertified/models/2015-Lexus-RCF | 
+| ${CPO RCF 2015 URL} |  /cpo/models/2015-Lexus-RCF | 
 
-| ${CPO NX 2015 URL} |  /lcertified/models/2015-Lexus-NX | 
+| ${CPO NX 2015 URL} |  /cpo/models/2015-Lexus-NX | 
 
-| ${CPO NXH 2015 URL} | /lcertified/models/2015-Lexus-NXh | 
+| ${CPO NXH 2015 URL} |  /cpo/models/2015-Lexus-NXh | 
 
-| ${CPO LS 2015 URL} |  /lcertified/models/2015-Lexus-LS | 
-| ${CPO LS 2014 URL} |  /lcertified/models/2014-Lexus-LS | 
-| ${CPO LS 2013 URL} |  /lcertified/models/2013-Lexus-LS | 
-| ${CPO LS 2012 URL} |  /lcertified/models/2012-Lexus-LS | 
-| ${CPO LS 2011 URL} |  /lcertified/models/2011-Lexus-LS | 
-| ${CPO LS 2010 URL} |  /lcertified/models/2010-Lexus-LS | 
-| ${CPO LS 2009 URL} |  /lcertified/models/2009-Lexus-LS | 
+| ${CPO LS 2015 URL} |  /cpo/models/2015-Lexus-LS | 
+| ${CPO LS 2014 URL} |  /cpo/models/2014-Lexus-LS | 
+| ${CPO LS 2013 URL} |  /cpo/models/2013-Lexus-LS | 
+| ${CPO LS 2012 URL} |  /cpo/models/2012-Lexus-LS | 
+| ${CPO LS 2011 URL} |  /cpo/models/2011-Lexus-LS | 
+| ${CPO LS 2010 URL} |  /cpo/models/2010-Lexus-LS | 
+| ${CPO LS 2009 URL} |  /cpo/models/2009-Lexus-LS | 
 
-| ${CPO GS 2015 URL} |  /lcertified/models/2015-Lexus-GS | 
-| ${CPO GS 2014 URL} |  /lcertified/models/2014-Lexus-GS | 
-| ${CPO GS 2013 URL} |  /lcertified/models/2013-Lexus-GS | 
-| ${CPO GS 2011 URL} |  /lcertified/models/2011-Lexus-GS | 
-| ${CPO GS 2010 URL} |  /lcertified/models/2010-Lexus-GS | 
-| ${CPO GS 2009 URL} |  /lcertified/models/2009-Lexus-GS | 
+| ${CPO GS 2015 URL} |  /cpo/models/2015-Lexus-GS | 
+| ${CPO GS 2014 URL} |  /cpo/models/2014-Lexus-GS | 
+| ${CPO GS 2013 URL} |  /cpo/models/2013-Lexus-GS | 
+| ${CPO GS 2011 URL} |  /cpo/models/2011-Lexus-GS | 
+| ${CPO GS 2010 URL} |  /cpo/models/2010-Lexus-GS | 
+| ${CPO GS 2009 URL} |  /cpo/models/2009-Lexus-GS | 
 
-| ${CPO ES 2015 URL} | /lcertified/models/2015-Lexus-ES | 
-| ${CPO ES 2014 URL} | /lcertified/models/2014-Lexus-ES | 
-| ${CPO ES 2013 URL} | /lcertified/models/2013-Lexus-ES | 
-| ${CPO ES 2012 URL} | /lcertified/models/2012-Lexus-ES | 
-| ${CPO ES 2011 URL} | /lcertified/models/2011-Lexus-ES | 
-| ${CPO ES 2010 URL} | /lcertified/models/2010-Lexus-ES | 
-| ${CPO ES 2009 URL} | /lcertified/models/2009-Lexus-ES | 
+| ${CPO ES 2015 URL} | /cpo/models/2015-Lexus-ES | 
+| ${CPO ES 2014 URL} | /cpo/models/2014-Lexus-ES | 
+| ${CPO ES 2013 URL} | /cpo/models/2013-Lexus-ES | 
+| ${CPO ES 2012 URL} | /cpo/models/2012-Lexus-ES | 
+| ${CPO ES 2011 URL} | /cpo/models/2011-Lexus-ES | 
+| ${CPO ES 2010 URL} | /cpo/models/2010-Lexus-ES | 
+| ${CPO ES 2009 URL} | /cpo/models/2009-Lexus-ES | 
 
-| ${CPO IS 2015 URL} |  /lcertified/models/2015-Lexus-IS | 
-| ${CPO IS 2014 URL} |  /lcertified/models/2014-Lexus-IS | 
-| ${CPO IS 2013 URL} |  /lcertified/models/2013-Lexus-IS | 
-| ${CPO IS 2012 URL} |  /lcertified/models/2012-Lexus-IS | 
-| ${CPO IS 2011 URL} |  /lcertified/models/2011-Lexus-IS | 
-| ${CPO IS 2010 URL} |  /lcertified/models/2010-Lexus-IS | 
-| ${CPO IS 2009 URL} |  /lcertified/models/2009-Lexus-IS | 
+| ${CPO IS 2015 URL} |  /cpo/models/2015-Lexus-IS | 
+| ${CPO IS 2014 URL} |  /cpo/models/2014-Lexus-IS | 
+| ${CPO IS 2013 URL} |  /cpo/models/2013-Lexus-IS | 
+| ${CPO IS 2012 URL} |  /cpo/models/2012-Lexus-IS | 
+| ${CPO IS 2011 URL} |  /cpo/models/2011-Lexus-IS | 
+| ${CPO IS 2010 URL} |  /cpo/models/2010-Lexus-IS | 
+| ${CPO IS 2009 URL} |  /cpo/models/2009-Lexus-IS | 
 
 # IS C DOES NOT HAVE 2009 VERSION
-| ${CPO ISC 2015 URL} | /lcertified/models/2015-Lexus-ISC | 
-| ${CPO ISC 2014 URL} | /lcertified/models/2014-Lexus-ISC | 
-| ${CPO ISC 2013 URL} | /lcertified/models/2013-Lexus-ISC | 
-| ${CPO ISC 2012 URL} | /lcertified/models/2012-Lexus-ISC | 
-| ${CPO ISC 2011 URL} | /lcertified/models/2011-Lexus-ISC | 
-| ${CPO ISC 2010 URL} | /lcertified/models/2010-Lexus-ISC | 
+| ${CPO ISC 2015 URL} | /cpo/models/2015-Lexus-ISC | 
+| ${CPO ISC 2014 URL} | /cpo/models/2014-Lexus-ISC | 
+| ${CPO ISC 2013 URL} | /cpo/models/2013-Lexus-ISC | 
+| ${CPO ISC 2012 URL} | /cpo/models/2012-Lexus-ISC | 
+| ${CPO ISC 2011 URL} | /cpo/models/2011-Lexus-ISC | 
+| ${CPO ISC 2010 URL} | /cpo/models/2010-Lexus-ISC | 
 
 # SC ONLY HAS 2009 AND 2010
-| ${CPO SC 2010 URL} | /lcertified/models/2010-Lexus-SC | 
-| ${CPO SC 2009 URL} | /lcertified/models/2009-Lexus-SC | 
+| ${CPO SC 2010 URL} | /cpo/models/2010-Lexus-SC | 
+| ${CPO SC 2009 URL} | /cpo/models/2009-Lexus-SC | 
 
-| ${CPO RX 2015 URL} | /lcertified/models/2015-Lexus-RX | 
-| ${CPO RX 2014 URL} | /lcertified/models/2014-Lexus-RX | 
-| ${CPO RX 2013 URL} | /lcertified/models/2013-Lexus-RX | 
-| ${CPO RX 2012 URL} | /lcertified/models/2012-Lexus-RX | 
-| ${CPO RX 2011 URL} | /lcertified/models/2011-Lexus-RX | 
-| ${CPO RX 2010 URL} | /lcertified/models/2010-Lexus-RX | 
-| ${CPO RX 2009 URL} | /lcertified/models/2009-Lexus-RX | 
+| ${CPO RX 2015 URL} | /cpo/models/2015-Lexus-RX | 
+| ${CPO RX 2014 URL} | /cpo/models/2014-Lexus-RX | 
+| ${CPO RX 2013 URL} | /cpo/models/2013-Lexus-RX | 
+| ${CPO RX 2012 URL} | /cpo/models/2012-Lexus-RX | 
+| ${CPO RX 2011 URL} | /cpo/models/2011-Lexus-RX | 
+| ${CPO RX 2010 URL} | /cpo/models/2010-Lexus-RX | 
+| ${CPO RX 2009 URL} | /cpo/models/2009-Lexus-RX | 
 
 # LX DOES NOT HAVE 2012 VERSION
-| ${CPO LX 2015 URL} |  /lcertified/models/2015-Lexus-LX | 
-| ${CPO LX 2014 URL} |  /lcertified/models/2014-Lexus-LX | 
-| ${CPO LX 2013 URL} |  /lcertified/models/2013-Lexus-LX | 
-| ${CPO LX 2012 URL} |  /lcertified/models/2012-Lexus-LX | 
-| ${CPO LX 2011 URL} |  /lcertified/models/2011-Lexus-LX | 
-| ${CPO LX 2010 URL} |  /lcertified/models/2010-Lexus-LX | 
-| ${CPO LX 2009 URL} |  /lcertified/models/2009-Lexus-LX | 
+| ${CPO LX 2015 URL} |  /cpo/models/2015-Lexus-LX | 
+| ${CPO LX 2014 URL} |  /cpo/models/2014-Lexus-LX | 
+| ${CPO LX 2013 URL} |  /cpo/models/2013-Lexus-LX | 
+| ${CPO LX 2012 URL} |  /cpo/models/2012-Lexus-LX | 
+| ${CPO LX 2011 URL} |  /cpo/models/2011-Lexus-LX | 
+| ${CPO LX 2010 URL} |  /cpo/models/2010-Lexus-LX | 
+| ${CPO LX 2009 URL} |  /cpo/models/2009-Lexus-LX | 
 
-| ${CPO GX 2015 URL} |  /lcertified/models/2015-Lexus-GX | 
-| ${CPO GX 2014 URL} |  /lcertified/models/2014-Lexus-GX | 
-| ${CPO GX 2013 URL} |  /lcertified/models/2013-Lexus-GX | 
-| ${CPO GX 2012 URL} |  /lcertified/models/2012-Lexus-GX | 
-| ${CPO GX 2011 URL} |  /lcertified/models/2011-Lexus-GX | 
-| ${CPO GX 2010 URL} |  /lcertified/models/2010-Lexus-GX | 
-| ${CPO GX 2009 URL} |  /lcertified/models/2009-Lexus-GX | 
+| ${CPO GX 2015 URL} |  /cpo/models/2015-Lexus-GX | 
+| ${CPO GX 2014 URL} |  /cpo/models/2014-Lexus-GX | 
+| ${CPO GX 2013 URL} |  /cpo/models/2013-Lexus-GX | 
+| ${CPO GX 2012 URL} |  /cpo/models/2012-Lexus-GX | 
+| ${CPO GX 2011 URL} |  /cpo/models/2011-Lexus-GX | 
+| ${CPO GX 2010 URL} |  /cpo/models/2010-Lexus-GX | 
+| ${CPO GX 2009 URL} |  /cpo/models/2009-Lexus-GX | 
 
 # RXh DOES NOT HAVE 2009 VERSION
-| ${CPO RXH 2015 URL} |  /lcertified/models/2015-Lexus-RXh | 
-| ${CPO RXH 2014 URL} |  /lcertified/models/2014-Lexus-RXh | 
-| ${CPO RXH 2013 URL} |  /lcertified/models/2013-Lexus-RXh | 
-| ${CPO RXH 2012 URL} |  /lcertified/models/2012-Lexus-RXh | 
-| ${CPO RXH 2011 URL} |  /lcertified/models/2011-Lexus-RXh | 
-| ${CPO RXH 2010 URL} |  /lcertified/models/2010-Lexus-RXh | 
+| ${CPO RXH 2015 URL} |  /cpo/models/2015-Lexus-RXh | 
+| ${CPO RXH 2014 URL} |  /cpo/models/2014-Lexus-RXh | 
+| ${CPO RXH 2013 URL} |  /cpo/models/2013-Lexus-RXh | 
+| ${CPO RXH 2012 URL} |  /cpo/models/2012-Lexus-RXh | 
+| ${CPO RXH 2011 URL} |  /cpo/models/2011-Lexus-RXh | 
+| ${CPO RXH 2010 URL} |  /cpo/models/2010-Lexus-RXh | 
 
 # ESh ONLY HAS 2013-2014
-| ${CPO ESH 2015 URL} |  /lcertified/models/2015-Lexus-ESh | 
-| ${CPO ESH 2014 URL} |  /lcertified/models/2014-Lexus-ESh | 
-| ${CPO ESH 2013 URL} |  /lcertified/models/2013-Lexus-ESh | 
+| ${CPO ESH 2015 URL} |  /cpo/models/2015-Lexus-ESh | 
+| ${CPO ESH 2014 URL} |  /cpo/models/2014-Lexus-ESh | 
+| ${CPO ESH 2013 URL} |  /cpo/models/2013-Lexus-ESh | 
 
 # CTh DOES NOT HAVE 2009 AND 2010
-| ${CPO CTH 2015 URL} |  /lcertified/models/2015-Lexus-CTh | 
-| ${CPO CTH 2014 URL} |  /lcertified/models/2014-Lexus-CTh | 
-| ${CPO CTH 2013 URL} |  /lcertified/models/2013-Lexus-CTh | 
-| ${CPO CTH 2012 URL} |  /lcertified/models/2012-Lexus-CTh | 
-| ${CPO CTH 2011 URL} |  /lcertified/models/2011-Lexus-CTh | 
+| ${CPO CTH 2015 URL} |  /cpo/models/2015-Lexus-CTh | 
+| ${CPO CTH 2014 URL} |  /cpo/models/2014-Lexus-CTh | 
+| ${CPO CTH 2013 URL} |  /cpo/models/2013-Lexus-CTh | 
+| ${CPO CTH 2012 URL} |  /cpo/models/2012-Lexus-CTh | 
+| ${CPO CTH 2011 URL} |  /cpo/models/2011-Lexus-CTh | 
 
 # GSh DOES NOT HAVE 2012 VERSION
-| ${CPO GSH 2015 URL} |  /lcertified/models/2015-Lexus-GSh | 
-| ${CPO GSH 2014 URL} |  /lcertified/models/2014-Lexus-GSh | 
-| ${CPO GSH 2013 URL} |  /lcertified/models/2013-Lexus-GSh | 
-| ${CPO GSH 2011 URL} |  /lcertified/models/2011-Lexus-GSh | 
-| ${CPO GSH 2010 URL} |  /lcertified/models/2010-Lexus-GSh | 
-| ${CPO GSH 2009 URL} |  /lcertified/models/2009-Lexus-GSh | 
+| ${CPO GSH 2015 URL} |  /cpo/models/2015-Lexus-GSh | 
+| ${CPO GSH 2014 URL} |  /cpo/models/2014-Lexus-GSh | 
+| ${CPO GSH 2013 URL} |  /cpo/models/2013-Lexus-GSh | 
+| ${CPO GSH 2011 URL} |  /cpo/models/2011-Lexus-GSh | 
+| ${CPO GSH 2010 URL} |  /cpo/models/2010-Lexus-GSh | 
+| ${CPO GSH 2009 URL} |  /cpo/models/2009-Lexus-GSh | 
 
-| ${CPO LSH 2015 URL} |  /lcertified/models/2015-Lexus-LSh | 
-| ${CPO LSH 2014 URL} |  /lcertified/models/2014-Lexus-LSh | 
-| ${CPO LSH 2013 URL} |  /lcertified/models/2013-Lexus-LSh | 
-| ${CPO LSH 2012 URL} |  /lcertified/models/2012-Lexus-LSh | 
-| ${CPO LSH 2011 URL} |  /lcertified/models/2011-Lexus-LSh | 
-| ${CPO LSH 2010 URL} |  /lcertified/models/2010-Lexus-LSh | 
-| ${CPO LSH 2009 URL} |  /lcertified/models/2009-Lexus-LSh | 
+| ${CPO LSH 2015 URL} |  /cpo/models/2015-Lexus-LSh | 
+| ${CPO LSH 2014 URL} |  /cpo/models/2014-Lexus-LSh | 
+| ${CPO LSH 2013 URL} |  /cpo/models/2013-Lexus-LSh | 
+| ${CPO LSH 2012 URL} |  /cpo/models/2012-Lexus-LSh | 
+| ${CPO LSH 2011 URL} |  /cpo/models/2011-Lexus-LSh | 
+| ${CPO LSH 2010 URL} |  /cpo/models/2010-Lexus-LSh | 
+| ${CPO LSH 2009 URL} |  /cpo/models/2009-Lexus-LSh | 
 
 # HSh ONLY HAS 2010-2012   
-| ${CPO HSH 2012 URL} |  /lcertified/models/2012-Lexus-HSh | 
-| ${CPO HSH 2011 URL} |  /lcertified/models/2011-Lexus-HSh | 
-| ${CPO HSH 2010 URL} |  /lcertified/models/2010-Lexus-HSh | 
+| ${CPO HSH 2012 URL} |  /cpo/models/2012-Lexus-HSh | 
+| ${CPO HSH 2011 URL} |  /cpo/models/2011-Lexus-HSh | 
+| ${CPO HSH 2010 URL} |  /cpo/models/2010-Lexus-HSh | 
 
-| ${CPO ISF 2014 URL} |  /lcertified/models/2014-Lexus-ISF | 
-| ${CPO ISF 2013 URL} |  /lcertified/models/2013-Lexus-ISF | 
-| ${CPO ISF 2012 URL} |  /lcertified/models/2012-Lexus-ISF | 
-| ${CPO ISF 2011 URL} |  /lcertified/models/2011-Lexus-ISF | 
-| ${CPO ISF 2010 URL} |  /lcertified/models/2010-Lexus-ISF | 
-| ${CPO ISF 2009 URL} |  /lcertified/models/2009-Lexus-ISF | 
+| ${CPO ISF 2014 URL} |  /cpo/models/2014-Lexus-ISF | 
+| ${CPO ISF 2013 URL} |  /cpo/models/2013-Lexus-ISF | 
+| ${CPO ISF 2012 URL} |  /cpo/models/2012-Lexus-ISF | 
+| ${CPO ISF 2011 URL} |  /cpo/models/2011-Lexus-ISF | 
+| ${CPO ISF 2010 URL} |  /cpo/models/2010-Lexus-ISF | 
+| ${CPO ISF 2009 URL} |  /cpo/models/2009-Lexus-ISF | 
 
 
 

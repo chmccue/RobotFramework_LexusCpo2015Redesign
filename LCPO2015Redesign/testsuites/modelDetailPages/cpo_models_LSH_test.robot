@@ -7,6 +7,26 @@
 *** Test Cases ***
 
 # ******************************************************
+# CPO LSH 2015 MODEL PAGE
+# ******************************************************
+
+| LSH 2014 Model page - Download Brochure button | 
+| | [Tags] | 2015 | 
+| | Given user is on LSH 2015 Model page | 
+| | When user clicks Model Detail Page Download Brochure button | 
+| | Then user views the LSH 2015 Brochure | 
+
+| LSH 2015 Model page - Back to All Models button | 
+| | [Tags] | 2015 | ie | 
+| | Given user is on LSH 2015 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LSH 2015 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2015 | test | 
+| | Desktop View - LSH 2015 page - review Choose Another Model Year menu | 
+
+# ******************************************************
 # CPO LSH 2014 MODEL PAGE
 # ******************************************************
 #| LSH 2014 Model page - Copy check | 
@@ -21,31 +41,37 @@
 | LSH 2014 Model page - Download Brochure button | 
 | | [Tags] | 2014 | 
 | | Given user is on LSH 2014 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LSH 2014 Brochure | 
 
 | LSH 2014 Model page - Back to All Models button | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on LSH 2014 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
 
+| LSH 2014 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2014 | test | 
+| | Desktop View - LSH 2014 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LSH 2014 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on LSH 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to LSH 2014 Model page | 
 
 | LSH 2014 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on LSH 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LSH 2013 Model page | 
 
 | LSH 2014 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on LSH 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -84,29 +110,42 @@
 #| | And Technology copy matches expected LSH 2013 Technology copy | 
 #| | And Drivetrain copy matches expected LSH 2013 Drivetrain copy | 
 #| | And Safety copy matches expected LSH 2013 Safety copy | 
+*** Test Cases ***
 
 | LSH 2013 Model page - Download Brochure button | 
 | | [Tags] | 2013 | 
 | | Given user is on LSH 2013 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LSH 2013 Brochure | 
 
+| LSH 2013 Model page - Back to All Models button | 
+| | [Tags] | 2013 | ie | 
+| | Given user is on LSH 2013 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LSH 2013 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2013 | test | 
+| | Desktop View - LSH 2013 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LSH 2013 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on LSH 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to LSH 2014 Model page | 
 
 | LSH 2013 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on LSH 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LSH 2013 Model page | 
 
 | LSH 2013 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on LSH 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -133,11 +172,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to LSH 2009 Model page | 
 
-| LSH 2013 Model page - Back to All Models button | 
-| | [Tags] | 2013 | 
-| | Given user is on LSH 2013 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO LSH 2012 MODEL PAGE
@@ -151,29 +185,42 @@
 #| | AndTechnology copy matches expected LSH 2012 Technology copy | 
 #| | AndDrivetrain copy matches expected LSH 2012 Drivetrain copy | 
 #| | AndSafety copy matches expected LSH 2012 Safety copy | 
+*** Test Cases ***
 
 | LSH 2012 Model page - Download Brochure button | 
 | | [Tags] | 2012 | 
 | | Given user is on LSH 2012 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LSH 2012 Brochure | 
 
+| LSH 2012 Model page - Back to All Models button | 
+| | [Tags] | 2012 | ie | 
+| | Given user is on LSH 2012 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LSH 2012 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2012 | test | 
+| | Desktop View - LSH 2012 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LSH 2012 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on LSH 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LSH 2013 Model page | 
 
 | LSH 2012 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on LSH 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to LSH 2014 Model page | 
 
 | LSH 2012 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on LSH 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -200,11 +247,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to LSH 2009 Model page | 
 
-| LSH 2012 Model page - Back to All Models button | 
-| | [Tags] | 2012 | 
-| | Given user is on LSH 2012 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO LSH 2011 MODEL PAGE
@@ -218,29 +260,41 @@
 #| | AndTechnology copy matches expected LSH 2011 Technology copy | 
 #| | AndDrivetrain copy matches expected LSH 2011 Drivetrain copy | 
 #| | AndSafety copy matches expected LSH 2011 Safety copy | 
+*** Test Cases ***
 
 | LSH 2011 Model page - Download Brochure button | 
 | | [Tags] | 2011 | 
 | | Given user is on LSH 2011 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LSH 2011 Brochure | 
 
+| LSH 2011 Model page - Back to All Models button | 
+| | [Tags] | 2011 | ie | 
+| | Given user is on LSH 2011 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LSH 2011 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2011 | test | 
+| | Desktop View - LSH 2011 page - review Choose Another Model Year menu | 
+
+*** comment ***
 | LSH 2011 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on LSH 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LSH 2013 Model page | 
 
 | LSH 2011 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on LSH 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
 | | Then user is taken to LSH 2012 Model page | 
 
 | LSH 2011 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on LSH 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -267,11 +321,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to LSH 2009 Model page | 
 
-| LSH 2011 Model page - Back to All Models button | 
-| | [Tags] | 2011 | 
-| | Given user is on LSH 2011 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO LSH 2010 MODEL PAGE
@@ -285,22 +334,35 @@
 #| | AndTechnology copy matches expected LSH 2010 Technology copy | 
 #| | AndDrivetrain copy matches expected LSH 2010 Drivetrain copy | 
 #| | AndSafety copy matches expected LSH 2010 Safety copy | 
+*** Test Cases ***
 
 | LSH 2010 Model page - Download Brochure button | 
 | | [Tags] | 2010 | 
 | | Given user is on LSH 2010 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LSH 2010 Brochure | 
 
+| LSH 2010 Model page - Back to All Models button | 
+| | [Tags] | 2010 | ie | 
+| | Given user is on LSH 2010 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LSH 2010 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2010 | test | 
+| | Desktop View - LSH 2010 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LSH 2010 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on LSH 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LSH 2013 Model page | 
 
 | LSH 2010 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on LSH 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -321,8 +383,7 @@
 | | Then user is taken to LSH 2010 Model page | 
 
 | LSH 2010 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2010 | 
-
+| | [Tags] | 2010 | ie | 
 | | Given user is on LSH 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -336,11 +397,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to LSH 2009 Model page | 
 
-| LSH 2010 Model page - Back to All Models button | 
-| | [Tags] | 2010 | 
-| | Given user is on LSH 2010 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO LSH 2009 MODEL PAGE
@@ -354,22 +410,35 @@
 #| | AndTechnology copy matches expected LSH 2009 Technology copy | 
 #| | AndDrivetrain copy matches expected LSH 2009 Drivetrain copy | 
 #| | AndSafety copy matches expected LSH 2009 Safety copy | 
+*** Test Cases ***
 
 | LSH 2009 Model page - Download Brochure button | 
 | | [Tags] | 2009 | 
 | | Given user is on LSH 2009 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the LSH 2009 Brochure | 
 
+| LSH 2009 Model page - Back to All Models button | 
+| | [Tags] | 2009 | ie | 
+| | Given user is on LSH 2009 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| LSH 2009 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2009 | test | 
+| | Desktop View - LSH 2009 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | LSH 2009 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on LSH 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to LSH 2013 Model page | 
 
 | LSH 2009 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on LSH 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -397,20 +466,14 @@
 | | Then user is taken to LSH 2009 Model page | 
 
 | LSH 2009 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on LSH 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to LSH 2014 Model page | 
 
-| LSH 2009 Model page - Back to All Models button | 
-| | [Tags] | 2009 | 
-| | Given user is on LSH 2009 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
-
-
+*** Test Cases ***
 # ***********************************************
 # MOBILE REVIEW
 # ***********************************************

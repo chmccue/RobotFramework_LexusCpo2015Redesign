@@ -6,6 +6,22 @@
 
 *** Test Cases ***
 
+| GX 2015 Model page - Download Brochure button | 
+| | [Tags] | 2015 | 
+| | Given user is on GX 2015 Model page | 
+| | When user clicks Model Detail Page Download Brochure button | 
+| | Then user views the GX 2015 Brochure | 
+
+| GX 2015 Model page - Back to All Models button | 
+| | [Tags] | 2015 | ie | 
+| | Given user is on GX 2015 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| GX 2015 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2015 | test | 
+| | Desktop View - GX 2015 page - review Choose Another Model Year menu | 
+
 # ******************************************************
 # CPO GX 2014 MODEL PAGE
 # ******************************************************
@@ -21,31 +37,36 @@
 | GX 2014 Model page - Download Brochure button | 
 | | [Tags] | 2014 | 
 | | Given user is on GX 2014 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the GX 2014 Brochure | 
 
 | GX 2014 Model page - Back to All Models button | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on GX 2014 Model page | 
 | | When user clicks Back to All Models button | 
 | | Then user is taken to CPO All Models page | 
 
+| GX 2014 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2014 | test | 
+| | Desktop View - GX 2014 page - review Choose Another Model Year menu | 
+
+*** comment ***
 | GX 2014 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on GX 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to GX 2014 Model page | 
 
 | GX 2014 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on GX 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to GX 2013 Model page | 
 
 | GX 2014 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2014 | 
+| | [Tags] | 2014 | ie | 
 | | Given user is on GX 2014 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -85,28 +106,41 @@
 #| | And Drivetrain copy matches expected GX 2013 Drivetrain copy | 
 #| | And Safety copy matches expected GX 2013 Safety copy | 
 
+*** Test Cases ***
+
 | GX 2013 Model page - Download Brochure button | 
 | | [Tags] | 2013 | 
 | | Given user is on GX 2013 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the GX 2013 Brochure | 
 
+| GX 2013 Model page - Back to All Models button | 
+| | [Tags] | 2013 | ie | 
+| | Given user is on GX 2013 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| GX 2013 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2013 | test | 
+| | Desktop View - GX 2013 page - review Choose Another Model Year menu | 
+
+*** comment ***
 | GX 2013 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on GX 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to GX 2014 Model page | 
 
 | GX 2013 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on GX 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to GX 2013 Model page | 
 
 | GX 2013 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2013 | 
+| | [Tags] | 2013 | ie | 
 | | Given user is on GX 2013 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -133,11 +167,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to GX 2009 Model page | 
 
-| GX 2013 Model page - Back to All Models button | 
-| | [Tags] | 2013 | 
-| | Given user is on GX 2013 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO GX 2012 MODEL PAGE
@@ -152,28 +181,42 @@
 #| | AndDrivetrain copy matches expected GX 2012 Drivetrain copy | 
 #| | AndSafety copy matches expected GX 2012 Safety copy | 
 
+*** Test Cases ***
+
 | GX 2012 Model page - Download Brochure button | 
 | | [Tags] | 2012 | 
 | | Given user is on GX 2012 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the GX 2012 Brochure | 
 
+| GX 2012 Model page - Back to All Models button | 
+| | [Tags] | 2012 | ie | 
+| | Given user is on GX 2012 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| GX 2012 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2012 | test | 
+| | Desktop View - GX 2012 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | GX 2012 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on GX 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
 | | Then user is taken to GX 2012 Model page | 
 
 | GX 2012 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on GX 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to GX 2013 Model page | 
 
 | GX 2012 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2012 | 
+| | [Tags] | 2012 | ie | 
 | | Given user is on GX 2012 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -200,11 +243,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to GX 2009 Model page | 
 
-| GX 2012 Model page - Back to All Models button | 
-| | [Tags] | 2012 | 
-| | Given user is on GX 2012 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO GX 2011 MODEL PAGE
@@ -219,28 +257,42 @@
 #| | AndDrivetrain copy matches expected GX 2011 Drivetrain copy | 
 #| | AndSafety copy matches expected GX 2011 Safety copy | 
 
+*** Test Cases ***
+
 | GX 2011 Model page - Download Brochure button | 
 | | [Tags] | 2011 | 
 | | Given user is on GX 2011 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the GX 2011 Brochure | 
 
+| GX 2011 Model page - Back to All Models button | 
+| | [Tags] | 2011 | ie | 
+| | Given user is on GX 2011 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| GX 2011 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2011 | test | 
+| | Desktop View - GX 2011 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | GX 2011 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on GX 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to GX 2013 Model page | 
 
 | GX 2011 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on GX 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
 | | Then user is taken to GX 2012 Model page | 
 
 | GX 2011 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2011 | 
+| | [Tags] | 2011 | ie | 
 | | Given user is on GX 2011 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -267,11 +319,6 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to GX 2009 Model page | 
 
-| GX 2011 Model page - Back to All Models button | 
-| | [Tags] | 2011 | 
-| | Given user is on GX 2011 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
 
 # ******************************************************
 # CPO GX 2010 MODEL PAGE
@@ -286,21 +333,35 @@
 #| | AndDrivetrain copy matches expected GX 2010 Drivetrain copy | 
 #| | AndSafety copy matches expected GX 2010 Safety copy | 
 
+*** Test Cases ***
+
 | GX 2010 Model page - Download Brochure button | 
 | | [Tags] | 2010 | 
 | | Given user is on GX 2010 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the GX 2010 Brochure | 
 
+| GX 2010 Model page - Back to All Models button | 
+| | [Tags] | 2010 | ie | 
+| | Given user is on GX 2010 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| GX 2010 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2010 | test | 
+| | Desktop View - GX 2010 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | GX 2010 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on GX 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to GX 2013 Model page | 
 
 | GX 2010 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on GX 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -314,7 +375,7 @@
 | | Then user is taken to GX 2011 Model page | 
 
 | GX 2010 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2010 | 
+| | [Tags] | 2010 | ie | 
 | | Given user is on GX 2010 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
@@ -334,11 +395,7 @@
 | | And menu expands and user selects 2009 | 
 | | Then user is taken to GX 2009 Model page | 
 
-| GX 2010 Model page - Back to All Models button | 
-| | [Tags] | 2010 | 
-| | Given user is on GX 2010 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
+
 
 # ******************************************************
 # CPO GX 2009 MODEL PAGE
@@ -353,21 +410,35 @@
 #| | AndDrivetrain copy matches expected GX 2009 Drivetrain copy | 
 #| | AndSafety copy matches expected GX 2009 Safety copy | 
 
+*** Test Cases ***
+
 | GX 2009 Model page - Download Brochure button | 
 | | [Tags] | 2009 | 
 | | Given user is on GX 2009 Model page | 
-| | When user clicks Download Brochure button | 
+| | When user clicks Model Detail Page Download Brochure button | 
 | | Then user views the GX 2009 Brochure | 
 
+| GX 2009 Model page - Back to All Models button | 
+| | [Tags] | 2009 | ie | 
+| | Given user is on GX 2009 Model page | 
+| | When user clicks Back to All Models button | 
+| | Then user is taken to CPO All Models page | 
+
+| GX 2009 Model page - Desktop view - Choose Another Model Year menu | 
+| | [Tags] | desktop | 2009 | test | 
+| | Desktop View - GX 2009 page - review Choose Another Model Year menu | 
+
+*** comment ***
+
 | GX 2009 Model page - Choose Another Model Year - 2013 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on GX 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2013 | 
 | | Then user is taken to GX 2013 Model page | 
 
 | GX 2009 Model page - Choose Another Model Year - 2012 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on GX 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2012 | 
@@ -395,26 +466,24 @@
 | | Then user is taken to GX 2009 Model page | 
 
 | GX 2009 Model page - Choose Another Model Year - 2014 | 
-| | [Tags] | 2009 | 
+| | [Tags] | 2009 | ie | 
 | | Given user is on GX 2009 Model page | 
 | | When user clicks Choose Another Model Year menu | 
 | | And menu expands and user selects 2014 | 
 | | Then user is taken to GX 2014 Model page | 
-
-| GX 2009 Model page - Back to All Models button | 
-| | [Tags] | 2009 | 
-| | Given user is on GX 2009 Model page | 
-| | When user clicks Back to All Models button | 
-| | Then user is taken to CPO All Models page | 
-
-
 
 
 # ***********************************************
 # MOBILE REVIEW
 # ***********************************************
 
+*** Test Cases ***
+
 # MOBILE PORTRAIT MODE
+| GX 2015 Model page - Mobile Portrait view - Choose Another Model Year menu | 
+| | [Tags] | mobile | 2015 | 
+| | Mobile Portrait View - GX 2015 page - review Choose Another Model Year menu | 
+
 | GX 2014 Model page - Mobile Portrait view - Choose Another Model Year menu | 
 | | [Tags] | mobile | 2014 | 
 | | Mobile Portrait View - GX 2014 page - review Choose Another Model Year menu | 
@@ -441,6 +510,10 @@
 
 
 # MOBILE LANDSCAPE MODE
+| GX 2015 Model page - Mobile Landscape view - Choose Another Model Year menu | 
+| | [Tags] | mobile | 2015 | 
+| | Mobile Landscape View - GX 2015 page - review Choose Another Model Year menu | 
+
 | GX 2014 Model page - Mobile Landscape view - Choose Another Model Year menu | 
 | | [Tags] | mobile | 2014 | 
 | | Mobile Landscape View - GX 2014 page - review Choose Another Model Year menu | 
@@ -468,6 +541,10 @@
 
 
 # TABLET PORTRAIT MODE
+| GX 2015 Model page - Tablet Portrait view - Choose Another Model Year menu | 
+| | [Tags] | tablet | 2015 | 
+| | Tablet Portrait View - GX 2015 page - review Choose Another Model Year menu | 
+
 | GX 2014 Model page - Tablet Portrait view - Choose Another Model Year menu | 
 | | [Tags] | tablet | 2014 | 
 | | Tablet Portrait View - GX 2014 page - review Choose Another Model Year menu | 
@@ -494,6 +571,10 @@
 
 
 # TABLET LANDSCAPE MODE
+| GX 2015 Model page - Tablet Landscape view - Choose Another Model Year menu | 
+| | [Tags] | tablet | 2015 | 
+| | Tablet Landscape View - GX 2015 page - review Choose Another Model Year menu | 
+
 | GX 2014 Model page - Tablet Landscape view - Choose Another Model Year menu | 
 | | [Tags] | tablet | 2014 | 
 | | Tablet Landscape View - GX 2014 page - review Choose Another Model Year menu | 

@@ -38,6 +38,6 @@
 | | Then  ???? |  # Find out what the expected functionality is for this.
 
 | Searching valid zip codes | 
-| | [Tags] | test | 
+| | [Tags] | quicksearch | 
 | | user enters correct zip code and is taken to search results page | 
 

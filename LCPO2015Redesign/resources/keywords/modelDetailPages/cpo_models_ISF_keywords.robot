@@ -13,10 +13,6 @@
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
 
@@ -53,67 +49,6 @@
 # ********************************************************************
 # ********************************************************************
 
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
-
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
-
-# ********************************************************************
-# ********************************************************************
-# DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
-
-| user views the ISF 2014 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2014 BROCHURE PAGE TITLE} | ${CPO ISF 2014 BROCHURE URL} | 
-
-| user views the ISF 2013 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2013 BROCHURE PAGE TITLE} | ${CPO ISF 2013 BROCHURE URL} | 
-
-| user views the ISF 2012 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2012 BROCHURE PAGE TITLE} | ${CPO ISF 2012 BROCHURE URL} | 
-
-| user views the ISF 2011 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2011 BROCHURE PAGE TITLE} | ${CPO ISF 2011 BROCHURE URL} | 
-
-| user views the ISF 2010 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2010 BROCHURE PAGE TITLE} | ${CPO ISF 2010 BROCHURE URL} | 
-
-| user views the ISF 2009 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2009 BROCHURE PAGE TITLE} | ${CPO ISF 2009 BROCHURE URL} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| menu expands and user selects 2014 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2014 BUTTON} | 
-
-| menu expands and user selects 2013 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2013 BUTTON} | 
-
-| menu expands and user selects 2012 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2012 BUTTON} | 
-
-| menu expands and user selects 2011 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2011 BUTTON} | 
-
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
-
-| menu expands and user selects 2009 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2009 BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
 | user is taken to ISF 2014 Model page | 
 | | Verify Correct Link Title | ${CPO ISF 2014 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO ISF 2014 URL} | 
@@ -137,6 +72,154 @@
 | user is taken to ISF 2009 Model page | 
 | | Verify Correct Link Title | ${CPO ISF 2009 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO ISF 2009 URL} | 
+
+# ********************************************************************
+# ********************************************************************
+# DOWNLOAD BROCHURE
+
+| user views the ISF 2014 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2014 BROCHURE PAGE TITLE} | ${CPO ISF 2014 BROCHURE URL} | 
+
+| user views the ISF 2013 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2013 BROCHURE PAGE TITLE} | ${CPO ISF 2013 BROCHURE URL} | 
+
+| user views the ISF 2012 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2012 BROCHURE PAGE TITLE} | ${CPO ISF 2012 BROCHURE URL} | 
+
+| user views the ISF 2011 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2011 BROCHURE PAGE TITLE} | ${CPO ISF 2011 BROCHURE URL} | 
+
+| user views the ISF 2010 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2010 BROCHURE PAGE TITLE} | ${CPO ISF 2010 BROCHURE URL} | 
+
+| user views the ISF 2009 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ISF 2009 BROCHURE PAGE TITLE} | ${CPO ISF 2009 BROCHURE URL} | 
+
+# ********************************************************************
+# ********************************************************************
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
+
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - ISF 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2014 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Portrait View - ISF 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2013 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Portrait View - ISF 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2012 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Portrait View - ISF 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2011 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Portrait View - ISF 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2010 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Portrait View - ISF 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2009 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - ISF 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2014 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Landscape View - ISF 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2013 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Landscape View - ISF 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2012 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Landscape View - ISF 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2011 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Landscape View - ISF 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2010 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Mobile Landscape View - ISF 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2009 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - ISF 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2014 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Portrait View - ISF 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2013 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Portrait View - ISF 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2012 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Portrait View - ISF 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2011 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Portrait View - ISF 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2010 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Portrait View - ISF 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2009 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - ISF 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2014 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Landscape View - ISF 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2013 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Landscape View - ISF 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2012 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Landscape View - ISF 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2011 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Landscape View - ISF 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2010 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+| Tablet Landscape View - ISF 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ISF 2009 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | ${CPO YEARS ISF} | 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************
@@ -170,119 +253,5 @@
 | | Actual vs Expected Copy | ${CPO ISF 2014 - ACTUAL SAFETY COPY LOCATION 1} | ${CPO ISF 2014 - EXPECTED SAFETY COPY 1} | 
 | | Actual vs Expected Copy | ${CPO ISF 2014 - ACTUAL SAFETY COPY LOCATION 2} | ${CPO ISF 2014 - EXPECTED SAFETY COPY 2} | 
 
-
-
-
-# ***************************************************************
-# MOBILE REVIEW
-# ***************************************************************
-
-# MOBILE PORTRAIT RESOLUTION
-| Mobile Portrait View - ISF 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2014 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Portrait View - ISF 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2013 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Portrait View - ISF 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2012 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Portrait View - ISF 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2011 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Portrait View - ISF 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2010 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Portrait View - ISF 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2009 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-
-# MOBILE LANDSCAPE RESOLUTION
-| Mobile Landscape View - ISF 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2014 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Landscape View - ISF 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2013 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Landscape View - ISF 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2012 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Landscape View - ISF 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2011 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Landscape View - ISF 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2010 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Mobile Landscape View - ISF 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2009 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-
-
-# ***************************************************************
-# TABLET REVIEW
-# ***************************************************************
-
-# TABLET PORTRAIT RESOLUTION
-| Tablet Portrait View - ISF 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2014 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Portrait View - ISF 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2013 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Portrait View - ISF 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2012 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Portrait View - ISF 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2011 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Portrait View - ISF 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2010 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Portrait View - ISF 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2009 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-
-# TABLET LANDSCAPE RESOLUTION
-| Tablet Landscape View - ISF 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2014 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Landscape View - ISF 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2013 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Landscape View - ISF 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2012 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Landscape View - ISF 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2011 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Landscape View - ISF 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2010 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
-
-| Tablet Landscape View - ISF 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO ISF 2009 URL} | ${CPO ISF PAGE TITLE VAR} | ${CPO ISF URL VAR} | 
 
 

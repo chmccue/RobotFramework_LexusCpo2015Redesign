@@ -19,6 +19,7 @@
 | loop through CPO Pages, click element and verify link title/url | [Arguments] | ${element to click} | ${expected page title} | ${expected page url} | 
 | | :FOR | ${cpo url} | IN | @{CPO PAGE URLS LIST} | 
 | | | Go To | ${BASE URL}${cpo url} | 
+| | | Run Keyword If | '${BROWSER}'=='Ie' | Javascript Scroll Down On Page | ${element to click} | 
 | | | Find and Click Element | ${element to click} | 
 | | | Verify Correct Link Title | ${expected page title} | 
 | | | Verify Correct Link URL | ${expected page url} | 
@@ -34,19 +35,34 @@
 | | | Verify Correct Link URL | ${expected page url} | 
 
 
+#| user goes to a CPO Page, clicks Share tab in Footer Nav, clicks on Facebook button, is taken to Facebook pop up with auto generated text | 
+#| | Go To | ${BASE URL}${CPO OVERVIEW URL} | 
+#| | Find and Click Element | ${CPO FOOTER NAV SHARE THIS PAGE BUTTON} | 
+#| | Find and Click Element | ${CPO SHARE MENU - FACEBOOK} | 
+#| | Select Window | Facebook | 
+#| | Clear and Type into element | id=email |  tteam.one@gmail.com | 
+#| | Clear and Type into element | id=pass | team1pass | 
+#| | Find and Click Element | id=loginbutton | 
+#| | Verify Text Element On Page | ${CPO SHARE MENU - FACEBOOK TITLE LOCATION} | 
+#| | Actual vs Expected Copy | ${CPO SHARE MENU - FACEBOOK TITLE LOCATION} | ${CPO SHARE MENU - FACEBOOK SHARE TITLE} | 
+#| | Close Window | 
+#| | Select Window | 
+
+
 | user goes to a CPO Page, clicks Share tab in Footer Nav, clicks on Facebook button, is taken to Facebook pop up with auto generated text | 
+| | Go To | https://www.facebook.com | 
+| | Clear and Type into element | id=email |  tteam.one@gmail.com | 
+| | Clear and Type into element | id=pass | team1pass | 
+| | Find and Click Element | id=loginbutton | 
 | | Go To | ${BASE URL}${CPO OVERVIEW URL} | 
 | | Find and Click Element | ${CPO FOOTER NAV SHARE THIS PAGE BUTTON} | 
 | | Find and Click Element | ${CPO SHARE MENU - FACEBOOK} | 
 | | Select Window | Facebook | 
-| | Clear and Type into element | id=email |  tteam.one@gmail.com | 
-| | Clear and Type into element | id=pass | team1pass | 
-| | Find and Click Element | id=loginbutton | 
-| | Verify Text Element On Page | ${CPO SHARE MENU - FACEBOOK COPY LOCATION} | 
-| | Actual vs Expected Copy | ${CPO SHARE MENU - FACEBOOK COPY LOCATION} | ${CPO SHARE MENU - FACEBOOK SHARE COPY} | 
+| | Verify Text Element On Page | ${CPO SHARE MENU - FACEBOOK TITLE LOCATION} | 
+| | Actual vs Expected Copy | ${CPO SHARE MENU - FACEBOOK TITLE LOCATION} | ${CPO SHARE MENU - FACEBOOK SHARE TITLE} | 
 | | Close Window | 
-| | Select Window | 
-
+#| | Run Keyword If | '${BROWSER}'=='Chrome' | Select Window | ${CPO SHARE MENU - FACEBOOK SHARE TITLE} | 
+#| | Run Keyword Unless | '${BROWSER}'=='Chrome' | Select Window | ${CPO SHARE MENU - FACEBOOK SHARE TITLE} | 
 
 # NEED TO INSERT  RUN KEYWORD IF STATEMENTS FOR WHEN AFTER USER SIGNS IN AND DOESN"T NEED TO SIGN IN AGAIN
 #| Desktop - user goes to a CPO Page, clicks Share tab in Footer Nav, clicks on Facebook button, is taken to Facebook pop up with auto generated text | 
@@ -72,20 +88,22 @@
 | | Select Window | Share a link on Twitter | 
 | | Actual vs Expected Copy | id=status | ${CPO SHARE MENU - TWITTER SHARE COPY} | 
 | | Close Window | 
-| | Select Window | 
+#| | Select Window | 
 
 
 | user goes to a CPO Page, clicks Share tab in Footer Nav, clicks on Google button, is taken to Google pop up with auto generated text | 
+| | Go To | https://gmail.com | 
+| | Run Keyword And Return Status | Clear and Type into element | id=Email |  tteam.one@gmail.com | 
+| | Run Keyword And Return Status | Clear and Type into element | id=Passwd | teamonepass | 
+| | Run Keyword And Return Status | Find and Click Element | id=signIn | 
 | | Go To | ${BASE URL}${CPO OVERVIEW URL} | 
 | | Find and Click Element | ${CPO FOOTER NAV SHARE THIS PAGE BUTTON} | 
 | | Find and Click Element | ${CPO SHARE MENU - GOOGLE} | 
-| | Select Window | Google+ | 
-| | Clear and Type into element | id=Email | tteam.one@gmail.com | 
-| | Clear and Type into element | id=Passwd | teamonepass | 
-| | Find and Click Element | id=signIn | 
+| | Select Window | Share On Google+ | 
 | | Actual vs Expected Copy | id=:0.f | ${EMPTY} | 
+| | Actual vs Expected Copy | css=div.rCauNb>a | ${CPO OVERVIEW PAGE TITLE} | 
 | | Close Window | 
-| | Select Window | 
+#| | Select Window | 
 
 # FOOTER NAV KEYWORDS *********************************************
 # *****************************************************************

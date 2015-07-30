@@ -9,16 +9,17 @@
 
 | Setup Commands, CPO LSH Models page | 
 | | Setup Commands | 
-| | Go To | ${BASE URL}${CPO LSH 2014 URL} | 
+| | Go To | ${BASE URL}${CPO LSH 2015 URL} | 
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
+
+| user is on LSH 2015 Model page | 
+| | Go To | ${BASE URL}${CPO LSH 2015 URL} | 
+| | Verify Correct Link Title | ${CPO LSH 2015 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO LSH 2015 URL} | 
 
 | user is on LSH 2014 Model page | 
 | | Go To | ${BASE URL}${CPO LSH 2014 URL} | 
@@ -52,66 +53,6 @@
 
 # ********************************************************************
 # ********************************************************************
-
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
-
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
-
-# ********************************************************************
-# ********************************************************************
-# DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
-
-| user views the LSH 2014 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2014 BROCHURE PAGE TITLE} | ${CPO LSH 2014 BROCHURE URL} | 
-
-| user views the LSH 2013 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2013 BROCHURE PAGE TITLE} | ${CPO LSH 2013 BROCHURE URL} | 
-
-| user views the LSH 2012 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2012 BROCHURE PAGE TITLE} | ${CPO LSH 2012 BROCHURE URL} | 
-
-| user views the LSH 2011 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2011 BROCHURE PAGE TITLE} | ${CPO LSH 2011 BROCHURE URL} | 
-
-| user views the LSH 2010 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2010 BROCHURE PAGE TITLE} | ${CPO LSH 2010 BROCHURE URL} | 
-
-| user views the LSH 2009 Brochure | 
-| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2009 BROCHURE PAGE TITLE} | ${CPO LSH 2009 BROCHURE URL} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| menu expands and user selects 2014 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2014 BUTTON} | 
-
-| menu expands and user selects 2013 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2013 BUTTON} | 
-
-| menu expands and user selects 2012 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2012 BUTTON} | 
-
-| menu expands and user selects 2011 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2011 BUTTON} | 
-
-| menu expands and user selects 2010 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2010 BUTTON} | 
-
-| menu expands and user selects 2009 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2009 BUTTON} | 
-
-# ********************************************************************
 # ********************************************************************
 
 | user is taken to LSH 2014 Model page | 
@@ -137,6 +78,198 @@
 | user is taken to LSH 2009 Model page | 
 | | Verify Correct Link Title | ${CPO LSH 2009 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO LSH 2009 URL} | 
+
+
+# ********************************************************************
+# ********************************************************************
+# ********************************************************************
+# ********************************************************************
+# DOWNLOAD BROCHURE
+
+| user views the LSH 2015 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2015 BROCHURE PAGE TITLE} | ${CPO LSH 2015 BROCHURE URL} | 
+
+| user views the LSH 2014 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2014 BROCHURE PAGE TITLE} | ${CPO LSH 2014 BROCHURE URL} | 
+
+| user views the LSH 2013 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2013 BROCHURE PAGE TITLE} | ${CPO LSH 2013 BROCHURE URL} | 
+
+| user views the LSH 2012 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2012 BROCHURE PAGE TITLE} | ${CPO LSH 2012 BROCHURE URL} | 
+
+| user views the LSH 2011 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2011 BROCHURE PAGE TITLE} | ${CPO LSH 2011 BROCHURE URL} | 
+
+| user views the LSH 2010 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2010 BROCHURE PAGE TITLE} | ${CPO LSH 2010 BROCHURE URL} | 
+
+| user views the LSH 2009 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO LSH 2009 BROCHURE PAGE TITLE} | ${CPO LSH 2009 BROCHURE URL} | 
+
+
+# ***************************************************************
+# DESKTOP REVIEW
+# ***************************************************************
+
+| Desktop View - LSH 2015 page - review Choose Another Model Year menu |  
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2015 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Desktop View - LSH 2014 page - review Choose Another Model Year menu |  
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2014 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Desktop View - LSH 2013 page - review Choose Another Model Year menu |  
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2013 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Desktop View - LSH 2012 page - review Choose Another Model Year menu |  
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2012 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Desktop View - LSH 2011 page - review Choose Another Model Year menu |  
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2011 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Desktop View - LSH 2010 page - review Choose Another Model Year menu |  
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2010 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Desktop View - LSH 2009 page - review Choose Another Model Year menu |  
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2009 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
+
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - LSH 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2015 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Portrait View - LSH 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2014 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Portrait View - LSH 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2013 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Portrait View - LSH 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2012 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Portrait View - LSH 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2011 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Portrait View - LSH 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2010 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Portrait View - LSH 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2009 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - LSH 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2015 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Landscape View - LSH 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2014 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Landscape View - LSH 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2013 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Landscape View - LSH 2012 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2012 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Landscape View - LSH 2011 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2011 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Landscape View - LSH 2010 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2010 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Mobile Landscape View - LSH 2009 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2009 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - LSH 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2015 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Portrait View - LSH 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2014 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Portrait View - LSH 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2013 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Portrait View - LSH 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2012 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Portrait View - LSH 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2011 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Portrait View - LSH 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2010 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Portrait View - LSH 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2009 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - LSH 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2015 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Landscape View - LSH 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2014 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Landscape View - LSH 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2013 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Landscape View - LSH 2012 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2012 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Landscape View - LSH 2011 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2011 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Landscape View - LSH 2010 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2010 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+| Tablet Landscape View - LSH 2009 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu  |  ${CPO LSH 2009 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | ${CPO YEARS LSH} | 
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************
@@ -169,123 +302,3 @@
 | Safety copy matches expected LSH 2014 Safety copy | 
 | | Actual vs Expected Copy | ${CPO LSH 2014 - ACTUAL SAFETY COPY LOCATION 1} | ${CPO LSH 2014 - EXPECTED SAFETY COPY 1} | 
 | | Actual vs Expected Copy | ${CPO LSH 2014 - ACTUAL SAFETY COPY LOCATION 2} | ${CPO LSH 2014 - EXPECTED SAFETY COPY 2} | 
-
-
-
-
-
-
-# ***************************************************************
-# MOBILE REVIEW
-# ***************************************************************
-
-# MOBILE PORTRAIT RESOLUTION
-| Mobile Portrait View - LSH 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2014 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Portrait View - LSH 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2013 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Portrait View - LSH 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2012 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Portrait View - LSH 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2011 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Portrait View - LSH 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2010 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Portrait View - LSH 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2009 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-
-# MOBILE LANDSCAPE RESOLUTION
-| Mobile Landscape View - LSH 2014 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2014 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Landscape View - LSH 2013 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2013 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Landscape View - LSH 2012 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2012 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Landscape View - LSH 2011 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2011 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Landscape View - LSH 2010 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2010 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Mobile Landscape View - LSH 2009 page - review Choose Another Model Year menu | 
-| | user loads mobile landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2009 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-
-
-# ***************************************************************
-# TABLET REVIEW
-# ***************************************************************
-
-# TABLET PORTRAIT RESOLUTION
-| Tablet Portrait View - LSH 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2014 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Portrait View - LSH 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2013 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Portrait View - LSH 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2012 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Portrait View - LSH 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2011 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Portrait View - LSH 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2010 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Portrait View - LSH 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet portrait resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2009 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-
-# TABLET LANDSCAPE RESOLUTION
-| Tablet Landscape View - LSH 2014 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2014 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Landscape View - LSH 2013 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2013 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Landscape View - LSH 2012 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2012 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Landscape View - LSH 2011 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2011 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Landscape View - LSH 2010 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2010 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-| Tablet Landscape View - LSH 2009 page - review Choose Another Model Year menu | 
-| | user loads tablet landscape resolution | 
-| | Choose Another Model Year menu - Years for IS,ES,LS,RX,GX,LSH,ISF |  ${CPO LSH 2009 URL} | ${CPO LSH PAGE TITLE VAR} | ${CPO LSH URL VAR} | 
-
-
-

@@ -9,16 +9,17 @@
 
 | Setup Commands, CPO ESH Models page | 
 | | Setup Commands | 
-| | Go To | ${BASE URL}${CPO ESH 2014 URL} | 
+| | Go To | ${BASE URL}${CPO ESH 2015 URL} | 
 
 # ********************************************************************
 # ********************************************************************
-
-
-
-
 # ********************************************************************
 # ********************************************************************
+
+| user is on ESH 2015 Model page | 
+| | Go To | ${BASE URL}${CPO ESH 2015 URL} | 
+| | Verify Correct Link Title | ${CPO ESH 2015 PAGE TITLE} | 
+| | Verify Correct Link URL | ${CPO ESH 2015 URL} | 
 
 | user is on ESH 2014 Model page | 
 | | Go To | ${BASE URL}${CPO ESH 2014 URL} | 
@@ -32,19 +33,12 @@
 
 # ********************************************************************
 # ********************************************************************
-
-| user clicks Back to All Models button | 
-| | Find and Click Element | ${ALL MODELS BUTTON} | 
-
-| user is taken to CPO All Models page | 
-| | Verify Correct Link Title | ${CPO ALL MODELS PAGE TITLE} | 
-| | Verify Correct Link URL | ${CPO ALL MODELS URL} | 
-
 # ********************************************************************
 # ********************************************************************
 # DOWNLOAD BROCHURE
-| user clicks Download Brochure button | 
-| | Find and Click Element | ${CPO MODEL DETAILS - DOWNLOAD BROCHURE BUTTON} | 
+
+| user views the ESH 2015 Brochure | 
+| | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ESH 2015 BROCHURE PAGE TITLE} | ${CPO ESH 2015 BROCHURE URL} | 
 
 | user views the ESH 2014 Brochure | 
 | | PDF - Switch Window, Verify Correct Link Title and URL | ${CPO ESH 2014 BROCHURE PAGE TITLE} | ${CPO ESH 2014 BROCHURE URL} | 
@@ -54,19 +48,6 @@
 
 # ********************************************************************
 # ********************************************************************
-
-| user clicks Choose Another Model Year menu | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR BUTTON} | 
-
-# ********************************************************************
-# ********************************************************************
-
-| menu expands and user selects 2014 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2014 BUTTON} | 
-
-| menu expands and user selects 2013 | 
-| | Find and Click Element | ${CHOOSE ANOTHER MODEL YEAR - 2013 BUTTON} | 
-
 # ********************************************************************
 # ********************************************************************
 
@@ -78,6 +59,106 @@
 | user is taken to ESH 2013 Model page | 
 | | Verify Correct Link Title | ${CPO ESH 2013 PAGE TITLE} | 
 | | Verify Correct Link URL | ${CPO ESH 2013 URL} | 
+
+
+
+
+
+
+
+
+
+# ***************************************************************
+# DESKTOP REVIEW
+# ***************************************************************
+
+# DESKTOP PORTRAIT RESOLUTION
+| Desktop View - ESH 2015 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2015 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Desktop View - ESH 2014 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2014 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Desktop View - ESH 2013 page - review Choose Another Model Year menu | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2013 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+
+
+# ********************************************************************
+# ***************************************************************
+# MOBILE REVIEW
+# ***************************************************************
+
+# MOBILE PORTRAIT RESOLUTION
+| Mobile Portrait View - ESH 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2015 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Mobile Portrait View - ESH 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2014 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Mobile Portrait View - ESH 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2013 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+
+
+# MOBILE LANDSCAPE RESOLUTION
+| Mobile Landscape View - ESH 2015 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2015 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Mobile Landscape View - ESH 2014 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2014 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Mobile Landscape View - ESH 2013 page - review Choose Another Model Year menu | 
+| | user loads mobile landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2013 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+
+
+# ***************************************************************
+# TABLET REVIEW
+# ***************************************************************
+
+# TABLET PORTRAIT RESOLUTION
+| Tablet Portrait View - ESH 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2015 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Tablet Portrait View - ESH 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2014 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Tablet Portrait View - ESH 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet portrait resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2013 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+
+# TABLET LANDSCAPE RESOLUTION
+| Tablet Landscape View - ESH 2015 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2015 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Tablet Landscape View - ESH 2014 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2014 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+| Tablet Landscape View - ESH 2013 page - review Choose Another Model Year menu | 
+| | user loads tablet landscape resolution | 
+| | Model Detail Pages - Choose Another Model Year menu |  ${CPO ESH 2013 URL} | ${CPO ESH PAGE TITLE VAR} | ${CPO ESH URL VAR} | ${CPO YEARS ESH} | 
+
+
+
+
+
+
+
+
+
+
 
 
 # ********************************************************************
